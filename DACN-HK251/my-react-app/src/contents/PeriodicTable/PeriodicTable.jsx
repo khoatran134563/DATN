@@ -14,7 +14,7 @@ const PeriodicTable = () => {
   useEffect(() => {
     const fetchElements = async () => {
       try {
-        const response = await fetch('${API_BASE}/api/elements');
+        const response = await fetch(`${API_BASE}/api/elements`);
         const data = await response.json();
         setElements(data);
         if (data.length > 0) setSelectedElement(data[0]); // Mặc định chọn Hydrogen

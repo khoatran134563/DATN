@@ -20,7 +20,7 @@ const TestScreen = () => {
   const handleStartGame = async () => {
     setLoading(true);
     try {
-      const response = await fetch('${API_BASE}/api/questions');
+      const response = await fetch(`${API_BASE}/api/questions`);
       const allData = await response.json();
 
       let filteredData = [];
