@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-const API_BASE = 'http://localhost:5000';
+import { API_BASE } from '../../../config/api';
 
 const Classwork = ({
   classroomId,

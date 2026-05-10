@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../../context/AuthContext';
+import { API_BASE } from '../../../config/api';
 
-const API_BASE = 'http://localhost:5000';
+
 
 const ClassSidebar = ({ classData, teacher, activeTab, setActiveTab }) => {
   const navigate = useNavigate();

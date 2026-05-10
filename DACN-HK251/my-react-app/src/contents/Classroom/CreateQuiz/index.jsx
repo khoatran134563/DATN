@@ -4,8 +4,7 @@ import Header from '../../../components/Header';
 import QuizInfo from './QuizInfo';
 import QuestionItem from './QuestionItem';
 
-const API_BASE = 'http://localhost:5000';
-
+import { API_BASE } from '../../../config/api';
 const CreateQuiz = () => {
   const navigate = useNavigate();
   const { classId } = useParams();

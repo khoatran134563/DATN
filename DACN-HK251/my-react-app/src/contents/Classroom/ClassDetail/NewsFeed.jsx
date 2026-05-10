@@ -1,6 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-
-const API_BASE = 'http://localhost:5000';
+import { API_BASE } from '../../../config/api';
 
 const Newsfeed = ({
   classId,

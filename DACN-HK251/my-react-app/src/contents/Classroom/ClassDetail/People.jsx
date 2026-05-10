@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from 'react';
 
-const API_BASE = 'http://localhost:5000';
-
+import { API_BASE } from '../../../config/api';
 const People = ({
   classId,
   teacher,

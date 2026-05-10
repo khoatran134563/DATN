@@ -5,8 +5,7 @@ import QuestionCard from './QuestionCard';
 import QuestionPalette from './QuestionPalette';
 import SubmitModal from './SubmitModal';
 
-const API_BASE = 'http://localhost:5000';
-
+import { API_BASE } from '../../../config/api';
 const TakeQuiz = () => {
   const navigate = useNavigate();
   const location = useLocation();
