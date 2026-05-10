@@ -1,0 +1,51 @@
+/* src/contents/ForumCreate/styles.css */
+
+/* 1. Tùy chỉnh thanh cuộn riêng cho khung soạn thảo (Textarea) */
+/* Giúp nó nhỏ gọn, không bị thô như mặc định trình duyệt */
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f8fafc; /* Màu nền track trùng với màu nền web */
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* Màu thanh cuộn xám nhẹ */
+  border-radius: 4px;
+  border: 2px solid #f8fafc; /* Tạo khoảng hở cho đẹp */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8; /* Đậm lên khi di chuột vào */
+}
+
+/* 2. Hiệu ứng Focus cho các Input */
+/* Làm cho đường viền mượt hơn khi nhập liệu */
+input:focus, textarea:focus {
+  transition: all 0.3s ease;
+}
+
+/* 3. Style cho Placeholder (Chữ gợi ý mờ) */
+::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+  font-style: italic; /* Chữ nghiêng nhẹ cho giống style ghi chú */
+}
+
+/* 4. Animation xuất hiện nhẹ nhàng cho form */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form {
+  animation: slideInUp 0.4s ease-out forwards;
+}

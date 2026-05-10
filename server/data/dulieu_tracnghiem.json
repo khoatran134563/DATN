@@ -1,0 +1,3462 @@
+[
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Yếu tố nào sau đây luôn luôn KHÔNG làm dịch chuyển cân bằng của hệ phản ứng?",
+    "options": [
+      "A. Nhiệt độ",
+      "B. Áp suất",
+      "C. Nồng độ",
+      "D. Chất xúc tác"
+    ],
+    "correct_index": 3,
+    "explanation": "Chất xúc tác làm tăng tốc độ phản ứng thuận và nghịch như nhau, nên chỉ làm hệ nhanh đạt cân bằng chứ không làm chuyển dịch cân bằng."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Phát biểu nào sau đây về một phản ứng thuận nghịch tại trạng thái cân bằng là KHÔNG đúng?",
+    "options": [
+      "A. Tốc độ của phản ứng thuận bằng tốc độ của phản ứng nghịch.",
+      "B. Nồng độ của tất cả các chất trong hỗn hợp phản ứng là không đổi.",
+      "C. Nồng độ mol của chất phản ứng luôn bằng nồng độ mol của chất sản phẩm phản ứng.",
+      "D. Phản ứng thuận và phản ứng nghịch vẫn diễn ra."
+    ],
+    "correct_index": 2,
+    "explanation": "Tại trạng thái cân bằng, nồng độ các chất KHÔNG ĐỔI, chứ không nhất thiết phải BẰNG NHAU."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Nhận xét nào sau đây KHÔNG đúng?",
+    "options": [
+      "A. Trong phản ứng một chiều, chất sản phẩm không phản ứng được với nhau tạo thành chất đầu.",
+      "B. Trong phản ứng thuận nghịch, các chất sản phẩm có thể phản ứng với nhau để tạo thành chất đầu.",
+      "C. Phản ứng một chiều là phản ứng luôn xảy ra không hoàn toàn.",
+      "D. Phản ứng thuận nghịch là phản ứng xảy ra theo hai chiều trái ngược nhau trong cùng điều kiện."
+    ],
+    "correct_index": 2,
+    "explanation": "Sai. Phản ứng một chiều thường xảy ra hoàn toàn (hiệu suất có thể đạt 100%)."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Đối với phản ứng sau, cân bằng sẽ bị ảnh hưởng như thế nào khi TĂNG nhiệt độ? H2(g) + 1/2O2(g) ⇌ H2O(l) (ΔH = -286 kJ)",
+    "options": [
+      "A. Cân bằng chuyển dịch sang phải.",
+      "B. Cân bằng chuyển dịch sang trái.",
+      "C. Không thay đổi.",
+      "D. Không dự đoán được."
+    ],
+    "correct_index": 1,
+    "explanation": "ΔH < 0 (phản ứng tỏa nhiệt). Khi tăng nhiệt độ, cân bằng chuyển dịch theo chiều thu nhiệt, tức là chiều nghịch (sang trái)."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Ý nào sau đây là ĐÚNG?",
+    "options": [
+      "A. Bất cứ phản ứng nào cũng phải đạt đến trạng thái cân bằng hóa học.",
+      "B. Khi phản ứng thuận nghịch ở trạng thái cân bằng thì phản ứng dừng lại.",
+      "C. Chỉ có những phản ứng thuận nghịch mới có trạng thái cân bằng hóa học.",
+      "D. Ở trạng thái cân bằng, khối lượng các chất ở hai vế phải bằng nhau."
+    ],
+    "correct_index": 2,
+    "explanation": "Cân bằng hóa học là đặc trưng riêng của phản ứng thuận nghịch."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Cho các nhận xét sau: (a) Ở cân bằng, tốc độ thuận = tốc độ nghịch. (b) Ở cân bằng, các chất không phản ứng với nhau. (c) Ở cân bằng, nồng độ sản phẩm luôn lớn hơn chất đầu. (d) Ở cân bằng, nồng độ các chất không đổi. Các nhận xét ĐÚNG là:",
+    "options": [
+      "A. (a) và (b).",
+      "B. (b) và (c).",
+      "C. (a) và (c).",
+      "D. (a) và (d)."
+    ],
+    "correct_index": 3,
+    "explanation": "(a) và (d) là những tính chất cơ bản của cân bằng hóa học."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Hệ cân bằng: 2SO2 + O2 ⇌ 2SO3 (ΔH < 0). Yếu tố nào KHÔNG làm nồng độ các chất biến đổi?",
+    "options": [
+      "A. Biến đổi nhiệt độ.",
+      "B. Biến đổi áp suất.",
+      "C. Sự có mặt chất xúc tác.",
+      "D. Biến đổi dung tích bình."
+    ],
+    "correct_index": 2,
+    "explanation": "Chất xúc tác không làm chuyển dịch cân bằng nên nồng độ các chất ở trạng thái cân bằng không đổi."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Cân bằng hóa học nào sau đây KHÔNG bị chuyển dịch khi thay đổi áp suất?",
+    "options": [
+      "A. 2SO2(g) + O2(g) ⇌ 2SO3(g)",
+      "B. C(s) + H2O(g) ⇌ CO(g) + H2(g)",
+      "C. PCl3(g) + Cl2(g) ⇌ PCl5(g)",
+      "D. 3Fe(s) + 4H2O(g) ⇌ Fe3O4(s) + 4H2(g)"
+    ],
+    "correct_index": 3,
+    "explanation": "Phản ứng D có tổng số mol khí ở hai vế bằng nhau (4 mol), nên thay đổi áp suất không làm chuyển dịch cân bằng."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Hằng số cân bằng Kc của một phản ứng thuận nghịch phụ thuộc vào yếu tố nào?",
+    "options": [
+      "A. Nồng độ.",
+      "B. Nhiệt độ.",
+      "C. Áp suất.",
+      "D. Chất xúc tác."
+    ],
+    "correct_index": 1,
+    "explanation": "Hằng số cân bằng Kc chỉ phụ thuộc vào bản chất phản ứng và nhiệt độ."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Xét cân bằng: N2(g) + 3H2(g) ⇌ 2NH3(g). Biểu thức hằng số cân bằng là:",
+    "options": [
+      "A. [NH3] / ([N2].[H2])",
+      "B. [NH3]^2 / ([N2].[H2]^3)",
+      "C. [N2].[H2] / [NH3]",
+      "D. [N2].[H2]^3 / [NH3]^2"
+    ],
+    "correct_index": 1,
+    "explanation": "Kc bằng tích nồng độ các chất sản phẩm (mũ hệ số) chia cho tích nồng độ các chất tham gia (mũ hệ số)."
+  },
+  {
+    "quiz_id": "cbhh_nbth",
+    "question_text": "Biểu thức hằng số cân bằng (Kc) của phản ứng: C(s) + 2H2(g) ⇌ CH4(g) là:",
+    "options": [
+      "A. Kc = [CH4] / [H2]",
+      "B. Kc = [CH4] / ([C].[H2]^2)",
+      "C. Kc = [CH4] / ([C].[H2])",
+      "D. Kc = [CH4] / [H2]^2"
+    ],
+    "correct_index": 3,
+    "explanation": "Chất rắn (C) không xuất hiện trong biểu thức hằng số cân bằng."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Cho phản ứng: N2(g) + 3H2(g) ⇌ 2NH3(g) (ΔH = -92 kJ). Cân bằng phản ứng chuyển dịch về phía tạo nhiều Ammonia (NH3) hơn khi:",
+    "options": [
+      "A. Giảm nồng độ khí nitrogen.",
+      "B. Giảm nồng độ khí hydrogen.",
+      "C. Tăng nhiệt độ của hệ phản ứng.",
+      "D. Tăng áp suất của hệ phản ứng."
+    ],
+    "correct_index": 3,
+    "explanation": "Để tạo nhiều NH3 (chiều thuận): tăng áp suất (vì số mol khí giảm từ 4 xuống 2) và giảm nhiệt độ (vì phản ứng tỏa nhiệt)."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Xét phản ứng: N2(g) + 3H2(g) ⇌ 2NH3(g) trong piston ở nhiệt độ không đổi. Nếu nén piston (tăng áp suất) thì cân bằng sẽ chuyển dịch theo chiều nào?",
+    "options": [
+      "A. Chuyển dịch theo chiều nghịch.",
+      "B. Chuyển dịch theo chiều thuận.",
+      "C. Tùy thuộc vào piston bị nén nhanh hay chậm.",
+      "D. Không thay đổi."
+    ],
+    "correct_index": 1,
+    "explanation": "Nén piston = tăng áp suất → cân bằng chuyển dịch về phía ít mol khí hơn (vế phải 2 mol < vế trái 4 mol) → chiều thuận."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Hệ cân bằng: PCl5(g) ⇌ PCl3(g) + Cl2(g) (ΔH > 0). Yếu tố nào sau đây tạo nên sự tăng lượng PCl3 (chiều thuận)?",
+    "options": [
+      "A. Lấy bớt PCl5 ra.",
+      "B. Thêm Cl2 vào.",
+      "C. Giảm nhiệt độ.",
+      "D. Tăng nhiệt độ."
+    ],
+    "correct_index": 3,
+    "explanation": "Phản ứng thuận là thu nhiệt (ΔH > 0). Muốn tăng PCl3 (theo chiều thuận) thì tăng nhiệt độ."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Trong phản ứng nào sau đây, sự tăng áp suất sẽ dẫn tới cân bằng chuyển dịch sang trái (chiều nghịch)?",
+    "options": [
+      "A. CaCO3(s) ⇌ CaO(s) + CO2(g)",
+      "B. CO(g) + H2O(g) ⇌ CO2(g) + H2(g)",
+      "C. 2H2(g) + O2(g) ⇌ 2H2O(l)",
+      "D. C(s) + 2O2(g) ⇌ CO2(g)"
+    ],
+    "correct_index": 0,
+    "explanation": "Tăng áp suất → chuyển dịch về phía ít mol khí. Phản ứng A: trái 0 mol khí, phải 1 mol khí → chuyển dịch sang trái (chiều nghịch)."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Cho các phản ứng với ΔH lần lượt là: (1) -115 kJ; (2) -198 kJ; (3) -92 kJ; (4) +130 kJ; (5) +178 kJ. Các phản ứng tỏa nhiệt là:",
+    "options": [
+      "A. (1); (2) và (3).",
+      "B. (1) và (3).",
+      "C. (1); (2); (4) và (5).",
+      "D. (1); (2); (3) và (5)."
+    ],
+    "correct_index": 0,
+    "explanation": "Phản ứng tỏa nhiệt có ΔH < 0, nên các phản ứng (1), (2), (3) là tỏa nhiệt."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Khi TĂNG nhiệt độ, các cân bằng nào chuyển dịch theo chiều thuận (trong các phản ứng trên)?",
+    "options": [
+      "A. (1); (2) và (3).",
+      "B. (1); (2) và (5).",
+      "C. (4) và (5).",
+      "D. (3) và (5)."
+    ],
+    "correct_index": 2,
+    "explanation": "Tăng nhiệt độ → ưu tiên chiều thu nhiệt. Các phản ứng có ΔH > 0 là (4) và (5) nên chuyển dịch theo chiều thuận."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Cho cân bằng: 2SO2(g) + O2(g) ⇌ 2SO3(g) (ΔH < 0). Những biện pháp nào làm cân bằng chuyển dịch theo chiều thuận?",
+    "options": [
+      "A. Tăng nhiệt độ; tăng áp suất; dùng xúc tác.",
+      "B. Tăng áp suất; hạ nhiệt độ; giảm nồng độ SO3.",
+      "C. Tăng áp suất; hạ nhiệt độ; dùng xúc tác.",
+      "D. Tăng nhiệt độ; tăng áp suất; giảm nồng độ SO3."
+    ],
+    "correct_index": 1,
+    "explanation": "Chiều thuận là tỏa nhiệt và giảm số mol khí → hạ nhiệt độ và tăng áp suất; đồng thời giảm nồng độ sản phẩm SO3 cũng kéo cân bằng theo chiều thuận. Xúc tác không làm chuyển dịch cân bằng."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Cho phản ứng A(g) ⇌ B(g) có Kc = 1,0×10⁻³. Tại cân bằng nồng độ chất A là 1,0×10³ M thì nồng độ chất B là:",
+    "options": [
+      "A. 1,0×10⁻³ M",
+      "B. 1,0 M",
+      "C. 2,0 M",
+      "D. 1,0×10³ M"
+    ],
+    "correct_index": 1,
+    "explanation": "Với A ⇌ B: Kc = [B]/[A] ⇒ [B] = Kc×[A] = 10⁻³×10³ = 1,0 M."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Phản ứng PCl3 + Cl2 ⇌ PCl5. Tại cân bằng: [PCl5]=0,059; [PCl3]=[Cl2]=0,035. Hằng số Kc là:",
+    "options": [
+      "A. 1,68",
+      "B. 48,16",
+      "C. 0,02",
+      "D. 16,95"
+    ],
+    "correct_index": 1,
+    "explanation": "Kc = [PCl5]/([PCl3][Cl2]) = 0,059/(0,035×0,035) ≈ 48,16."
+  },
+  {
+    "quiz_id": "cbhh_vdvdc",
+    "question_text": "Cho N2O4(g) ⇌ 2NO2(g), Kc = 4,84×10⁻³. Nồng độ các chất tại cân bằng nào sau đây là đúng?",
+    "options": [
+      "A. [N2O4]=4,84×10⁻¹; [NO2]=1,0×10⁻⁴",
+      "B. [N2O4]=1,0×10⁻¹; [NO2]=4,84×10⁻⁴",
+      "C. [N2O4]=1,0×10⁻¹; [NO2]=2,20×10⁻²",
+      "D. [N2O4]=5,0×10⁻²; [NO2]=1,10×10⁻²"
+    ],
+    "correct_index": 2,
+    "explanation": "Kc = [NO2]^2/[N2O4]. Với [N2O4]=0,1 và [NO2]=2,20×10⁻²: (2,20×10⁻²)^2/0,1 = 4,84×10⁻³ (đúng)."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Vì sao dung dịch của các muối, acid, base dẫn điện?",
+    "options": [
+      "A. Do dòng electron.",
+      "B. Do phân tử dẫn điện.",
+      "C. Do ion hợp phần dẫn điện.",
+      "D. Do phân li ra ion trong dung dịch."
+    ],
+    "correct_index": 3,
+    "explanation": "Trong dung dịch, các chất điện li phân li tạo ra ion chuyển động tự do, chính các ion này dẫn điện."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch sodium chloride (NaCl) dẫn được điện là do:",
+    "options": [
+      "A. NaCl tan được.",
+      "B. NaCl điện li trong nước thành ion.",
+      "C. NaCl có vị mặn.",
+      "D. NaCl là phân tử phân cực."
+    ],
+    "correct_index": 1,
+    "explanation": "NaCl điện li hoàn toàn trong nước tạo ra Na+ và Cl− chuyển động tự do nên dung dịch dẫn điện."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Saccharose là chất không điện li vì:",
+    "options": [
+      "A. Không tan.",
+      "B. Không phân li thành ion trong nước.",
+      "C. Không dẫn điện.",
+      "D. Tan trong nước."
+    ],
+    "correct_index": 1,
+    "explanation": "Saccharose tan trong nước nhưng tồn tại dưới dạng phân tử, không phân li thành ion."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phát biểu nào sau đây ĐÚNG khi nói về sự điện li?",
+    "options": [
+      "A. Quá trình phân li một chất trong nước thành ion.",
+      "B. Quá trình hòa tan.",
+      "C. Phân li dưới tác dụng dòng điện.",
+      "D. Quá trình oxi hóa – khử."
+    ],
+    "correct_index": 0,
+    "explanation": "Sự điện li là quá trình các chất phân li thành ion khi tan trong nước."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Các chất trong dãy nào sau đây là những chất điện li mạnh?",
+    "options": [
+      "A. HCl, NaOH, CH3COOH.",
+      "B. KOH, NaCl, H3PO4.",
+      "C. HCl, NaOH, NaCl.",
+      "D. NaNO3, NaNO2, NH3."
+    ],
+    "correct_index": 2,
+    "explanation": "Chất điện li mạnh gồm acid mạnh, base mạnh và các muối tan; HCl, NaOH và NaCl đều là chất điện li mạnh."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phương trình điện li nào sau đây biểu diễn KHÔNG đúng?",
+    "options": [
+      "A. HF → H+ + F−",
+      "B. CH3COOH ⇌ CH3COO− + H+",
+      "C. NaCl → Na+ + Cl−",
+      "D. NaOH → Na+ + OH−"
+    ],
+    "correct_index": 0,
+    "explanation": "HF là acid yếu nên phải dùng mũi tên hai chiều (⇌), không phải mũi tên một chiều."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phương trình điện li nào sau đây biểu diễn ĐÚNG?",
+    "options": [
+      "A. NaOH ⇌ Na+ + OH−",
+      "B. HClO → H+ + ClO−",
+      "C. Al2(SO4)3 → 2Al3+ + 3SO4^2−",
+      "D. NH4Cl ⇌ NH4+ + Cl−"
+    ],
+    "correct_index": 2,
+    "explanation": "Al2(SO4)3 là muối tan, điện li mạnh và phân li hoàn toàn thành 2Al3+ và 3SO4^2−."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phương trình mô tả sự điện li của NaCl trong nước là:",
+    "options": [
+      "A. NaCl(s) → Na(aq) + Cl(aq)",
+      "B. NaCl(s) → Na+(g) + Cl−(g)",
+      "C. NaCl(s) → Na+(aq) + Cl−(aq)",
+      "D. NaCl(s) → Na(s) + Cl(s)"
+    ],
+    "correct_index": 2,
+    "explanation": "NaCl điện li trong nước tạo ra các ion Na+ và Cl− ở trạng thái dung dịch (aq)."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phương trình mô tả sự điện li của Na2CO3 trong nước là:",
+    "options": [
+      "A. Na2CO3 → Na + C + 3O",
+      "B. Na2CO3 → Na+ + C4+ + 3O2−",
+      "C. Na2CO3 → 2Na+ + CO3^2−",
+      "D. Na2CO3 → 2Na+ + CO3^2−"
+    ],
+    "correct_index": 2,
+    "explanation": "Na2CO3 là muối tan, điện li mạnh thành 2Na+ và CO3^2− trong dung dịch."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dạng tồn tại chủ yếu của CH3COOH trong dung dịch là gì?",
+    "options": [
+      "A. Ion CH3COO− và H+.",
+      "B. Phân tử CH3COOH.",
+      "C. Chỉ có ion.",
+      "D. Không xác định."
+    ],
+    "correct_index": 1,
+    "explanation": "CH3COOH là chất điện li yếu nên phần lớn tồn tại dưới dạng phân tử trong dung dịch."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho các chất: NaOH, HCl, HNO3, NaNO3, saccharose, ethanol, glycerol, KAl(SO4)2.12H2O. Có bao nhiêu chất tạo dung dịch dẫn điện?",
+    "options": [
+      "A. 5",
+      "B. 3",
+      "C. 6",
+      "D. 2"
+    ],
+    "correct_index": 0,
+    "explanation": "Các chất tạo dung dịch dẫn điện là các chất điện li: NaOH, HCl, HNO3, NaNO3 và KAl(SO4)2·12H2O (phèn chua). Tổng cộng 5 chất."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Ở cùng nồng độ và cùng điều kiện, chất nào sau đây tạo ra nhiều ion H+ nhất trong dung dịch?",
+    "options": [
+      "A. Acid mạnh.",
+      "B. Base mạnh.",
+      "C. Acid yếu.",
+      "D. Nước."
+    ],
+    "correct_index": 0,
+    "explanation": "Acid mạnh phân li hoàn toàn trong nước nên tạo ra nồng độ H+ lớn nhất (ở cùng nồng độ ban đầu)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch A có 0,01 mol Mg2+; 0,01 mol Na+; 0,02 mol Cl- và x mol SO4^2-. Giá trị của x là:",
+    "options": [
+      "A. 0,01",
+      "B. 0,02",
+      "C. 0,05",
+      "D. 0,005"
+    ],
+    "correct_index": 3,
+    "explanation": "Bảo toàn điện tích: 0,01×2 + 0,01 = 0,02 + 2x ⇒ 0,03 = 0,02 + 2x ⇒ x = 0,005."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy chất nào sau đây mà tất cả các chất đều là chất điện li mạnh?",
+    "options": [
+      "A. NaCl, AgCl, Cu(OH)2, HCl.",
+      "B. KNO3, NaOH, BaCl2, H2SO4.",
+      "C. CH3COOH, NaOH, NaCl, H3PO4.",
+      "D. HCl, C2H5OH, NaNO3, KOH."
+    ],
+    "correct_index": 1,
+    "explanation": "Dãy B gồm muối tan (KNO3, BaCl2), base mạnh (NaOH) và acid mạnh (H2SO4) nên đều là chất điện li mạnh."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Hiện tượng nào giải thích việc khả năng dẫn điện của nước vôi trong (Ca(OH)2) để lâu trong không khí bị giảm dần?",
+    "options": [
+      "A. Bay hơi.",
+      "B. Oxi hóa.",
+      "C. Tác dụng với CO2 tạo tủa CaCO3.",
+      "D. Tự phân hủy."
+    ],
+    "correct_index": 2,
+    "explanation": "Ca(OH)2 phản ứng với CO2 trong không khí tạo CaCO3 kết tủa, làm giảm lượng ion Ca2+ và OH− trong dung dịch, nên khả năng dẫn điện giảm."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Tính nồng độ mol của ion NO3- trong dung dịch Ba(NO3)2 0,1 M (giả sử phân li hoàn toàn)?",
+    "options": [
+      "A. 0,1 M",
+      "B. 0,2 M",
+      "C. 0,05 M",
+      "D. 0,3 M"
+    ],
+    "correct_index": 1,
+    "explanation": "Ba(NO3)2 → Ba2+ + 2NO3− nên [NO3−] = 2×0,1 = 0,2 M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Để trung hòa axit dư trong dạ dày (NaHCO3). Thể tích HCl 0,035 M cần để trung hòa 0,588 g NaHCO3?",
+    "options": [
+      "A. 100 ml",
+      "B. 200 ml",
+      "C. 500 ml",
+      "D. 150 ml"
+    ],
+    "correct_index": 1,
+    "explanation": "M(NaHCO3)=84 g/mol ⇒ n=0,588/84=0,007 mol. Phản ứng 1:1 với HCl ⇒ n(HCl)=0,007. V= n/C = 0,007/0,035 = 0,2 L = 200 ml."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 100 ml NaCl 0,1M với 100 ml Na2SO4 0,1M. Nồng độ ion Na+ sau trộn là:",
+    "options": [
+      "A. 0,1 M",
+      "B. 0,2 M",
+      "C. 0,15 M",
+      "D. 0,3 M"
+    ],
+    "correct_index": 2,
+    "explanation": "n(Na+) từ NaCl: 0,1×0,1=0,01 mol. n(Na+) từ Na2SO4: 2×(0,1×0,1)=0,02 mol. Tổng n=0,03 mol; V=0,2 L ⇒ [Na+] = 0,03/0,2 = 0,15 M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch X có pH = 12. Đánh giá nào sau đây là đúng?",
+    "options": [
+      "A. [H+] = 10^-2",
+      "B. [OH-] = 10^-12",
+      "C. Quỳ hóa đỏ",
+      "D. [OH-] = 0,01 M"
+    ],
+    "correct_index": 3,
+    "explanation": "pH=12 ⇒ pOH=14−12=2 ⇒ [OH−]=10^-2=0,01 M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cần pha loãng dung dịch HCl có pH = 2 bao nhiêu lần để được dung dịch mới có pH = 3?",
+    "options": [
+      "A. 10 lần",
+      "B. 100 lần",
+      "C. 2 lần",
+      "D. 5 lần"
+    ],
+    "correct_index": 0,
+    "explanation": "pH tăng từ 2 lên 3 ⇒ [H+] giảm 10 lần ⇒ cần pha loãng 10 lần."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Đặc điểm nào sau đây là không đúng khi mô tả về acid mạnh?",
+    "options": [
+      "A. Phân li hoàn toàn trong nước.",
+      "B. Dung dịch nước của chúng dẫn điện.",
+      "C. Có khả năng nhận $H^+$.",
+      "D. Có khả năng cho $H^+$."
+    ],
+    "correct_index": 2,
+    "explanation": "Theo thuyết Bronsted-Lowry, acid là chất có khả năng nhường (cho) proton ($H^+$), còn base là chất có khả năng nhận proton. Do đó, đặc điểm \"Có khả năng nhận $H^+$\" là của base, không phải của acid. Các đặc điểm khác (phân li hoàn toàn, dẫn điện) đều đúng với acid mạnh."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Đặc điểm nào sau đây không đúng khi mô tả về base yếu?",
+    "options": [
+      "A. Trong dung dịch nước, không phân li hoàn toàn ra $OH^-$.",
+      "B. Có khả năng nhận $H^+$.",
+      "C. Dung dịch nước của chúng dẫn điện.",
+      "D. Có khả năng cho $H^+$."
+    ],
+    "correct_index": 3,
+    "explanation": "Theo thuyết Bronsted-Lowry, base là chất có khả năng nhận proton ($H^+$). Đặc điểm \"Có khả năng cho $H^+$\" là của acid. Base yếu không phân li hoàn toàn ra $OH^-$, và dung dịch của chúng vẫn dẫn điện (dù yếu)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong phản ứng sau đây, những chất nào đóng vai trò là acid theo thuyết Bronsted-Lowry?\n$$H_2S(aq) + H_2O \\rightleftharpoons HS^-(aq) + H_3O^+(aq)$$ ",
+    "options": [
+      "A. $H_2S$ và $H_2O$.",
+      "B. $H_2S$ và $H_3O^+$.",
+      "C. $H_2S$ và $HS^-$.",
+      "D. $H_2O$ và $H_3O^+$."
+    ],
+    "correct_index": 1,
+    "explanation": "Theo thuyết Bronsted-Lowry, acid là chất cho proton ($H^+$). Xét chiều thuận, $H_2S$ nhường $H^+$ cho $H_2O$, nên $H_2S$ đóng vai trò là acid. Xét chiều nghịch, $H_3O^+$ nhường $H^+$ cho $HS^-$, nên $H_3O^+$ đóng vai trò là acid. Cặp acid trong phản ứng thuận nghịch này là $H_2S$ và $H_3O^+$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong phản ứng sau đây, những chất nào đóng vai trò là base theo thuyết Bronsted-Lowry?\n$$CO_3^{2-}(aq) + H_2O \\rightleftharpoons HCO_3^-(aq) + OH^-(aq)$$ ",
+    "options": [
+      "A. $CO_3^{2-}$ và $OH^-$.",
+      "B. $CO_3^{2-}$ và $HCO_3^-$.",
+      "C. $H_2O$ và $OH^-$.",
+      "D. $H_2O$ và $CO_3^{2-}$."
+    ],
+    "correct_index": 0,
+    "explanation": "Theo thuyết Bronsted-Lowry, base là chất nhận proton ($H^+$). Xét chiều thuận, $CO_3^{2-}$ nhận $H^+$ từ $H_2O$, nên $CO_3^{2-}$ đóng vai trò là base. Xét chiều nghịch, $OH^-$ nhận $H^+$ từ $HCO_3^-$, nên $OH^-$ đóng vai trò là base. Cặp base trong phản ứng thuận nghịch này là $CO_3^{2-}$ và $OH^-$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Base liên hợp của các acid $HCOOH$, $HCl$, $NH_4^+$ lần lượt là",
+    "options": [
+      "A. $HCOO^-$, $Cl^-$, $NH_3$.",
+      "B. $COO^{2-}$, $Cl^-$, $NH_2^-$.",
+      "C. $HCOO^-$, $Cl^-$, $NH_2^-$.",
+      "D. $HCOO^-$, $Cl$, $NH_2$."
+    ],
+    "correct_index": 0,
+    "explanation": "Base liên hợp là phần còn lại của acid sau khi acid đã cho (nhường) một proton ($H^+$).\n$HCOOH \\rightarrow HCOO^- + H^+$\n$HCl \\rightarrow Cl^- + H^+$\n$NH_4^+ \\rightarrow NH_3 + H^+$"
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng: $H_2SO_4(aq) + H_2O \\rightarrow HSO_4^-(aq) + H_3O^+(aq)$. Cặp acid-base liên hợp trong phản ứng trên là",
+    "options": [
+      "A. $H_2SO_4$ và $HSO_4^-$.",
+      "B. $H_2O$ và $H_3O^+$.",
+      "C. $H_2SO_4$ và $SO_4^{2-}$; $H_2O$ và $OH^-$.",
+      "D. $H_2SO_4$ và $HSO_4^-$; $H_3O^+$ và $H_2O$."
+    ],
+    "correct_index": 3,
+    "explanation": "Trong phản ứng, $H_2SO_4$ nhường $H^+$ tạo thành $HSO_4^-$, nên ($H_2SO_4$, $HSO_4^-$) là một cặp acid-base liên hợp (theo thứ tự acid/base). Tương tự, xét về mặt khái niệm theo thuyết Bronsted-Lowry, $H_3O^+$ đóng vai trò acid liên hợp của base $H_2O$, do đó ($H_3O^+$, $H_2O$) là cặp acid-base liên hợp thứ hai. Đáp án D liệt kê chính xác cả hai cặp."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong dung dịch nước, cation kim loại mạnh, gốc acid mạnh không bị thủy phân còn cation kim loại trung bình và yếu bị thủy phân tạo môi trường acid, gốc acid yếu bị thủy phân tạo môi trường base. Dung dịch muối nào sau đây có pH > 7?",
+    "options": [
+      "A. $KNO_3$.",
+      "B. $K_2SO_4$.",
+      "C. $Na_2CO_3$.",
+      "D. $NaCl$."
+    ],
+    "correct_index": 2,
+    "explanation": "Dung dịch có pH > 7 nghĩa là có môi trường base. Theo dữ kiện đề bài, gốc acid yếu bị thủy phân sẽ tạo môi trường base. Trong các đáp án, muối $Na_2CO_3$ được tạo bởi cation kim loại mạnh ($Na^+$) và gốc acid yếu ($CO_3^{2-}$). Gốc $CO_3^{2-}$ bị thủy phân sinh ra ion $OH^-$ ($CO_3^{2-} + H_2O \\rightleftharpoons HCO_3^- + OH^-$) làm dung dịch có pH > 7. Các muối còn lại ($KNO_3$, $K_2SO_4$, $NaCl$) đều tạo từ cation kim loại mạnh và gốc acid mạnh, không bị thủy phân nên dung dịch có pH = 7."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong các dung dịch acid sau có cùng nồng độ 0,1 M, dung dịch nào có pH cao nhất?",
+    "options": [
+      "A. HF.",
+      "B. HCl.",
+      "C. HBr.",
+      "D. HI."
+    ],
+    "correct_index": 0,
+    "explanation": "Với cùng một nồng độ ban đầu, acid nào càng yếu thì phân li ra lượng $H^+$ càng ít, dẫn đến nồng độ $[H^+]$ càng nhỏ và pH càng lớn. Trong dãy các hydrohalic acid, tính acid tăng dần từ $HF < HCl < HBr < HI$. Do đó, $HF$ là acid yếu nhất (phân li không hoàn toàn), dung dịch của nó sẽ có nồng độ $H^+$ nhỏ nhất và pH cao nhất."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Một dung dịch có pH = 11,7. Nồng độ ion hydrogen ($H^+$) của dung dịch là",
+    "options": [
+      "A. 2,3 M.",
+      "B. 11,7 M.",
+      "C. $5,0.10^{-3}$ M.",
+      "D. $2,0.10^{-12}$ M."
+    ],
+    "correct_index": 3,
+    "explanation": "Ta có công thức: $pH = -\\log[H^+] \\Rightarrow [H^+] = 10^{-pH}$. Thế số vào ta được: $[H^+] = 10^{-11,7} = 10^{0,3} \\cdot 10^{-12} \\approx 1,995 \\cdot 10^{-12} \\approx 2,0 \\cdot 10^{-12} \\text{ M}$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Calcium hydroxide rắn được hòa tan trong nước cho tới khi pH của dung dịch đạt 10,94. Nồng độ của ion hydroxide ($OH^-$) trong dung dịch là",
+    "options": [
+      "A. $1,1.10^{-11}$ M.",
+      "B. 3,06 M.",
+      "C. $8,7.10^{-4}$ M.",
+      "D. $1,0.10^{-14}$ M."
+    ],
+    "correct_index": 2,
+    "explanation": "Từ $pH = 10,94$, ta tính được $pOH = 14 - pH = 14 - 10,94 = 3,06$. Nồng độ ion $OH^-$ được tính bằng công thức: $[OH^-] = 10^{-pOH} = 10^{-3,06} = 10^{0,94} \\cdot 10^{-4} \\approx 8,7 \\cdot 10^{-4} \\text{ M}$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Thêm nước vào 10 mL dung dịch NaOH 1,0 mol/L thu được 1000 mL dung dịch A. Dung dịch A có pH thay đổi như thế nào so với dung dịch ban đầu?",
+    "options": [
+      "A. pH giảm đi 2 đơn vị.",
+      "B. pH giảm đi 1 đơn vị.",
+      "C. pH tăng 2 đơn vị.",
+      "D. pH tăng gấp đôi."
+    ],
+    "correct_index": 0,
+    "explanation": "Dung dịch ban đầu có nồng độ $[OH^-] = 1,0 \\text{ M} \\Rightarrow pOH = -\\log(1,0) = 0 \\Rightarrow pH = 14$.\nKhi pha loãng từ 10 mL thành 1000 mL, thể tích dung dịch tăng lên 100 lần, do đó nồng độ mol của dung dịch giảm đi 100 lần. Dung dịch A sẽ có $[OH^-] = \\frac{1,0}{100} = 10^{-2} \\text{ M} \\Rightarrow pOH_{mới} = 2 \\Rightarrow pH_{mới} = 14 - 2 = 12$.\nVậy pH giảm đi: $14 - 12 = 2$ đơn vị."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Tại khu vực bị ô nhiễm, pH của nước mưa đo được là 4,5 còn pH của nước mưa tại khu vực không bị ô nhiễm là 5,7. Nhận xét nào sau đây không đúng?",
+    "options": [
+      "A. Nồng độ ion $H^+$ trong dung dịch nước mưa bị ô nhiễm là $10^{-4,5}$.",
+      "B. Nồng độ ion $H^+$ trong dung dịch nước mưa không bị ô nhiễm là $10^{-5,7}$.",
+      "C. Nồng độ ion $H^+$ trong dung dịch nước mưa bị ô nhiễm thấp hơn so với trong nước mưa không bị ô nhiễm.",
+      "D. Nồng độ ion $OH^-$ trong dung dịch nước mưa bị ô nhiễm thấp hơn so với trong nước mưa không bị ô nhiễm."
+    ],
+    "correct_index": 2,
+    "explanation": "Ta có công thức $[H^+] = 10^{-\\text{pH}}$. Ở khu vực bị ô nhiễm có pH = 4,5 thì nồng độ $[H^+] = 10^{-4,5}$ M. Ở khu vực không bị ô nhiễm có pH = 5,7 thì nồng độ $[H^+] = 10^{-5,7}$ M. Theo tính chất toán học, $10^{-4,5} > 10^{-5,7}$, do đó nồng độ ion $H^+$ trong nước mưa bị ô nhiễm phải cao hơn so với nước mưa không bị ô nhiễm. Vì vậy, nhận xét C là sai."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Khi chuẩn độ, người ta thêm từ từ dung dịch đựng trong ...(1)... vào dung dịch đựng trong bình tam giác. Dụng cụ cần điền vào (1) là",
+    "options": [
+      "A. bình định mức.",
+      "B. burette.",
+      "C. pipette.",
+      "D. ống đong."
+    ],
+    "correct_index": 1,
+    "explanation": "Trong phương pháp chuẩn độ thể tích, dung dịch chuẩn (dung dịch đã biết chính xác nồng độ) thường được cho vào burette. Nhờ có van khóa và vạch chia thể tích chính xác, burette giúp người ta nhỏ từ từ từng giọt dung dịch chuẩn xuống bình tam giác chứa dung dịch cần phân tích và xác định chính xác thể tích đã tiêu tốn."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho ba dung dịch có cùng nồng độ: hydrochloric acid (HCl), ethanoic acid (acetic acid, $CH_3COOH$) và sodium hydroxide (NaOH). Khi chuẩn độ riêng một thể tích như nhau của dung dịch HCl và dung dịch $CH_3COOH$ bằng dung dịch NaOH, phát biểu nào sau đây là đúng?",
+    "options": [
+      "A. Trước khi chuẩn độ, pH của hai acid bằng nhau.",
+      "B. Tại các điểm tương đương, dung dịch của cả hai phép chuẩn độ đều có giá trị pH = 7.",
+      "C. Cần dùng một thể tích sodium hydroxide để đạt đến điểm tương đương.",
+      "D. Giá trị pH của hai acid tăng như nhau cho đến khi đạt điểm tương đương."
+    ],
+    "correct_index": 2,
+    "explanation": "HCl và $CH_3COOH$ đều là các acid đơn chức (có 1 proton phân li tham gia phản ứng trung hòa). Vì hai dung dịch này có cùng nồng độ và được lấy cùng một thể tích để đem đi chuẩn độ nên tổng số mol acid của chúng là bằng nhau. Cả hai acid đều phản ứng với NaOH theo tỉ lệ mol 1:1, do đó lượng (số mol) NaOH cần dùng để trung hòa hết mỗi acid tại điểm tương đương là bằng nhau, dẫn đến thể tích dung dịch NaOH tiêu tốn là như nhau."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phương trình nhiệt hóa học sau\n$C_2H_2(g) + H_2O(g) \\rightleftharpoons CH_3CHO(g) \\quad \\Delta_r H_{298}^\\circ = -151 \\text{ kJ}$\nCân bằng hóa học sẽ chuyển dịch về phía tạo nhiều $CH_3CHO$ hơn khi",
+    "options": [
+      "A. giảm nồng độ của khí $C_2H_2$.",
+      "B. tăng nhiệt độ của phản ứng.",
+      "C. không sử dụng chất xúc tác.",
+      "D. tăng áp suất của hệ."
+    ],
+    "correct_index": 3,
+    "explanation": "Phản ứng thuận làm giảm số mol khí (từ 2 mol khí chất tham gia xuống 1 mol khí sản phẩm). Theo nguyên lí Le Chatelier, khi tăng áp suất của hệ, cân bằng sẽ chuyển dịch theo chiều làm giảm áp suất, tức là chiều làm giảm số mol khí (chiều thuận). Do đó, tăng áp suất sẽ làm cân bằng chuyển dịch về phía tạo ra nhiều sản phẩm $CH_3CHO$ hơn."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng hóa học sau:\n$2NO(g) + O_2(g) \\rightleftharpoons 2NO_2(g) \\quad \\Delta_r H_{298}^\\circ = -115 \\text{ kJ}$\nNhận xét nào sau đây không đúng?",
+    "options": [
+      "A. Nếu tăng nhiệt độ thì cân bằng trên chuyển dịch sang chiều nghịch.",
+      "B. Nếu tăng áp suất thì cân bằng trên chuyển dịch sang chiều nghịch.",
+      "C. Hằng số cân bằng phản ứng trên chỉ phụ thuộc vào nhiệt độ.",
+      "D. Phản ứng thuận là phản ứng tỏa nhiệt."
+    ],
+    "correct_index": 1,
+    "explanation": "Phản ứng có tổng số mol khí của các chất tham gia (3 mol) lớn hơn số mol khí của sản phẩm (2 mol). Theo nguyên lí Le Chatelier, khi tăng áp suất, cân bằng sẽ chuyển dịch theo chiều làm giảm áp suất, tức là chiều tạo ra ít số mol khí hơn (chiều thuận). Nhận xét B cho rằng cân bằng chuyển dịch sang chiều nghịch là sai."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Xét cân bằng sau:\n$2SO_2(g) + O_2(g) \\rightleftharpoons 2SO_3(g)$\nNếu tăng nồng độ $SO_2(g)$ (các điều kiện khác giữ không đổi), cân bằng sẽ chuyển dịch theo chiều nào?",
+    "options": [
+      "A. Chuyển dịch theo chiều nghịch.",
+      "B. Chuyển dịch theo chiều thuận.",
+      "C. Có thể chuyển dịch theo chiều thuận hoặc chiều nghịch tuỳ thuộc vào lượng $SO_2$ thêm vào.",
+      "D. Không thay đổi."
+    ],
+    "correct_index": 1,
+    "explanation": "Theo nguyên lí chuyển dịch cân bằng Le Chatelier, khi tăng nồng độ của một chất tham gia phản ứng (ở đây là khí $SO_2$), cân bằng sẽ chuyển dịch theo chiều chống lại sự thay đổi đó, tức là chiều làm giảm nồng độ $SO_2$. Chiều tiêu thụ $SO_2$ để tạo ra thêm sản phẩm chính là chiều thuận."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phương trình nhiệt hóa học sau:\n$C_2H_2(g) + H_2O(g) \\rightleftharpoons CH_3CHO(g)$\nBiểu thức tính hằng số cân bằng ($K_C$) của phản ứng là",
+    "options": [
+      "A. $K_C = \\frac{[C_2H_2][H_2O]}{[CH_3CHO]}$",
+      "B. $K_C = \\frac{[C_2H_2]}{[CH_3CHO]}$",
+      "C. $K_C = \\frac{[CH_3CHO]}{[C_2H_2][H_2O]}$",
+      "D. $K_C = \\frac{[CH_3CHO]}{[C_2H_2]}$"
+    ],
+    "correct_index": 2,
+    "explanation": "Đối với phản ứng thuận nghịch tổng quát: $aA + bB \\rightleftharpoons cC + dD$, biểu thức hằng số cân bằng nồng độ là $K_C = \\frac{[C]^c [D]^d}{[A]^a [B]^b}$. Áp dụng vào phản ứng $C_2H_2(g) + H_2O(g) \\rightleftharpoons CH_3CHO(g)$, ta có biểu thức đúng là $K_C = \\frac{[CH_3CHO]}{[C_2H_2][H_2O]}$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho cân bằng hóa học sau: $2CO_2(g) \\rightleftharpoons 2CO(g) + O_2(g)$\nỞ T °C, nồng độ các chất ở trạng thái cân bằng như sau:\n$[CO_2] = 1,2 \\text{ mol/L}; \\quad [CO] = 0,35 \\text{ mol/L}; \\quad [O_2] = 0,15 \\text{ mol/L}$\nHằng số cân bằng phản ứng tại T °C là",
+    "options": [
+      "A. $1,276.10^{-2}$.",
+      "B. $4,375.10^{-2}$.",
+      "C. $78,36$.",
+      "D. $22,85$."
+    ],
+    "correct_index": 0,
+    "explanation": "Biểu thức hằng số cân bằng cho phản ứng trên là: $K_C = \\frac{[CO]^2 \\cdot [O_2]}{[CO_2]^2}$. Thay các giá trị nồng độ lúc cân bằng vào biểu thức, ta tính được: $K_C = \\frac{(0,35)^2 \\cdot 0,15}{(1,2)^2} = \\frac{0,1225 \\cdot 0,15}{1,44} \\approx 0,01276 = 1,276 \\cdot 10^{-2}$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chất nào sau đây không phải chất điện li?",
+    "options": [
+      "A. $NaCl$.",
+      "B. $C_6H_{12}O_6$.",
+      "C. $HNO_3$.",
+      "D. $NaOH$."
+    ],
+    "correct_index": 1,
+    "explanation": "Chất điện li là những chất khi tan trong nước phân li ra các ion (bao gồm acid, base và muối). $NaCl$ (muối), $HNO_3$ (acid) và $NaOH$ (base) đều là các chất điện li. $C_6H_{12}O_6$ (glucose) tan trong nước nhưng không phân li ra ion, nên nó là chất không điện li."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phương trình điện li nào sau đây không chính xác?",
+    "options": [
+      "A. $KCl \\rightleftharpoons K^+ + Cl^-$.",
+      "B. $HCOOH \\rightleftharpoons HCOO^- + H^+$.",
+      "C. $HClO \\rightleftharpoons H^+ + ClO^-$.",
+      "D. $Ca(OH)_2 \\rightarrow Ca^{2+} + 2OH^-$."
+    ],
+    "correct_index": 0,
+    "explanation": "$KCl$ là muối tan tốt và là chất điện li mạnh, nên trong dung dịch nó phân li hoàn toàn ra ion. Do đó, phương trình điện li phải dùng mũi tên một chiều ($\\rightarrow$) thay vì mũi tên thuận nghịch ($\\rightleftharpoons$). Phương trình đúng phải là: $KCl \\rightarrow K^+ + Cl^-$. Các chất còn lại đều biểu diễn đúng ($HCOOH, HClO$ là acid yếu phân li thuận nghịch; $Ca(OH)_2$ là base mạnh phân li hoàn toàn)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Theo thuyết Bronsted-Lowry, $H_2O$ đóng vai trò gì trong phản ứng sau?\n$$S^{2-} + H_2O \\rightleftharpoons HS^- + OH^-$$",
+    "options": [
+      "A. Chất oxi hóa.",
+      "B. Chất khử.",
+      "C. Acid.",
+      "D. Base."
+    ],
+    "correct_index": 2,
+    "explanation": "Theo thuyết Bronsted-Lowry, acid là chất cho proton ($H^+$) và base là chất nhận proton. Trong phản ứng thuận, phân tử $H_2O$ đã nhường một $H^+$ cho ion $S^{2-}$ để tạo thành ion $OH^-$. Do có khả năng cho (nhường) proton, $H_2O$ đóng vai trò là acid."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng hoá học sau:\n$$CH_3COOH(l) + CH_3OH(l) \\rightleftharpoons CH_3COOCH_3(l) + H_2O(l)$$\nBiểu thức hằng số cân bằng của phản ứng trên là",
+    "options": [
+      "A. $K_C = \\frac{[CH_3COOCH_3][H_2O]}{[CH_3COOH][CH_3OH]}$",
+      "B. $K_C = \\frac{[CH_3COOCH_3]}{[CH_3COOH][CH_3OH]}$",
+      "C. $K_C = \\frac{[CH_3COOH][CH_3OH]}{[CH_3COOCH_3][H_2O]}$",
+      "D. $K_C = \\frac{[CH_3COOH][CH_3OH]}{[CH_3COOCH_3]}$"
+    ],
+    "correct_index": 0,
+    "explanation": "Đối với phản ứng tổng quát $aA + bB \\rightleftharpoons cC + dD$, biểu thức hằng số cân bằng nồng độ là $K_C = \\frac{[C]^c[D]^d}{[A]^a[B]^b}$. Mặc dù $H_2O$ ở thể lỏng, nhưng trong phản ứng este hóa này, hỗn hợp phản ứng là một hỗn hợp lỏng đồng nhất và $H_2O$ là một sản phẩm được sinh ra (không phải là dung môi có nồng độ coi như không đổi giống như trong dung dịch loãng). Do đó, nồng độ của $H_2O$ vẫn thay đổi và bắt buộc phải được đưa vào biểu thức hằng số cân bằng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng hoá học sau: $3Fe(s) + 4H_2O(g) \\rightleftharpoons Fe_3O_4(s) + 4H_2(g)$\nBiểu thức hằng số cân bằng của phản ứng trên là",
+    "options": [
+      "A. $K_C = \\frac{[H_2]^4[Fe_3O_4]}{[H_2O]^4[Fe]^3}$",
+      "B. $K_C = \\frac{[H_2]^4}{[H_2O]^4}$",
+      "C. $K_C = \\frac{4[H_2]}{4[H_2O]}$",
+      "D. $K_C = \\frac{4[H_2][Fe_3O_4]}{4[H_2O]^3[Fe]}$"
+    ],
+    "correct_index": 1,
+    "explanation": "Theo nguyên tắc viết biểu thức hằng số cân bằng $K_C$, nồng độ của các chất rắn nguyên chất không được đưa vào biểu thức (vì nồng độ của chúng được coi là hằng số). Trong phản ứng này, $Fe(s)$ và $Fe_3O_4(s)$ là chất rắn nên bị lược bỏ. Do đó, biểu thức chỉ còn lại các chất khí là $H_2O(g)$ ở chất tham gia và $H_2(g)$ ở sản phẩm, với số mũ tương ứng là hệ số tỉ lượng của chúng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng hoá học sau: $2NO(g) + O_2(g) \\rightleftharpoons 2NO_2(g) \\quad \\Delta_r H_{298}^0 = -115\\text{ kJ}$\nNhận xét nào sau đây không đúng?",
+    "options": [
+      "A. Nếu tăng nhiệt độ thì cân bằng trên chuyển dịch theo chiều nghịch.",
+      "B. Nếu tăng áp suất thì cân bằng trên chuyển dịch theo chiều nghịch.",
+      "C. Hằng số cân bằng của phản ứng trên chỉ phụ thuộc vào nhiệt độ.",
+      "D. Phản ứng thuận là phản ứng tỏa nhiệt."
+    ],
+    "correct_index": 1,
+    "explanation": "Phản ứng thuận có tổng số mol khí tham gia (2 + 1 = 3 mol) lớn hơn tổng số mol khí tạo thành (2 mol). Theo nguyên lí Le Chatelier, khi tăng áp suất, cân bằng sẽ chuyển dịch theo chiều làm giảm áp suất, tức là chiều làm giảm số mol khí (chiều thuận). Do đó, nhận xét B cho rằng cân bằng chuyển dịch theo chiều nghịch khi tăng áp suất là sai."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong dung dịch nước, cation kim loại mạnh, gốc acid mạnh không bị thủy phân còn cation kim loại trung bình và yếu bị thủy phân tạo môi trường acid, gốc acid yếu bị thủy phân tạo môi trường base. Dung dịch muối nào sau đây có pH < 7?",
+    "options": [
+      "A. $FeCl_3$.",
+      "B. $KCl$.",
+      "C. $Na_2CO_3$.",
+      "D. $Na_2SO_4$."
+    ],
+    "correct_index": 0,
+    "explanation": "Dung dịch có pH < 7 (môi trường acid) khi muối được tạo bởi cation kim loại trung bình/yếu và gốc acid mạnh. Trong các đáp án, muối $FeCl_3$ thoả mãn vì cation $Fe^{3+}$ bị thuỷ phân sinh ra ion $H^+$ tạo môi trường acid ($Fe^{3+} + 3H_2O \\rightleftharpoons Fe(OH)_3 + 3H^+$), còn gốc $Cl^-$ (gốc acid mạnh) không bị thuỷ phân. Các muối $KCl, Na_2SO_4$ tạo môi trường trung tính (pH = 7); $Na_2CO_3$ tạo môi trường base (pH > 7)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong các dung dịch có cùng nồng độ 0,1 M sau đây, dung dịch nào có pH cao nhất?",
+    "options": [
+      "A. $H_2SO_4$.",
+      "B. $HCl$.",
+      "C. $NH_3$.",
+      "D. $NaOH$."
+    ],
+    "correct_index": 3,
+    "explanation": "Dung dịch có pH cao nhất là dung dịch có tính base mạnh nhất. Trong 4 chất, $H_2SO_4$ và $HCl$ là các acid nên có pH < 7. $NH_3$ là base yếu, chỉ phân li một phần. $NaOH$ là base mạnh, phân li hoàn toàn trong nước. Do đó, ở cùng một nồng độ, dung dịch $NaOH$ sẽ cung cấp nồng độ ion $OH^-$ lớn nhất, dẫn đến giá trị pH là cao nhất."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 100ml dung dịch NaOH 0,4 M với 100ml dung dịch Ba(OH)2 0,4 M được dung dịch A, nồng độ ion OH- trong dung dịch A là:",
+    "options": [
+      "A. 1,2 M",
+      "B. 0,4 M",
+      "C. 0,6 M",
+      "D. 0,8 M"
+    ],
+    "correct_index": 2,
+    "explanation": "Số mol các chất ban đầu: $n_{NaOH} = 0,1 \\cdot 0,4 = 0,04$ mol; $n_{Ba(OH)_2} = 0,1 \\cdot 0,4 = 0,04$ mol. Thể tích dung dịch sau khi trộn: $V = 100 + 100 = 200$ ml = 0,2 lít. Tổng số mol ion $OH^-$ trong dung dịch A là: $n_{OH^-} = n_{NaOH} + 2n_{Ba(OH)_2} = 0,04 + 2 \\cdot 0,04 = 0,12$ mol. Nồng độ ion $OH^-$ là: $[OH^-] = \\frac{0,12}{0,2} = 0,6$ M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch muối nào sau đây có môi trường bazơ?",
+    "options": [
+      "A. $(NH_4)_2SO_4$",
+      "B. $Na_2CO_3$",
+      "C. $NaNO_3$",
+      "D. $NaCl$"
+    ],
+    "correct_index": 1,
+    "explanation": "Muối $Na_2CO_3$ được tạo ra từ cation kim loại mạnh ($Na^+$) và gốc acid yếu ($CO_3^{2-}$). Khi tan trong nước, gốc $CO_3^{2-}$ bị thủy phân tạo ra ion $OH^-$, làm cho dung dịch có môi trường bazơ ($pH > 7$). Các muối khác: $(NH_4)_2SO_4$ tạo môi trường acid, $NaNO_3$ và $NaCl$ tạo môi trường trung tính."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy các chất nào đều gồm các bazơ theo A- re-ni-ut?",
+    "options": [
+      "A. $NaOH$, $HNO_3$, $CaCl_2$",
+      "B. $NaOH$, $K_2CO_3$, $CH_3COOH$",
+      "C. $KOH$, $NaOH$, $Ba(OH)_2$",
+      "D. $NaOH$, $KOH$, $CaCO_3$"
+    ],
+    "correct_index": 2,
+    "explanation": "Theo thuyết Arrhenius, bazơ là chất khi tan trong nước phân li ra anion $OH^-$. Dãy C gồm các chất $KOH$, $NaOH$, $Ba(OH)_2$ đều là các hidroxit của kim loại kiềm/kiềm thổ, phân li ra $OH^-$ trong nước nên đều là bazơ theo Arrhenius."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chọn phát biểu đúng trong số các phát biểu sau đây ?",
+    "options": [
+      "A. Giá trị pH tăng thì độ axit tăng.",
+      "B. Dd có pH >7 làm quỳ tím hoá đỏ.",
+      "C. Dd có pH < 7 làm quỳ tím hoá xanh.",
+      "D. Giá trị pH tăng thì độ axit giảm."
+    ],
+    "correct_index": 3,
+    "explanation": "Ta có công thức $pH = -\\log[H^+]$. Theo đó, pH tỉ lệ nghịch với nồng độ ion $H^+$. Nghĩa là khi giá trị pH càng tăng, nồng độ $[H^+]$ càng giảm, đồng nghĩa với việc độ axit của dung dịch giảm đi. Các phát biểu B và C bị ngược (pH > 7 làm quỳ chuyển xanh, pH < 7 làm quỳ chuyển đỏ)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch nước của chất A làm quỳ tím hóa xanh, còn dung dịch nước của muối B làm quỳ hóa đỏ. Trộn lẫn hai dung dịch trên vào nhau thì xuất hiện kết tủa. A và B là:",
+    "options": [
+      "A. $K_2CO_3$ và $Ba(NO_3)_2$",
+      "B. $KOH$ và $FeCl_3$",
+      "C. $KOH$ và $K_2SO_4$",
+      "D. $Na_2CO_3$ và $KNO_3$"
+    ],
+    "correct_index": 1,
+    "explanation": "Dung dịch A làm quỳ hóa xanh nên A phải có tính bazơ. Muối B làm quỳ hóa đỏ nên B là muối của cation kim loại yếu và gốc acid mạnh. Trong đáp án B, A là $KOH$ (bazơ mạnh, quỳ hóa xanh), B là $FeCl_3$ (muối tạo từ $Fe^{3+}$ và $Cl^-$ có môi trường acid, quỳ hóa đỏ). Khi trộn lẫn sẽ tạo kết tủa: $3KOH + FeCl_3 \\rightarrow Fe(OH)_3 \\downarrow \\text{ (nâu đỏ)} + 3KCl$, thỏa mãn đầy đủ dữ kiện đề bài."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch nào làm quì tím hóa đỏ",
+    "options": [
+      "A. $HCl$",
+      "B. $KOH$",
+      "C. $NaOH$",
+      "D. $NaCl$"
+    ],
+    "correct_index": 0,
+    "explanation": "Dung dịch làm quỳ tím hóa đỏ phải có môi trường axit ($pH < 7$). Trong các đáp án, $HCl$ là một axit nên sẽ làm quỳ chuyển đỏ. Các chất $KOH$ và $NaOH$ là bazơ làm quỳ chuyển xanh, còn $NaCl$ là muối trung tính không làm đổi màu quỳ."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng trao đổi ion trong dd các chất điện li xảy ra khi :",
+    "options": [
+      "A. Chất phản ứng là các chất điện li mạnh",
+      "B. Sản phẩm tạo màu",
+      "C. Chất phản ứng là các chất dễ tan",
+      "D. Sản phẩm tạo thành có chất kết tủa hoặc chất bay hơi hoặc chất điện li yếu"
+    ],
+    "correct_index": 3,
+    "explanation": "Theo điều kiện để xảy ra phản ứng trao đổi ion trong dung dịch các chất điện li: phản ứng chỉ thực sự xảy ra khi các ion kết hợp được với nhau tạo thành ít nhất một trong các chất sau: chất kết tủa (không tan), chất khí (bay hơi) hoặc chất điện li yếu (ví dụ: $H_2O$, các axit yếu...)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy gồm các chất điện li mạnh là:",
+    "options": [
+      "A. $H_3PO_4$, $HCl$, $Cu(OH)_2$, $AlCl_3$, $HClO$.",
+      "B. $HNO_3$, $KOH$, $HClO_4$, $Ca(OH)_2$, $KNO_3$.",
+      "C. $AlCl_3$, $NaOH$, $Ba(HCO_3)_2$, $HClO_4$, $H_2SO_3$.",
+      "D. $NaNO_3$, $AlCl_3$, $CH_3COOH$, $H_2SO_4$, $Ca(HCO_3)_2$."
+    ],
+    "correct_index": 1,
+    "explanation": "Chất điện li mạnh phân li hoàn toàn trong nước, bao gồm: axit mạnh ($HCl, HNO_3, H_2SO_4...$), bazơ mạnh ($NaOH, KOH, Ca(OH)_2, Ba(OH)_2...$) và hầu hết các muối tan. Dãy B hoàn toàn gồm các chất điện li mạnh. Các dãy khác đều có chứa chất điện li yếu như: A chứa $H_3PO_4, Cu(OH)_2, HClO$; C chứa $H_2SO_3$; D chứa $CH_3COOH$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng sau : $Fe(NO_3)_3 + A \\rightarrow B + KNO_3$. Vậy A, B lần lượt là:",
+    "options": [
+      "A. KBr, $FeBr_3$",
+      "B. $K_2SO_4$, $Fe_2(SO_4)_3$",
+      "C. KCl, $FeCl_3$",
+      "D. KOH, $Fe(OH)_3$"
+    ],
+    "correct_index": 3,
+    "explanation": "Phản ứng trao đổi ion trong dung dịch chỉ xảy ra khi sản phẩm tạo thành có chất kết tủa, chất bay hơi hoặc chất điện li yếu. Xét các đáp án, chỉ có cặp chất $KOH$ và $Fe(OH)_3$ thỏa mãn vì sinh ra kết tủa $Fe(OH)_3$ màu nâu đỏ. Phương trình: $Fe(NO_3)_3 + 3KOH \\rightarrow Fe(OH)_3 \\downarrow + 3KNO_3$. Các cặp chất ở đáp án khác khi phản ứng đều tạo ra các muối tan tốt, do đó phản ứng không xảy ra."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Một dung dịch chứa 0,2 mol $Na^+$; 0,1 mol $Mg^{2+}$; 0,2 mol $NO_3^-$ và x mol $Cl^-$. Vậy x có giá trị là:",
+    "options": [
+      "A. 0,15 mol",
+      "B. 0,20 mol",
+      "C. 0,35 mol",
+      "D. 0,10 mol"
+    ],
+    "correct_index": 1,
+    "explanation": "Áp dụng định luật bảo toàn điện tích cho dung dịch: Tổng số mol điện tích dương luôn bằng tổng số mol điện tích âm. Ta có phương trình: $n_{Na^+} \\cdot 1 + n_{Mg^{2+}} \\cdot 2 = n_{NO_3^-} \\cdot 1 + n_{Cl^-} \\cdot 1 \\Leftrightarrow 0,2 \\cdot 1 + 0,1 \\cdot 2 = 0,2 \\cdot 1 + x \\cdot 1 \\Leftrightarrow 0,4 = 0,2 + x \\Rightarrow x = 0,2 \\text{ (mol)}$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Đối với dung dịch axit yếu $CH_3COOH$ 0,10M, nếu bỏ qua sự điện li của nước thì đánh giá nào về nồng độ mol ion sau đây là đúng?",
+    "options": [
+      "A. $[H^+] < [CH_3COO^-]$",
+      "B. $[H^+] > [CH_3COO^-]$",
+      "C. $[H^+] = 0,10M$",
+      "D. $[H^+] < 0,10M$"
+    ],
+    "correct_index": 3,
+    "explanation": "Axit axetic ($CH_3COOH$) là một axit yếu, nên trong dung dịch nó chỉ điện li một phần: $CH_3COOH \\rightleftharpoons CH_3COO^- + H^+$. Do sự phân li không hoàn toàn này, nồng độ của ion $H^+$ sinh ra chắc chắn phải nhỏ hơn nồng độ ban đầu của axit, tức là $[H^+] < 0,10M$. (Lưu ý thêm: vì tỉ lệ phân li là 1:1 nên $[H^+] = [CH_3COO^-]$, do đó đáp án A và B sai)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Khi thêm một axit vào dung dịch của một bazơ, sự thay đổi nào dưới đây có thể xảy ra đối với pH của dung dịch",
+    "options": [
+      "A. Giảm",
+      "B. Tăng từ 7 lên 11",
+      "C. Giảm từ 7 xuống 3",
+      "D. Tăng"
+    ],
+    "correct_index": 0,
+    "explanation": "Dung dịch bazơ ban đầu có môi trường kiềm, tức là pH > 7. Khi thêm dần axit vào, ion $H^+$ từ axit sẽ phản ứng trung hòa với ion $OH^-$ của bazơ ($H^+ + OH^- \\rightarrow H_2O$). Quá trình này làm giảm nồng độ $OH^-$ và làm tăng dần nồng độ $H^+$ trong dung dịch. Do pH tỉ lệ nghịch với nồng độ ion $H^+$ ($pH = -\\log[H^+]$), nên sự gia tăng nồng độ $H^+$ sẽ làm giá trị pH của dung dịch giảm dần."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch có chứa $Mg^{2+}$ (0,02 mol), $K^+$ (0,03 mol), $Cl^-$ (0,04 mol) và chỉ còn một ion nữa là:",
+    "options": [
+      "A. $SO_4^{2-}$ (0,01 mol)",
+      "B. $NH_4^+$ (0,01 mol)",
+      "C. $NO_3^-$ (0,03 mol)",
+      "D. $CO_3^{2-}$ (0,015 mol)"
+    ],
+    "correct_index": 2,
+    "explanation": "Áp dụng định luật bảo toàn điện tích, tổng số điện tích dương bằng tổng số điện tích âm. Tổng số mol điện tích dương: $\\sum n_{(+)} = 0,02 \\cdot 2 (Mg^{2+}) + 0,03 \\cdot 1 (K^+) = 0,07 \\text{ mol}$. Điện tích âm hiện có: $\\sum n_{(-)} = 0,04 \\cdot 1 (Cl^-) = 0,04 \\text{ mol}$. Vậy ion còn thiếu phải là một anion (ion âm) mang lượng điện tích là: $0,07 - 0,04 = 0,03 \\text{ mol}$. Kiểm tra các đáp án: $NO_3^-$ (0,03 mol) đóng góp $0,03 \\cdot 1 = 0,03 \\text{ mol}$ điện tích âm (Thỏa mãn). ($CO_3^{2-}$ ở đáp án D tuy thỏa mãn bảo toàn điện tích nhưng lại tạo kết tủa $MgCO_3$ với ion $Mg^{2+}$ nên không thể cùng tồn tại trong một dung dịch)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 100ml dung dịch gồm HCl và H2SO4 với 100ml dung dịch NaOH nồng độ 0,08(mol/l) thu được dung dịch X có pH=2. Để trung hòa dung dịch X cần V lít dung dịch Ba(OH)2 0,05M. Sau khi phản ứng xảy ra hoàn toàn thu được 0,1165 gam kết tủa. Nồng độ của HCl và H2SO4 lần lượt là",
+    "options": [
+      "A. 0,05; $4.10^{-4}$",
+      "B. 0,06; $5.10^{-3}$",
+      "C. 0,09; $5.10^{-3}$",
+      "D. 0,09; $2.10^{-3}$"
+    ],
+    "correct_index": 2,
+    "explanation": "Số mol $OH^-$ ban đầu: $n_{OH^-} = 0,1 \\times 0,08 = 0,008$ mol.\nDung dịch X có thể tích $V_X = 100 + 100 = 200$ ml = 0,2 lít. X có pH = 2 nên dư axit: $[H^+]_{\\text{dư}} = 10^{-2} = 0,01M \\Rightarrow n_{H^+ (\\text{dư})} = 0,2 \\times 0,01 = 0,002$ mol.\nTổng số mol $H^+$ ban đầu: $n_{H^+ (\\text{bđ})} = n_{OH^- (\\text{pư})} + n_{H^+ (\\text{dư})} = 0,008 + 0,002 = 0,01$ mol.\nTrung hòa X cần V lít $Ba(OH)_2$ 0,05M: $n_{OH^- (\\text{thêm})} = n_{H^+ (\\text{dư})} \\Leftrightarrow 2 \\times V \\times 0,05 = 0,002 \\Rightarrow V = 0,02$ lít. \nSố mol $Ba^{2+}$ thêm vào là $0,02 \\times 0,05 = 0,001$ mol. \nKhối lượng kết tủa $BaSO_4$: $n_{BaSO_4} = \\frac{0,1165}{233} = 0,0005$ mol. Nhận thấy $n_{Ba^{2+}} > n_{BaSO_4}$ nên $SO_4^{2-}$ phản ứng hết $\\Rightarrow n_{H_2SO_4} = n_{SO_4^{2-}} = 0,0005$ mol.\nNồng độ $H_2SO_4$ = $\\frac{0,0005}{0,1} = 0,005M = 5.10^{-3}M$.\nTổng $n_{H^+} = n_{HCl} + 2n_{H_2SO_4} = 0,01 \\Rightarrow n_{HCl} = 0,01 - 2(0,0005) = 0,009$ mol.\nNồng độ HCl = $\\frac{0,009}{0,1} = 0,09M$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 200 ml dung dịch NaOH 0,01M với 300 ml dung dịch KOH 0,01M thu được dung dịch Y. pH của dung dịch Y là :",
+    "options": [
+      "A. 12",
+      "B. 3",
+      "C. 2",
+      "D. 13"
+    ],
+    "correct_index": 0,
+    "explanation": "Số mol $OH^-$ từ NaOH: $n_{NaOH} = 0,2 \\times 0,01 = 0,002$ mol.\nSố mol $OH^-$ từ KOH: $n_{KOH} = 0,3 \\times 0,01 = 0,003$ mol.\nTổng số mol $OH^-$ trong dung dịch Y là: $0,002 + 0,003 = 0,005$ mol.\nThể tích dung dịch Y: $V_Y = 200 + 300 = 500$ ml = 0,5 lít.\nNồng độ ion $OH^-$ trong Y: $[OH^-] = \\frac{0,005}{0,5} = 0,01M = 10^{-2}M$.\nTa có $pOH = -\\log(10^{-2}) = 2 \\Rightarrow pH = 14 - 2 = 12$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho dãy các chất: NaOH, Sn(OH)2, Pb(OH)2, Al(OH)3, Cr(OH)3. Số chất trong dãy có tính chất lưỡng tính là",
+    "options": [
+      "A. 3.",
+      "B. 2.",
+      "C. 1.",
+      "D. 4."
+    ],
+    "correct_index": 3,
+    "explanation": "Các hiđroxit lưỡng tính thường gặp bao gồm: $Al(OH)_3, Zn(OH)_2, Sn(OH)_2, Pb(OH)_2, Cr(OH)_3, Be(OH)_2$. Trong dãy chất đã cho, có 4 chất mang tính lưỡng tính là: $Sn(OH)_2$, $Pb(OH)_2$, $Al(OH)_3$ và $Cr(OH)_3$. NaOH là một bazơ mạnh điển hình."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong số các chất sau chất nào là chất điện li yếu?",
+    "options": [
+      "A. HCl",
+      "B. $Na_2CO_3$",
+      "C. $Ba(OH)_2$",
+      "D. $H_2O$"
+    ],
+    "correct_index": 3,
+    "explanation": "HCl là axit mạnh, $Na_2CO_3$ là muối tan, $Ba(OH)_2$ là bazơ mạnh; cả ba chất này đều là chất điện li mạnh phân li hoàn toàn trong dung dịch. $H_2O$ là chất điện li rất yếu (ở $25^\\circ C$ hằng số phân li của nước $K_w = 10^{-14}$)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Các dung dịch axit, bazơ, muối dẫn được điện là do trong dung dịch của chúng có các",
+    "options": [
+      "A. ion trái dấu.",
+      "B. chất.",
+      "C. cation.",
+      "D. anion."
+    ],
+    "correct_index": 0,
+    "explanation": "Theo thuyết điện li, nguyên nhân làm cho các dung dịch axit, bazơ, muối dẫn được điện là do chúng phân li ra các hạt mang điện tích trái dấu (cation và anion) có thể chuyển động tự do trong dung dịch."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy gồm các ion (không kể đến sự phân li của nước) cùng tồn tại trong một dung dịch là",
+    "options": [
+      "A. $Mg^{2+}, K^+, SO_4^{2-}, OH^-$",
+      "B. $H^+, Fe^{3+}, NO_3^-, SO_4^{2-}$",
+      "C. $Ag^+, Na^+, NO_3^-, Cl^-$",
+      "D. $Al^{3+}, NH_4^+, Br^-, OH^-$"
+    ],
+    "correct_index": 1,
+    "explanation": "Các ion cùng tồn tại trong một dung dịch khi chúng không phản ứng với nhau để tạo thành chất kết tủa, chất khí hay chất điện li yếu.\n- Dãy A không tồn tại vì $Mg^{2+} + 2OH^- \\rightarrow Mg(OH)_2 \\downarrow$.\n- Dãy B cùng tồn tại vì không có phản ứng nào xảy ra giữa các ion.\n- Dãy C không tồn tại vì $Ag^+ + Cl^- \\rightarrow AgCl \\downarrow$.\n- Dãy D không tồn tại vì $Al^{3+} + 3OH^- \\rightarrow Al(OH)_3 \\downarrow$ và $NH_4^+ + OH^- \\rightarrow NH_3 \\uparrow + H_2O$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch nào dẫn điện được:",
+    "options": [
+      "A. $C_6H_{12}O_6$",
+      "B. $C_2H_5OH$",
+      "C. NaCl",
+      "D. $C_{12}H_{22}O_{11}$"
+    ],
+    "correct_index": 2,
+    "explanation": "Dung dịch dẫn điện phải là dung dịch của chất điện li (axit, bazơ, muối). Muối ăn NaCl khi tan trong nước phân li thành ion $Na^+$ và $Cl^-$ nên dẫn điện. Glucozơ ($C_6H_{12}O_6$), ancol etylic ($C_2H_5OH$) và saccarozơ ($C_{12}H_{22}O_{11}$) tan trong nước nhưng không phân li ra ion, nên chúng là chất không điện li và dung dịch của chúng không dẫn điện."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho dãy các chất: NH4Cl, (NH4)2SO4, NaCl, MgCl2, FeCl2. Số chất trong dãy tác dụng với lượng dư dung dịch Ba(OH)2 tạo thành kết tủa là",
+    "options": [
+      "A. 3.",
+      "B. 5.",
+      "C. 4.",
+      "D. 1."
+    ],
+    "correct_index": 0,
+    "explanation": "Xét phản ứng của các chất với $Ba(OH)_2$ dư:\n- $NH_4Cl + Ba(OH)_2 \\rightarrow BaCl_2 + NH_3 \\uparrow + H_2O$ (Chỉ có khí, không kết tủa).\n- $(NH_4)_2SO_4 + Ba(OH)_2 \\rightarrow BaSO_4 \\downarrow + 2NH_3 \\uparrow + 2H_2O$ (Có kết tủa trắng).\n- NaCl không phản ứng.\n- $MgCl_2 + Ba(OH)_2 \\rightarrow Mg(OH)_2 \\downarrow + BaCl_2$ (Có kết tủa trắng).\n- $FeCl_2 + Ba(OH)_2 \\rightarrow Fe(OH)_2 \\downarrow + BaCl_2$ (Có kết tủa trắng xanh).\nVậy có 3 chất tạo kết tủa là: $(NH_4)_2SO_4$, $MgCl_2$ và $FeCl_2$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch H2SO4, HNO3 dẫn điện được là do:",
+    "options": [
+      "A. Trong phân tử đều có nguyên tử hiđro",
+      "B. Trong phân tử đều chứa gốc axit",
+      "C. Phân li ra ion",
+      "D. Không phân li ra các ion"
+    ],
+    "correct_index": 2,
+    "explanation": "Tính dẫn điện của dung dịch axit, bazơ, muối là do sự hiện diện của các ion mang điện tích chuyển động tự do. $H_2SO_4$ và $HNO_3$ là các axit mạnh, khi hòa tan vào nước phân li hoàn toàn ra các cation ($H^+$) và anion (gốc axit), giúp dung dịch dẫn điện được."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Có mấy muối axit trong số các muối sau : NaHSO4, CH3COOK, NH4Cl, NaHCO3, NH4HCO3, KCl.",
+    "options": [
+      "A. 2.",
+      "B. 4.",
+      "C. 3.",
+      "D. 5."
+    ],
+    "correct_index": 2,
+    "explanation": "Muối axit là muối mà anion (gốc axit) vẫn còn nguyên tử hiđro có khả năng phân li ra ion $H^+$. \nTrong các muối đã cho: $NaHSO_4$ (chứa gốc $HSO_4^-$), $NaHCO_3$ (chứa gốc $HCO_3^-$), $NH_4HCO_3$ (chứa gốc $HCO_3^-$) là các muối axit.\nCác muối còn lại: $CH_3COOK$ (gốc axetat không phân li $H^+$), $NH_4Cl$ (muối trung hòa), $KCl$ (muối trung hòa). Vậy có tổng cộng 3 muối axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy chất nào dưới đây đều phản ứng được với dung dịch NaOH?",
+    "options": [
+      "A. $CO_2, NaCl, Cl_2$",
+      "B. $MgCl_2, SO_2, NaHCO_3$",
+      "C. $H_2SO_4, FeCl_3, KOH$",
+      "D. $Na_2CO_3, CuSO_4, HCl$"
+    ],
+    "correct_index": 1,
+    "explanation": "Xét từng dãy chất:\n- Dãy A loại vì NaCl không phản ứng.\n- Dãy B đúng vì tất cả đều phản ứng: $MgCl_2$ phản ứng trao đổi tạo kết tủa $Mg(OH)_2$; $SO_2$ là oxit axit tạo muối sunfit; $NaHCO_3$ là muối axit phản ứng trung hòa tạo $Na_2CO_3$.\n- Dãy C loại vì KOH cùng là bazơ không phản ứng.\n- Dãy D loại vì $Na_2CO_3$ không phản ứng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch nào sau đây có nồng độ ion H+ cao nhất ?",
+    "options": [
+      "A. Cà phê đen pH = 5",
+      "B. Máu pH = 7,4",
+      "C. Thuốc tẩy dầu pH= 11",
+      "D. Nước chanh pH = 2"
+    ],
+    "correct_index": 3,
+    "explanation": "Ta có công thức định nghĩa pH: $pH = -\\log[H^+] \\Rightarrow [H^+] = 10^{-pH}$. Như vậy, giá trị pH càng nhỏ thì nồng độ ion $H^+$ càng lớn (tính axit càng mạnh). Trong 4 đáp án, dung dịch nước chanh có độ pH = 2 là nhỏ nhất, do đó nó có nồng độ ion $H^+$ cao nhất."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 200ml dung dịch $H_2SO_4$ 0,05M với 300ml dung dịch HCl 0,1M thu được dung dịch Y. pH của dung dịch Y là :",
+    "options": [
+      "A. 1,2",
+      "B. 4",
+      "C. 1",
+      "D. 3"
+    ],
+    "correct_index": 2,
+    "explanation": "Ta tính số mol ion $H^+$ từ từng axit:\n- Từ $H_2SO_4$: $n_{H_2SO_4} = 0,2 \\times 0,05 = 0,01 \\text{ mol} \\Rightarrow n_{H^+} = 2 \\times 0,01 = 0,02 \\text{ mol}$.\n- Từ $HCl$: $n_{HCl} = 0,3 \\times 0,1 = 0,03 \\text{ mol} \\Rightarrow n_{H^+} = 0,03 \\text{ mol}$.\nTổng số mol $H^+$ trong dung dịch Y: $\\sum n_{H^+} = 0,02 + 0,03 = 0,05 \\text{ mol}$.\nThể tích dung dịch Y: $V_Y = 0,2 + 0,3 = 0,5 \\text{ lít}$.\nNồng độ ion $H^+$ trong Y: $[H^+] = \\frac{0,05}{0,5} = 0,1\\text{ M} = 10^{-1}\\text{ M}$.\nVậy $pH = -\\log(10^{-1}) = 1$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Môi trường axit có pH",
+    "options": [
+      "A. lớn hơn 7",
+      "B. nhỏ hơn 7",
+      "C. bằng 7",
+      "D. lớn hơn 8"
+    ],
+    "correct_index": 1,
+    "explanation": "Thang pH được sử dụng để đánh giá độ axit/bazơ của dung dịch. Ở $25^\\circ C$, dung dịch có pH = 7 là môi trường trung tính; dung dịch có pH < 7 là môi trường axit (pH càng nhỏ tính axit càng mạnh); dung dịch có pH > 7 là môi trường bazơ."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trường hợp nào dưới đây không dẫn điện ?",
+    "options": [
+      "A. NaOH rắn, khan",
+      "B. dd HF trong nước",
+      "C. NaOH nóng chảy",
+      "D. dd NaOH"
+    ],
+    "correct_index": 0,
+    "explanation": "Điều kiện để một chất hoặc dung dịch dẫn được điện là phải có các hạt mang điện (ion) có khả năng chuyển động tự do. NaOH ở trạng thái rắn, khan tồn tại dưới dạng mạng tinh thể ion, các ion $Na^+$ và $OH^-$ bị liên kết chặt chẽ ở các nút mạng không thể di chuyển tự do nên không dẫn điện. Khi hòa tan vào nước (tạo dung dịch) hoặc đun nóng chảy, mạng tinh thể bị phá vỡ, các ion được giải phóng và chuyển động tự do nên mới dẫn được điện."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Câu nào sau đây đúng?",
+    "options": [
+      "A. Mọi chất điện li đều là axit.",
+      "B. Mọi axit đều là chất điện li mạnh.",
+      "C. Mọi axit mạnh đều là chất điện li mạnh",
+      "D. Mọi axit đều là chất điện li"
+    ],
+    "correct_index": 3,
+    "explanation": "Theo thuyết điện li, các chất khi tan trong nước phân li ra ion được gọi là chất điện li. Chất điện li bao gồm 3 loại hợp chất: axit, bazơ và muối. Do đó, \"mọi axit đều là chất điện li\" (tùy thuộc vào độ mạnh yếu của axit mà chúng là chất điện li mạnh hay yếu, nhưng chắc chắn đều là chất điện li). Đáp án A sai vì chất điện li còn có bazơ, muối. Đáp án B sai vì có nhiều axit là chất điện li yếu (như $CH_3COOH, HF...$). (Lưu ý: Đáp án C cũng là một mệnh đề đúng về mặt logic định nghĩa, nhưng D là mệnh đề tổng quát và chính xác nhất để phân loại nhóm chất điện li thường được dùng làm đáp án chuẩn trong dạng câu hỏi này)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Các ion nào sau đây không cùng tồn tại trong một dung dịch:",
+    "options": [
+      "A. $NH_4^+, OH^-, Fe^{3+}, Cl^-$",
+      "B. $H^+, NH_4^+, SO_4^{2-}, Cl^-$",
+      "C. $Na^+, NO_3^-, Mg^{2+}, Cl^-$",
+      "D. $Fe^{3+}, NO_3^-, Mg^{2+}, Cl^-$"
+    ],
+    "correct_index": 0,
+    "explanation": "Các ion không thể cùng tồn tại trong một dung dịch nếu chúng phản ứng được với nhau tạo ra chất kết tủa, chất khí hoặc chất điện li yếu. Trong đáp án A, ion $OH^-$ sẽ phản ứng với cả hai cation: kết hợp với $Fe^{3+}$ tạo kết tủa nâu đỏ ($Fe^{3+} + 3OH^- \\rightarrow Fe(OH)_3 \\downarrow$) và kết hợp với $NH_4^+$ tạo khí mùi khai ($NH_4^+ + OH^- \\rightarrow NH_3 \\uparrow + H_2O$). Do có phản ứng xảy ra nên tập hợp các ion ở đáp án A không thể cùng tồn tại."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 50 ml dung dịch HCl 0,12 M với 50 ml dung dịch NaOH 0,1M được 100 ml dung dịch có pH bằng bao nhiêu",
+    "options": [
+      "A. 11",
+      "B. 2",
+      "C. 1",
+      "D. 12"
+    ],
+    "correct_index": 1,
+    "explanation": "Số mol $H^+$ ban đầu: $n_{H^+} = n_{HCl} = 0,05 \\times 0,12 = 0,006$ mol.\nSố mol $OH^-$ ban đầu: $n_{OH^-} = n_{NaOH} = 0,05 \\times 0,1 = 0,005$ mol.\nPhản ứng trung hòa: $H^+ + OH^- \\rightarrow H_2O$. Ta thấy $n_{H^+} > n_{OH^-}$ nên axit dư.\nSố mol $H^+$ dư = $0,006 - 0,005 = 0,001$ mol.\nThể tích dung dịch sau khi trộn là 100 ml = 0,1 lít.\nNồng độ $H^+$ dư: $[H^+] = \\frac{0,001}{0,1} = 0,01$ M = $10^{-2}$ M.\nVậy $pH = -\\log(10^{-2}) = 2$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng nào không có phương trình ion thu gọn là: $H^+ + OH^- \\rightarrow H_2O$",
+    "options": [
+      "A. $Ba(OH)_2 + H_2SO_4$",
+      "B. $Ba(OH)_2 + HNO_3$",
+      "C. $KOH + HCl$",
+      "D. $Ba(OH)_2 + HCl$"
+    ],
+    "correct_index": 0,
+    "explanation": "Phương trình ion thu gọn $H^+ + OH^- \\rightarrow H_2O$ đặc trưng cho phản ứng giữa axit mạnh và bazơ mạnh tạo ra muối tan và nước (như các đáp án B, C, D). Đối với đáp án A, phản ứng giữa $Ba(OH)_2$ và $H_2SO_4$ ngoài việc tạo nước còn sinh ra kết tủa trắng $BaSO_4$. Phương trình ion thu gọn của nó là: $Ba^{2+} + 2OH^- + 2H^+ + SO_4^{2-} \\rightarrow BaSO_4 \\downarrow + 2H_2O$. Do đó, đáp án A không có pt ion thu gọn như đề bài."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy gồm những chất điện li mạnh là:",
+    "options": [
+      "A. $HCl, NaCl, Na_2CO_3, Fe(OH)_3$.",
+      "B. $NaF, NaOH, KCl, HClO$.",
+      "C. $NaOH, KCl, H_2SO_4, KOH$.",
+      "D. $KNO_3, MgCl_2, HNO_3, HF$."
+    ],
+    "correct_index": 2,
+    "explanation": "Chất điện li mạnh bao gồm các axit mạnh, bazơ mạnh và hầu hết các muối tan. Xét các dãy chất:\n- Dãy A sai vì có $Fe(OH)_3$ là chất kết tủa, điện li yếu.\n- Dãy B sai vì có $HClO$ là axit yếu.\n- Dãy C đúng vì gồm $NaOH, KOH$ (bazơ mạnh), $KCl$ (muối tan) và $H_2SO_4$ (axit mạnh).\n- Dãy D sai vì có $HF$ là axit yếu."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong các dd sau: nước chanh; dịch dạ dày; giấm; nước vôi trong; máu người. Số dung dịch có môi trường axit là:",
+    "options": [
+      "A. 4",
+      "B. 3",
+      "C. 1",
+      "D. 2"
+    ],
+    "correct_index": 1,
+    "explanation": "Các dung dịch có môi trường axit (pH < 7) bao gồm: nước chanh (chứa axit xitric), dịch dạ dày (chứa axit HCl) và giấm (chứa axit axetic). Nước vôi trong ($Ca(OH)_2$) có môi trường bazơ; máu người có pH hơi kiềm (khoảng 7,35 - 7,45). Vậy có 3 dung dịch có môi trường axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Hòa tan 20 gam NaOH vào nước được 2 lít dd. Nồng độ của OH- bằng",
+    "options": [
+      "A. 0,25 M",
+      "B. 0,5M",
+      "C. 0,125M",
+      "D. 1M"
+    ],
+    "correct_index": 0,
+    "explanation": "Số mol NaOH: $n_{NaOH} = \\frac{20}{40} = 0,5$ mol.\nNồng độ mol của dung dịch NaOH: $C_M = \\frac{0,5}{2} = 0,25$ M.\nVì NaOH là bazơ mạnh phân li hoàn toàn ($NaOH \\rightarrow Na^+ + OH^-$), nên nồng độ ion $OH^-$ bằng nồng độ của NaOH: $[OH^-] = 0,25$ M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chất nào sau đây không dẫn được điện:",
+    "options": [
+      "A. KCl nóng chảy.",
+      "B. KCl rắn khan.",
+      "C. Dung dịch KCl.",
+      "D. Dung dịch HBr."
+    ],
+    "correct_index": 1,
+    "explanation": "Muối KCl ở trạng thái rắn khan tồn tại dưới dạng mạng tinh thể ion. Trong đó, các ion $K^+$ và $Cl^-$ bị liên kết chặt chẽ tại các nút mạng, không thể di chuyển tự do được nên không dẫn điện. Khi hòa tan vào nước (dung dịch) hoặc đun nóng chảy, mạng tinh thể bị phá vỡ, các ion được giải phóng và chuyển động tự do mới có khả năng dẫn điện."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Nhúng giấy quỳ vào dung dịch có pH = 4 giấy quỳ chuyển thành màu:",
+    "options": [
+      "A. đỏ",
+      "B. xanh",
+      "C. không đổi màu",
+      "D. Chưa xác định được."
+    ],
+    "correct_index": 0,
+    "explanation": "Dung dịch có pH = 4 (nhỏ hơn 7) là dung dịch có môi trường axit. Dung dịch axit sẽ làm giấy quỳ tím chuyển sang màu đỏ."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chọn câu đúng",
+    "options": [
+      "A. ở mọi nhiệt độ trong mọi dd ta luôn có: $[H^+][OH^-] = 10^{-14}$.",
+      "B. nước là chất điện li mạnh",
+      "C. dung dịch kali sunfit có pH >7",
+      "D. dd axit sunfuric làm phenolphthalein hóa đỏ"
+    ],
+    "correct_index": 2,
+    "explanation": "Xét các phát biểu:\n- A sai vì tích số ion của nước $K_w = [H^+][OH^-] = 10^{-14}$ chỉ đúng ở nhiệt độ $25^\\circ C$.\n- B sai vì nước nguyên chất là chất điện li rất yếu.\n- C đúng vì kali sunfit ($K_2SO_3$) là muối tạo bởi cation kim loại mạnh ($K^+$) và gốc axit yếu ($SO_3^{2-}$). Gốc $SO_3^{2-}$ bị thủy phân tạo môi trường bazơ nên pH > 7.\n- D sai vì axit sunfuric có môi trường axit, không làm đổi màu phenolphthalein (phenolphthalein chỉ hóa hồng/đỏ trong môi trường kiềm)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chất nào sau đây lưỡng tính",
+    "options": [
+      "A. KOH",
+      "B. $Mg(OH)_2$",
+      "C. $Zn(OH)_2$",
+      "D. HCl"
+    ],
+    "correct_index": 2,
+    "explanation": "Chất lưỡng tính là chất vừa có khả năng phân li như axit, vừa có khả năng phân li như bazơ, tức là nó có thể tác dụng được với cả dung dịch axit và dung dịch bazơ mạnh. Trong các đáp án, $Zn(OH)_2$ là hiđroxit lưỡng tính điển hình. KOH là bazơ, $Mg(OH)_2$ là bazơ (chỉ tan trong axit), HCl là axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "cặp chất nào sau đây không xảy ra phản ứng trong dung dịch",
+    "options": [
+      "A. $CaCO_3 + HCl$",
+      "B. $CH_3COONa + HCl$",
+      "C. $CuSO_4 + HNO_3$",
+      "D. $AgNO_3 + HCl$"
+    ],
+    "correct_index": 2,
+    "explanation": "Điều kiện để xảy ra phản ứng trao đổi ion trong dung dịch là sản phẩm phải có chất kết tủa, chất khí bay hơi hoặc chất điện li yếu. \nKhi cho $CuSO_4$ phản ứng với $HNO_3$, nếu giả sử phản ứng xảy ra sẽ tạo thành $Cu(NO_3)_2$ và $H_2SO_4$. Cả hai chất sản phẩm này đều là các chất tan tốt và phân li mạnh trong nước, không thỏa mãn điều kiện tạo kết tủa/khí/điện li yếu. Do đó, phản ứng không xảy ra."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chọn câu đúng trong các câu sau",
+    "options": [
+      "A. dung dịch NaOH không dẫn điện",
+      "B. phản ứng giữa sắt và dung dịch HCl là pư trao đổi ion",
+      "C. magie oxit không tan trong dung dịch $HNO_3$ vì không tạo kết tủa",
+      "D. nước nguyên chất để ngoài không khí một thời gian sẽ có môi trường axit"
+    ],
+    "correct_index": 3,
+    "explanation": "- A sai: dung dịch NaOH phân li ra ion nên dẫn điện tốt.\n- B sai: phản ứng $Fe + 2HCl \\rightarrow FeCl_2 + H_2$ có sự thay đổi số oxi hóa của Fe và H, nên đây là phản ứng oxi hóa - khử, không phải phản ứng trao đổi ion đơn thuần.\n- C sai: MgO là oxit bazơ, tan tốt trong axit $HNO_3$ tạo muối tan $Mg(NO_3)_2$ và nước.\n- D đúng: Khi để nước nguyên chất ngoài không khí, khí $CO_2$ (là một oxit axit) trong không khí sẽ hòa tan một phần vào nước tạo thành axit cacbonic yếu ($H_2CO_3 \\rightleftharpoons H^+ + HCO_3^-$), làm cho nước có môi trường axit nhẹ (pH < 7)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Một dung dịch X có các ion $HCO_3^-, HSO_3^-, SO_3^{2-}, NH_4^+, Na^+, Cl^-$. Cho X tác dụng với dung dịch $BaCl_2$. Hỏi có bao nhiêu phản ứng xảy ra?",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 4",
+      "D. 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Khi cho dung dịch $BaCl_2$ vào dung dịch X, ion $Ba^{2+}$ sẽ tìm kiếm các anion trong X để phản ứng nếu tạo thành chất kết tủa. Các anion có trong dung dịch là $HCO_3^-, HSO_3^-, SO_3^{2-}, Cl^-$. Trong số các muối tạo thành ($Ba(HCO_3)_2$, $Ba(HSO_3)_2$, $BaSO_3$, $BaCl_2$), chỉ có duy nhất $BaSO_3$ là chất kết tủa không tan. Do đó, chỉ xảy ra 1 phản ứng duy nhất: $Ba^{2+} + SO_3^{2-} \\rightarrow BaSO_3 \\downarrow$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Nhóm dung dịch nào sau đây chứa các chất đều pư được với dung dịch $H_2SO_4$ loãng ở nhiệt độ thường.",
+    "options": [
+      "A. $Mg(NO_3)_2$; $CaO$; $HNO_2$; $KCl$",
+      "B. $Ba(OH)_2$; $KOH$; $CaCl_2$; $NaHCO_3$.",
+      "C. $CaCO_3$; $K_2SO_4$; $MgO$; $KOH$",
+      "D. $HCl$; $CuO$; $CuS$; $KHSO_3$."
+    ],
+    "correct_index": 1,
+    "explanation": "Dung dịch $H_2SO_4$ loãng có thể phản ứng với bazơ, oxit bazơ, và muối (điều kiện: tạo kết tủa, khí hoặc chất điện li yếu). Nhóm B thỏa mãn vì: $Ba(OH)_2$ và $KOH$ phản ứng trung hòa; $NaHCO_3$ phản ứng tạo khí $CO_2$; $CaCl_2$ phản ứng tạo kết tủa $CaSO_4$ ít tan. Các nhóm khác đều chứa chất không phản ứng: A chứa $KCl$, C chứa $K_2SO_4$, D chứa $HCl$ và $CuS$ (không tan trong axit loãng)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 2 dung dịch sau với nhau. Trường hợp nào không thu được kết tủa trắng sau phản ứng",
+    "options": [
+      "A. $NaOH$ vào $MgCl_2$",
+      "B. $Na_2CO_3$ vào $CaCl_2$",
+      "C. $NaOH$ dư vào $AlCl_3$",
+      "D. $BaCl_2$ vào $H_2SO_4$"
+    ],
+    "correct_index": 2,
+    "explanation": "Khi cho $NaOH$ dư vào dung dịch $AlCl_3$, ban đầu sẽ xuất hiện kết tủa trắng keo $Al(OH)_3$ ($AlCl_3 + 3NaOH \\rightarrow Al(OH)_3 \\downarrow + 3NaCl$). Tuy nhiên, do $Al(OH)_3$ là một hiđroxit lưỡng tính nên nó sẽ tiếp tục phản ứng và tan hoàn toàn trong $NaOH$ dư tạo thành dung dịch trong suốt ($Al(OH)_3 + NaOH \\rightarrow NaAlO_2 + 2H_2O$). Do đó, sau cùng không thu được kết tủa."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho 11 gam hỗn hợp Fe và Al phản ứng vừa đủ với dung dịch HCl được dung dịch A. Cho A phản ứng với dung dịch NaOH dư thì được 9 gam kết tủa. %m của Fe bằng",
+    "options": [
+      "A. 45,6%",
+      "B. 40,19%",
+      "C. 50,91%",
+      "D. 52,8%"
+    ],
+    "correct_index": 2,
+    "explanation": "Hỗn hợp phản ứng với HCl sinh ra muối $FeCl_2$ và $AlCl_3$. Khi cho dung dịch A tác dụng với NaOH dư: $FeCl_2 + 2NaOH \\rightarrow Fe(OH)_2 \\downarrow + 2NaCl$. Ion $Al^{3+}$ tạo kết tủa $Al(OH)_3$ nhưng sau đó kết tủa này tan hết trong NaOH dư ($Al(OH)_3 + NaOH \\rightarrow NaAlO_2 + 2H_2O$). Vậy kết tủa duy nhất thu được là $Fe(OH)_2$ có khối lượng 9 gam. Số mol $Fe(OH)_2 = \\frac{9}{90} = 0,1$ mol. Bảo toàn nguyên tố Fe, số mol $Fe = 0,1$ mol $\\Rightarrow m_{Fe} = 0,1 \\times 56 = 5,6$ gam. Phần trăm khối lượng của Fe là: $\\frac{5,6}{11} \\times 100\\% \\approx 50,91\\%$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Một dung dịch có $[OH^-] = 10^{-9}$ M có môi trường",
+    "options": [
+      "A. axit",
+      "B. bazơ",
+      "C. trung tính",
+      "D. không xác định"
+    ],
+    "correct_index": 0,
+    "explanation": "Ta có tích số ion của nước là $[H^+][OH^-] = 10^{-14}$. Từ đó suy ra nồng độ $[H^+] = \\frac{10^{-14}}{10^{-9}} = 10^{-5}$ M. Vì $[H^+] > 10^{-7}$ M (hoặc tính được $pH = 5 < 7$), dung dịch này có môi trường axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho các muối sau: $KHCO_3$; $K_2SO_3$; $KH_2PO_4$; $NaClO$. Số muối axit là",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 3",
+      "D. 4"
+    ],
+    "correct_index": 1,
+    "explanation": "Muối axit là muối mà trong gốc anion vẫn còn nguyên tử hiđro có khả năng phân li ra ion $H^+$. Trong dãy trên, $KHCO_3$ (có gốc $HCO_3^-$) và $KH_2PO_4$ (có gốc $H_2PO_4^-$) là các muối axit. $K_2SO_3$ và $NaClO$ là các muối trung hòa vì gốc axit không còn hiđro có khả năng phân li. Vậy có 2 muối axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Nhóm chất chỉ chứa chất điện li mạnh là",
+    "options": [
+      "A. $CuSO_4$; $Cu(OH)_2$; $KCl$; $NaOH$",
+      "B. $HF$; $HCl$; $HI$; $HBr$",
+      "C. $H_3PO_4$; $KOH$; $NH_4NO_3$; $K_2S$",
+      "D. $CH_3COONa$; $KF$; $HCl$; $Ba(OH)_2$."
+    ],
+    "correct_index": 3,
+    "explanation": "Chất điện li mạnh bao gồm các axit mạnh, bazơ mạnh và hầu hết các muối tan. \n- Nhóm A loại vì $Cu(OH)_2$ là bazơ không tan (điện li yếu).\n- Nhóm B loại vì $HF$ là axit yếu.\n- Nhóm C loại vì $H_3PO_4$ là axit trung bình/yếu.\n- Nhóm D đúng vì $CH_3COONa, KF$ (muối tan), $HCl$ (axit mạnh) và $Ba(OH)_2$ (bazơ mạnh) đều phân li hoàn toàn."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 250 ml dung dịch chứa $HCl$ 0,08 M và $H_2SO_4$ 0,01 M với 250 ml dung dịch $NaOH$ aM được 500 ml dung dịch có $pH = 12$. Coi $H_2SO_4$ điện li hoàn toàn thì a bằng",
+    "options": [
+      "A. 0,10 M",
+      "B. 0,15 M",
+      "C. 0,125 M",
+      "D. 0,12 M"
+    ],
+    "correct_index": 3,
+    "explanation": "Tổng số mol $H^+$ ban đầu = $n_{HCl} + 2n_{H_2SO_4} = 0,25 \\times 0,08 + 2 \\times 0,25 \\times 0,01 = 0,025$ mol.\nSố mol $OH^-$ ban đầu = $0,25a$ mol.\nDung dịch sau trộn có $pH = 12 > 7$, suy ra $OH^-$ dư. $pOH = 14 - 12 = 2 \\Rightarrow [OH^-]_{\\text{dư}} = 10^{-2} = 0,01$ M.\nThể tích dung dịch sau trộn là 500 ml = 0,5 lít. Số mol $OH^-$ dư = $0,5 \\times 0,01 = 0,005$ mol.\nTa có: $n_{OH^- (\\text{dư})} = n_{OH^- (\\text{bđ})} - n_{H^+} \\Leftrightarrow 0,005 = 0,25a - 0,025 \\Rightarrow 0,25a = 0,03 \\Rightarrow a = 0,12$ M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "pH của dd $HCl$ 0,01M và $NaOH$ 0,01M lần lượt là",
+    "options": [
+      "A. 1 và 13",
+      "B. 1 và 2",
+      "C. 2 và 2",
+      "D. 2 và 12"
+    ],
+    "correct_index": 3,
+    "explanation": "- Dung dịch $HCl$ 0,01 M: là axit mạnh phân li hoàn toàn nên $[H^+] = 0,01$ M = $10^{-2}$ M $\\Rightarrow pH = -\\log(10^{-2}) = 2$.\n- Dung dịch $NaOH$ 0,01 M: là bazơ mạnh phân li hoàn toàn nên $[OH^-] = 0,01$ M = $10^{-2}$ M $\\Rightarrow pOH = -\\log(10^{-2}) = 2 \\Rightarrow pH = 14 - 2 = 12$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch $CH_3COOH$ 0,1M phải có",
+    "options": [
+      "A. pH < 1",
+      "B. pH > 7",
+      "C. pH = 7",
+      "D. 1 < pH < 7"
+    ],
+    "correct_index": 3,
+    "explanation": "Axit axetic ($CH_3COOH$) là một axit yếu nên chỉ phân li một phần trong nước: $CH_3COOH \\rightleftharpoons CH_3COO^- + H^+$. Do đó, nồng độ ion $H^+$ sinh ra sẽ nhỏ hơn nồng độ ban đầu của axit, tức là $[H^+] < 0,1\\text{ M}$. Suy ra $pH = -\\log[H^+] > -\\log(0,1) = 1$. Mặt khác, vì là dung dịch axit nên $pH < 7$. Vậy dung dịch có $1 < pH < 7$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch KOH 0,0001M có pH bằng:",
+    "options": [
+      "A. 11",
+      "B. 3",
+      "C. 4",
+      "D. 10"
+    ],
+    "correct_index": 3,
+    "explanation": "KOH là một bazơ mạnh, phân li hoàn toàn trong dung dịch: $KOH \\rightarrow K^+ + OH^-$. Với nồng độ $KOH$ là $0,0001\\text{ M}$ ($10^{-4}\\text{ M}$), ta có $[OH^-] = 10^{-4}\\text{ M} \\Rightarrow pOH = -\\log(10^{-4}) = 4$. Do đó, $pH = 14 - pOH = 14 - 4 = 10$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Nhận xét nào sau đây sai ?",
+    "options": [
+      "A. Dung dịch axit có chứa ion $H^+$.",
+      "B. Dung dịch $HNO_3$ có $[H^+] > 10^{-7}\\text{M}$",
+      "C. Dung dịch bazơ có chứa ion $OH^-$.",
+      "D. Dung dịch muối không bao giờ có tính axit hoặc bazơ."
+    ],
+    "correct_index": 3,
+    "explanation": "Nhận xét D sai vì nhiều dung dịch muối khi hòa tan vào nước có thể bị thủy phân tạo ra môi trường axit hoặc bazơ. Ví dụ: muối $Na_2CO_3$ có tính bazơ (pH > 7), muối $NH_4Cl$ có tính axit (pH < 7)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Nếu trộn 100 ml dung dịch HCl 0,01M với 100 ml dung dịch $H_2SO_4$ 0,005M thì dung dịch thu được có pH là (Biết $H_2O$ bay hơi không đáng kể):",
+    "options": [
+      "A. 2",
+      "B. 3,12",
+      "C. 4",
+      "D. 1"
+    ],
+    "correct_index": 0,
+    "explanation": "Số mol $H^+$ từ $HCl$: $n_{H^+} = 0,1 \\times 0,01 = 0,001$ mol.\nSố mol $H^+$ từ $H_2SO_4$: $n_{H^+} = 0,1 \\times 0,005 \\times 2 = 0,001$ mol.\nTổng số mol $H^+$ trong dung dịch sau khi trộn: $\\sum n_{H^+} = 0,001 + 0,001 = 0,002$ mol.\nThể tích dung dịch sau khi trộn: $V = 100 + 100 = 200$ ml = $0,2$ lít.\nNồng độ $H^+$ của dung dịch mới: $[H^+] = \\frac{0,002}{0,2} = 0,01\\text{ M} = 10^{-2}\\text{ M}$.\nVậy $pH = -\\log(10^{-2}) = 2$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phương trình điện li nào sau đây viết sai ?",
+    "options": [
+      "A. $Na_2SO_4 \\rightarrow Na^{2+} + SO_4^{2-}$",
+      "B. $Fe(NO_3)_3 \\rightarrow Fe^{3+} + 3NO_3^-$",
+      "C. $Al_2(SO_4)_3 \\rightarrow 2Al^{3+} + 3SO_4^{2-}$",
+      "D. $K_2CrO_4 \\rightarrow K^+ + CrO_4^{2-}$"
+    ],
+    "correct_index": 0,
+    "explanation": "Kim loại Natri (Na) thuộc nhóm IA nên chỉ có hóa trị I, khi phân li tạo thành ion $Na^+$. Phương trình A viết ion $Na^{2+}$ là hoàn toàn sai về mặt hóa học. Phương trình đúng phải là: $Na_2SO_4 \\rightarrow 2Na^+ + SO_4^{2-}$. (Lưu ý: Phương trình D trong đề cũng bị thiếu hệ số 2 trước $K^+$, nhưng sai sót tạo ra ion $Na^{2+}$ ở câu A là sai sót nghiêm trọng nhất về bản chất hóa học)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phương trình phân tử: $CaCO_3 + 2HCl \\rightarrow CaCl_2 + CO_2 + H_2O$ có phương trình ion rút gọn sau?",
+    "options": [
+      "A. $CaCO_3 + 2H^+ \\rightarrow Ca^{2+} + CO_2 + H_2O$.",
+      "B. $Ca^{2+} + 2Cl^- \\rightarrow CaCl_2$ .",
+      "C. $2H^+ + CO_3^{2-} \\rightarrow CO_2 + H_2O$.",
+      "D. $CaCO_3 + 2H^+ + 2Cl^- \\rightarrow CaCl_2 + CO_2 + H_2O$."
+    ],
+    "correct_index": 0,
+    "explanation": "Khi chuyển từ phương trình phân tử sang phương trình ion thu gọn, các chất kết tủa, chất khí và chất điện li yếu (như nước) phải được giữ nguyên dưới dạng phân tử. $CaCO_3$ là chất rắn không tan nên được giữ nguyên. $HCl$ và $CaCl_2$ là chất điện li mạnh nên phân li ra ion. Phương trình ion đầy đủ: $CaCO_3 + 2H^+ + 2Cl^- \\rightarrow Ca^{2+} + 2Cl^- + CO_2 + H_2O$. Lược bỏ ion $Cl^-$ ở cả 2 vế ta được phương trình ion rút gọn: $CaCO_3 + 2H^+ \\rightarrow Ca^{2+} + CO_2 + H_2O$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng nào sau đây không phải là phản ứng axit–bazơ ?",
+    "options": [
+      "A. $H_2SO_4 + BaCl_2 \\rightarrow BaSO_4 \\downarrow + 2HCl$",
+      "B. $H_2SO_4 + 2NaOH \\rightarrow Na_2SO_4 + 2H_2O$",
+      "C. $6HCl + Fe_2O_3 \\rightarrow 2FeCl_3 + 3H_2O$",
+      "D. $Ca(OH)_2 + CO_2 \\rightarrow CaCO_3 \\downarrow + H_2O$"
+    ],
+    "correct_index": 0,
+    "explanation": "Phản ứng axit-bazơ bản chất là phản ứng có sự nhường và nhận proton ($H^+$). Phản ứng A ($H_2SO_4 + BaCl_2 \\rightarrow BaSO_4 \\downarrow + 2HCl$) chỉ đơn thuần là phản ứng trao đổi ion tạo ra chất kết tủa ($BaSO_4$), không có sự tương tác trực tiếp để trung hòa giữa axit và bazơ (hoặc oxit bazơ/oxit axit)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Có 100 ml dung dịch $Ba(OH)_2$ 1M, thêm vào 100ml $H_2O$ thu được dung dịch X. Nồng độ $OH^-$ trong dung dịch X là:",
+    "options": [
+      "A. 1M",
+      "B. 2M",
+      "C. 0,5M",
+      "D. 1,5M"
+    ],
+    "correct_index": 0,
+    "explanation": "Số mol $Ba(OH)_2$ ban đầu: $n = C_M \\times V = 1 \\times 0,1 = 0,1$ mol.\n$Ba(OH)_2$ phân li ra 2 ion $OH^-$, nên số mol $OH^-$ ban đầu là: $n_{OH^-} = 0,1 \\times 2 = 0,2$ mol.\nKhi thêm 100ml $H_2O$, thể tích dung dịch tăng lên thành: $V_{mới} = 100 + 100 = 200$ ml = $0,2$ lít.\nNồng độ $OH^-$ trong dung dịch X: $[OH^-] = \\frac{0,2}{0,2} = 1\\text{M}."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho 2 dung dịch HCl và $CH_3COOH$ có cùng nồng độ $C_M$, Hãy so sánh độ pH của 2 dung dịch ?",
+    "options": [
+      "A. Không so sánh được.",
+      "B. $HCl > CH_3COOH$.",
+      "C. $HCl < CH_3COOH$.",
+      "D. $HCl = CH_3COOH$."
+    ],
+    "correct_index": 2,
+    "explanation": "Vì HCl là axit mạnh nên phân li hoàn toàn trong nước, cung cấp lượng ion $H^+$ tối đa. Trong khi đó, $CH_3COOH$ là axit yếu chỉ phân li một phần, lượng $H^+$ sinh ra ít hơn nhiều so với HCl cùng nồng độ. Do nồng độ $[H^+]$ của dung dịch $HCl$ lớn hơn, giá trị pH của dung dịch $HCl$ sẽ nhỏ hơn (vì $pH = -\\log[H^+]$)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Các ion nào sau đây không cùng tồn tại trong một dung dịch:",
+    "options": [
+      "A. $NH_4^+, OH^-, Fe^{3+}, Cl^-$",
+      "B. $Fe^{3+}, NO_3^-, Mg^{2+}, Cl^-$",
+      "C. $Na^+, NO_3^-, Mg^{2+}, Cl^-$",
+      "D. $H^+, NH_4^+, SO_4^{2-}, Cl^-$"
+    ],
+    "correct_index": 0,
+    "explanation": "Các ion không thể cùng tồn tại nếu chúng phản ứng được với nhau tạo thành kết tủa, khí hoặc chất điện li yếu. Ở đáp án A, ion $OH^-$ sẽ phản ứng với ion $Fe^{3+}$ tạo ra kết tủa nâu đỏ $Fe(OH)_3$ ($Fe^{3+} + 3OH^- \\rightarrow Fe(OH)_3 \\downarrow$) và phản ứng với ion $NH_4^+$ tạo ra khí amoniac ($NH_4^+ + OH^- \\rightarrow NH_3 \\uparrow + H_2O$). Do đó, nhóm ion này không thể tồn tại chung."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng trao đổi ion trong dung dịch các chất điện li chỉ có thể xảy ra khi :",
+    "options": [
+      "A. tạo thành chất kết tủa.",
+      "B. tạo thành chất điện li yếu.",
+      "C. tạo thành chất khí.",
+      "D. có ít nhất một trong 3 điều kiện trên."
+    ],
+    "correct_index": 3,
+    "explanation": "Theo điều kiện để xảy ra phản ứng trao đổi ion trong dung dịch, phản ứng chỉ thực sự diễn ra nếu sản phẩm tạo thành thỏa mãn ít nhất một trong ba điều kiện: có chất kết tủa (không tan), chất khí (bay hơi) hoặc chất điện li yếu (ví dụ: $H_2O$, các axit yếu)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho các muối sau: $NaHSO_4$ , $NaHCO_3$ , $Na_2HPO_3$ . Muối axit trong số đó là:",
+    "options": [
+      "A. cả 3 muối",
+      "B. $NaHSO_4, NaHCO_3$",
+      "C. $Na_2HPO_3$",
+      "D. $NaHSO_4$"
+    ],
+    "correct_index": 1,
+    "explanation": "Muối axit là muối mà gốc axit vẫn còn nguyên tử hiđro có khả năng phân li ra ion $H^+$. Cả $NaHSO_4$ và $NaHCO_3$ đều thoả mãn ($HSO_4^- \\rightarrow H^+ + SO_4^{2-}$, $HCO_3^- \\rightleftharpoons H^+ + CO_3^{2-}$). Ngược lại, $Na_2HPO_3$ là muối trung hoà vì axit $H_3PO_3$ (axit photphorơ) chỉ là axit 2 nấc, gốc $HPO_3^{2-}$ không còn khả năng phân li ra $H^+$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho các chất sau: HCl, $H_2S$, $HNO_3$, NaOH, $Ca(OH)_2$, $Al(OH)_3$, NaCl, $BaCl_2$. Có bao nhiêu chất điện li yếu?",
+    "options": [
+      "A. 3",
+      "B. 5",
+      "C. 4",
+      "D. 2"
+    ],
+    "correct_index": 3,
+    "explanation": "Chất điện li mạnh phân li hoàn toàn gồm axit mạnh ($HCl, HNO_3$), bazơ mạnh ($NaOH, Ca(OH)_2$) và muối tan ($NaCl, BaCl_2$). Chất điện li yếu là những chất chỉ phân li một phần, trong dãy trên có $H_2S$ (axit yếu) và $Al(OH)_3$ (bazơ yếu, kết tủa). Vậy có tổng cộng 2 chất điện li yếu."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng nào dưới đây là phản ứng trao đổi ion trong dd ?",
+    "options": [
+      "A. $Zn + H_2SO_4 \\rightarrow ZnSO_4 + H_2$",
+      "B. $Zn + 2Fe(NO_3)_3 \\rightarrow Zn(NO_3)_2 + 2Fe(NO_3)_2$",
+      "C. $Fe(NO_3)_3 + 3NaOH \\rightarrow Fe(OH)_3 \\downarrow + 3NaNO_3$",
+      "D. $2Fe(NO_3)_3 + 2KI \\rightarrow 2Fe(NO_3)_2 + I_2 + 2KNO_3$"
+    ],
+    "correct_index": 2,
+    "explanation": "Phản ứng trao đổi ion trong dung dịch các chất điện li không có sự thay đổi số oxi hoá của các nguyên tố. Các phản ứng A, B, D đều có sự thay đổi số oxi hoá nên chúng là phản ứng oxi hoá - khử. Chỉ có phản ứng C là phản ứng trao đổi ion đơn thuần (tạo ra kết tủa $Fe(OH)_3$)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch $H_2SO_4$ có pH = 2 thì nồng độ của $H_2SO_4$ là :",
+    "options": [
+      "A. 0,01M",
+      "B. 0,05M",
+      "C. 0,005M",
+      "D. 0,1M"
+    ],
+    "correct_index": 2,
+    "explanation": "Dung dịch có $pH = 2 \\Rightarrow [H^+] = 10^{-2} = 0,01$ M. Axit sunfuric phân li theo phương trình: $H_2SO_4 \\rightarrow 2H^+ + SO_4^{2-}$. Suy ra nồng độ của $H_2SO_4$ bằng một nửa nồng độ $H^+$, tức là $0,01 / 2 = 0,005$ M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho 1,5 lít dung dịch KOH có pH = 9. Nồng độ mol/l của dung dịch KOH là:",
+    "options": [
+      "A. $1,5.10^{-5}$M",
+      "B. $10^{-5}$ M",
+      "C. $10^{-9}$ M",
+      "D. 9M"
+    ],
+    "correct_index": 1,
+    "explanation": "Ta có $pH = 9 \\Rightarrow pOH = 14 - 9 = 5 \\Rightarrow [OH^-] = 10^{-5}$ M. Vì KOH là bazơ mạnh phân li ra 1 ion $OH^-$ ($KOH \\rightarrow K^+ + OH^-$), nên nồng độ mol của KOH chính bằng nồng độ của ion $OH^-$, tức là $10^{-5}$ M. (Dữ kiện 1,5 lít thể tích là không cần thiết để tính nồng độ mol)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho các chất : a) $H_2SO_4$ b) $Ba(OH)_2$ c) $H_2S$ d) $CH_3COOH$ e) $NaNO_3$. Những chất nào sau đây là chất điện li mạnh:",
+    "options": [
+      "A. a , c , d",
+      "B. a , b , e",
+      "C. b , c , e",
+      "D. a , b , c"
+    ],
+    "correct_index": 1,
+    "explanation": "Các chất điện li mạnh bao gồm các axit mạnh (như a: $H_2SO_4$), bazơ mạnh (như b: $Ba(OH)_2$) và hầu hết các loại muối (như e: $NaNO_3$). Các chất còn lại là $H_2S$ (c) và $CH_3COOH$ (d) đều là các axit yếu nên chúng là chất điện li yếu."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 40 ml dd HCl 0,5M với 60ml dd NaOH 0,5M. Dung dịch thu được có pH là",
+    "options": [
+      "A. 13",
+      "B. 3",
+      "C. 11",
+      "D. 1"
+    ],
+    "correct_index": 0,
+    "explanation": "Số mol $H^+$ từ HCl = $0,04 \\times 0,5 = 0,02$ mol; số mol $OH^-$ từ NaOH = $0,06 \\times 0,5 = 0,03$ mol. Khi trộn sẽ xảy ra phản ứng trung hoà: $H^+ + OH^- \\rightarrow H_2O$. Lượng $OH^-$ dư = $0,03 - 0,02 = 0,01$ mol. Thể tích dung dịch sau khi trộn = $40 + 60 = 100$ ml = $0,1$ lít. Nồng độ $OH^-$ dư = $0,01 / 0,1 = 0,1$ M. Tính $pOH = -\\log(0,1) = 1 \\Rightarrow pH = 14 - 1 = 13$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chọn câu đúng :",
+    "options": [
+      "A. Giá trị pH tăng thì độ axit tăng.",
+      "B. Dung dịch có pH >7 làm quỳ tím hoá đỏ.",
+      "C. Giá trị pH tăng thì độ axit giảm.",
+      "D. Dung dịch có pH = 7 làm quỳ tím hoá xanh."
+    ],
+    "correct_index": 2,
+    "explanation": "Theo định nghĩa, $pH = -\\log[H^+]$. Mối quan hệ giữa pH và $[H^+]$ là tỉ lệ nghịch: giá trị pH càng lớn thì nồng độ ion $H^+$ càng nhỏ, đồng nghĩa với việc độ axit của dung dịch càng giảm. Do đó, phát biểu C là phát biểu duy nhất đúng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho: $BaCl_2$ + X $\\rightarrow$ NaCl + Y. Trong các câu trả lời sau, câu nào sai ?",
+    "options": [
+      "A. X là $Na_2SO_4$ , Y là $BaSO_4$",
+      "B. X là $Na_3PO_4$ , Y là $Ba_3(PO_4)_2$.",
+      "C. X là NaOH , Y là $Ba(OH)_2$",
+      "D. X là $Na_2CO_3$, Y là $BaCO_3$"
+    ],
+    "correct_index": 2,
+    "explanation": "Phản ứng giữa $BaCl_2$ và X là phản ứng trao đổi ion, điều kiện để phản ứng xảy ra là chất sản phẩm (Y) phải là chất kết tủa. Trong các đáp án, $BaSO_4, Ba_3(PO_4)_2, BaCO_3$ đều là các chất kết tủa (thoả mãn). Tuy nhiên ở đáp án C, nếu Y là $Ba(OH)_2$ thì đây là chất tan tốt trong nước, dẫn đến không có phản ứng nào xảy ra giữa $BaCl_2$ và NaOH. Do đó, câu C sai."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chất nào dưới đây không phân li ra ion khi tan trong nước ?",
+    "options": [
+      "A. $Ba(OH)_2$",
+      "B. HCl$",
+      "C. $MgCl_2$",
+      "D. $C_2H_5OH$"
+    ],
+    "correct_index": 3,
+    "explanation": "Ancol etylic ($C_2H_5OH$) tan vô hạn trong nước tạo thành dung dịch đồng nhất, nhưng các phân tử của nó không phân li thành các ion. Do đó, nó là một chất không điện li. Các chất còn lại ($Ba(OH)_2$, $HCl$, $MgCl_2$) đều là axit/bazơ/muối điện li mạnh, phân li hoàn toàn thành các ion khi tan trong nước."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phương trình điện li nào viết đúng?",
+    "options": [
+      "A. $H_2S \\rightarrow 2H^+ + S^{2-}$",
+      "B. $HClO \\rightarrow H^+ + ClO^-$",
+      "C. $NaCl \\rightleftharpoons Na^+ + Cl^-$",
+      "D. $KOH \\rightarrow K^+ + OH^-$"
+    ],
+    "correct_index": 3,
+    "explanation": "KOH là bazơ mạnh nên phân li hoàn toàn (dùng mũi tên một chiều $\\rightarrow$). $H_2S$ và $HClO$ là các axit yếu nên phân li không hoàn toàn, phải dùng mũi tên thuận nghịch ($\\rightleftharpoons$). $NaCl$ là muối tan, điện li mạnh nên phải dùng mũi tên một chiều."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng nào sau đây không phải phản ứng trao đổi ion?",
+    "options": [
+      "A. $MgSO_4 + BaCl_2 \\rightarrow MgCl_2 + BaSO_4$.",
+      "B. $Cu + 2AgNO_3 \\rightarrow Cu(NO_3)_2 + 2Ag$.",
+      "C. $2NaOH + CuCl_2 \\rightarrow 2NaCl + Cu(OH)_2$.",
+      "D. $HCl + AgNO_3 \\rightarrow AgCl + HNO_3$."
+    ],
+    "correct_index": 1,
+    "explanation": "Phản ứng trao đổi ion trong dung dịch không có sự thay đổi số oxi hóa của các nguyên tố. Phản ứng B là phản ứng oxi hóa - khử (kim loại Cu đẩy Ag ra khỏi muối), trong đó số oxi hóa của Cu tăng từ 0 lên +2 và Ag giảm từ +1 xuống 0."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy ion nào sau đây có thể đồng thời tồn tại trong cùng một dung dịch ?",
+    "options": [
+      "A. $Na^+, Cl^-, S^{2-}, Cu^{2+}$.",
+      "B. $K^+, OH^-, Ba^{2+}, HCO_3^-$.",
+      "C. $HSO_4^-, NH_4^+, Na^+, NO_3^-$.",
+      "D. $NH_4^+, Ba^{2+}, NO_3^-, OH^-$."
+    ],
+    "correct_index": 2,
+    "explanation": "Các ion cùng tồn tại trong một dung dịch khi chúng không phản ứng với nhau. Dãy C thoả mãn vì không có cặp ion nào tạo kết tủa, chất bay hơi hay điện li yếu. Các dãy còn lại đều có phản ứng: Dãy A tạo kết tủa $CuS$; Dãy B có phản ứng giữa $OH^-$ và $HCO_3^-$ tạo $CO_3^{2-}$, sau đó tạo kết tủa $BaCO_3$; Dãy D tạo khí $NH_3$ ($NH_4^+ + OH^- \\rightarrow NH_3 \\uparrow + H_2O$)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho các phản ứng hóa học sau:\n(1) $(NH_4)_2SO_4 + BaCl_2 \\rightarrow$\n(2) $CuSO_4 + Ba(NO_3)_2 \\rightarrow$\n(3) $Na_2SO_4 + BaCl_2 \\rightarrow$\n(4) $H_2SO_4 + BaSO_3 \\rightarrow$\n(5) $(NH_4)_2SO_4 + Ba(OH)_2 \\rightarrow$\n(6) $Fe_2(SO_4)_3 + Ba(NO_3)_2 \\rightarrow$\nCác phản ứng đều có cùng một phương trình ion rút gọn là:",
+    "options": [
+      "A. (1), (3), (5), (6).",
+      "B. (1), (2), (3), (6).",
+      "C. (2), (3), (4), (6).",
+      "D. (3), (4), (5), (6)."
+    ],
+    "correct_index": 1,
+    "explanation": "Phương trình ion rút gọn $Ba^{2+} + SO_4^{2-} \\rightarrow BaSO_4 \\downarrow$ đặc trưng cho phản ứng giữa các muối tan chứa ion $Ba^{2+}$ và $SO_4^{2-}$. Các phản ứng (1), (2), (3), (6) đều thỏa mãn chỉ tạo ra 1 kết tủa duy nhất này. Phản ứng (4) sinh ra thêm khí $SO_2$ và phản ứng (5) sinh ra thêm khí $NH_3$ nên phương trình ion rút gọn sẽ phức tạp hơn."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho 10 ml dung dịch HCl có pH = 3. Thêm vào đó x ml nước cất và khuấy đều, thu được dung dịch có pH = 4. Giá trị của x là",
+    "options": [
+      "A. 100",
+      "B. 90",
+      "C. 1",
+      "D. 40"
+    ],
+    "correct_index": 1,
+    "explanation": "Khi pH tăng lên 1 đơn vị (từ 3 lên 4), nồng độ $[H^+]$ giảm đi 10 lần (từ $10^{-3}$ M xuống $10^{-4}$ M). Vì số mol $H^+$ không đổi nên thể tích dung dịch phải tăng gấp 10 lần. Thể tích dung dịch lúc sau là $10 \\times 10 = 100$ ml. Thể tích nước cất cần thêm vào là $x = 100 - 10 = 90$ ml."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 600ml dd HCl 1M với 400 ml dd NaOH 1,25M thu được 1 lít dd X. pH của dd X bằng",
+    "options": [
+      "A. 1",
+      "B. 1,3",
+      "C. 2",
+      "D. 0,7"
+    ],
+    "correct_index": 0,
+    "explanation": "Số mol $H^+$ ban đầu là $0,6 \\times 1 = 0,6$ mol. Số mol $OH^-$ ban đầu là $0,4 \\times 1,25 = 0,5$ mol. Sau phản ứng trung hòa ($H^+ + OH^- \\rightarrow H_2O$), lượng $H^+$ dư là $0,6 - 0,5 = 0,1$ mol. Thể tích dung dịch X là 1 lít. Nồng độ $[H^+] = 0,1 / 1 = 0,1$ M. Suy ra $pH = -\\log(0,1) = 1$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Đối với dd axit mạnh $HNO_3$ 0,1M. Nếu bỏ qua sự điện li của nước thì đánh giá nào sau đây là đúng?",
+    "options": [
+      "A. pH > 1,0",
+      "B. $[H^+] < [NO_3^-]$",
+      "C. pH = 1,0",
+      "D. $[H^+] > [NO_3^-]$"
+    ],
+    "correct_index": 2,
+    "explanation": "Axit nitric ($HNO_3$) là một axit mạnh, phân li hoàn toàn trong dung dịch ($HNO_3 \\rightarrow H^+ + NO_3^-$). Do đó, $[H^+] = [NO_3^-] = 0,1$ M $= 10^{-1}$ M. Ta tính được $pH = -\\log(10^{-1}) = 1,0$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Một dd có pH = 5 , thì",
+    "options": [
+      "A. $[H^+] = 1,0.10^{-5}$M",
+      "B. $[H^+] = 5,0.10^{-4}$M",
+      "C. $[H^+] = 1,0.10^{-4}$M",
+      "D. $[H^+] = 2,0.10^{-5}$M"
+    ],
+    "correct_index": 0,
+    "explanation": "Theo định nghĩa, $pH = -\\log[H^+]$. Khi dung dịch có $pH = 5$, ta suy ra ngay nồng độ mol của ion hydrogen là $[H^+] = 10^{-5}$ M hay $1,0.10^{-5}$ M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phương trình phân tử: $2NaOH + CuCl_2 \\rightarrow 2NaCl + Cu(OH)_2$ có phương trình ion rút gọn sau?",
+    "options": [
+      "A. $2OH^- + CuCl_2 \\rightarrow 2Cl^- + Cu(OH)_2$.",
+      "B. $Na^+ + Cl^- \\rightarrow NaCl$ .",
+      "C. $2NaOH + Cu^{2+} \\rightarrow 2Na^+ + Cu(OH)_2$.",
+      "D. $Cu^{2+} + 2OH^- \\rightarrow Cu(OH)_2$."
+    ],
+    "correct_index": 3,
+    "explanation": "Các chất điện li mạnh và tan tốt ($NaOH, CuCl_2, NaCl$) được viết dưới dạng ion, chất kết tủa ($Cu(OH)_2$) giữ nguyên dưới dạng phân tử. Phương trình ion đầy đủ: $2Na^+ + 2OH^- + Cu^{2+} + 2Cl^- \\rightarrow 2Na^+ + 2Cl^- + Cu(OH)_2 \\downarrow$. Lược bỏ các ion giống nhau ở 2 vế ($Na^+, Cl^-$), ta được phương trình ion rút gọn: $Cu^{2+} + 2OH^- \\rightarrow Cu(OH)_2$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phương trình điện li nào sau đây không đúng",
+    "options": [
+      "A. $Zn(OH)_2 \\rightleftharpoons 2H^+ + ZnO_2^{2-}$",
+      "B. $NaHCO_3 \\rightarrow Na^+ + HCO_3^-$",
+      "C. $Zn(OH)_2 \\rightleftharpoons Zn^{2+} + 2OH^-$",
+      "D. $H_3PO_4 \\rightarrow H^+ + H_2PO_4^-$"
+    ],
+    "correct_index": 3,
+    "explanation": "$H_3PO_4$ là một axit yếu ba nấc. Do đó, sự phân li của nó trong nước là một quá trình thuận nghịch và không hoàn toàn. Phương trình điện li phải sử dụng mũi tên thuận nghịch ($\\rightleftharpoons$) thay vì mũi tên một chiều ($\\rightarrow$). Phản ứng đúng: $H_3PO_4 \\rightleftharpoons H^+ + H_2PO_4^-$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho 200ml dung dịch NaOH 0,1M vào 300 ml dung dịch HCl 0,1M. Nồng độ $[H^+]$ trong dung dịch sau phản ứng là",
+    "options": [
+      "A. 0,02M",
+      "B. 0,01M",
+      "C. 0,2M",
+      "D. 0,1M"
+    ],
+    "correct_index": 0,
+    "explanation": "Số mol $OH^-$ ban đầu: $n_{OH^-} = n_{NaOH} = 0,2 \\times 0,1 = 0,02$ mol.\nSố mol $H^+$ ban đầu: $n_{H^+} = n_{HCl} = 0,3 \\times 0,1 = 0,03$ mol.\nPhản ứng trung hòa: $H^+ + OH^- \\rightarrow H_2O$.\nVì $n_{H^+} > n_{OH^-}$ nên $H^+$ dư sau phản ứng.\nSố mol $H^+$ dư: $n_{H^+ (dư)} = 0,03 - 0,02 = 0,01$ mol.\nThể tích dung dịch sau khi trộn: $V = 200 + 300 = 500$ ml = 0,5 lít.\nNồng độ $H^+$ trong dung dịch sau phản ứng: $[H^+] = \\frac{0,01}{0,5} = 0,02$ M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong 100 ml dung dịch $H_2SO_4$ 0,2M có số mol của ion $H^+$ và $SO_4^{2-}$ lần lượt là:",
+    "options": [
+      "A. 0,2 và 0,4",
+      "B. 0,04 và 0,02",
+      "C. 0,02 và 0,02",
+      "D. 0,02 và 0,01"
+    ],
+    "correct_index": 1,
+    "explanation": "Số mol của $H_2SO_4$ là: $n = 0,1 \\times 0,2 = 0,02$ mol.\nPhương trình điện li (coi phân li hoàn toàn 2 nấc): $H_2SO_4 \\rightarrow 2H^+ + SO_4^{2-}$.\nTừ phương trình, ta suy ra:\nSố mol ion $H^+ = 2 \\times n_{H_2SO_4} = 2 \\times 0,02 = 0,04$ mol.\nSố mol ion $SO_4^{2-} = n_{H_2SO_4} = 0,02$ mol."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chất nào sau đây không dẫn điện được?",
+    "options": [
+      "A. NaOH nóng chảy",
+      "B. HBr hòa tan trong nước",
+      "C. KCl rắn, khan",
+      "D. $CaCl_2$ nóng chảy"
+    ],
+    "correct_index": 2,
+    "explanation": "Để dẫn được điện, chất phải có các hạt mang điện (ion hoặc electron) có thể chuyển động tự do. Trong tinh thể KCl rắn khan, các ion $K^+$ và $Cl^-$ bị liên kết chặt chẽ ở các nút mạng tinh thể, không thể chuyển động tự do nên không dẫn điện. Chỉ khi hòa tan vào nước tạo dung dịch hoặc nung chảy thì chúng mới phân li thành các ion tự do và dẫn điện."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho 10ml dd HCl có pH = 3. Cần thêm vào dd trên bao nhiêu ml nước để sau khi khuấy đều, thu được dd có pH = 4?",
+    "options": [
+      "A. 10ml",
+      "B. 40ml",
+      "C. 100ml",
+      "D. 90ml"
+    ],
+    "correct_index": 3,
+    "explanation": "Dung dịch có pH = 3 có nồng độ $[H^+]_1 = 10^{-3}$ M.\nDung dịch có pH = 4 có nồng độ $[H^+]_2 = 10^{-4}$ M.\nKhi pha loãng, số mol $H^+$ không đổi: $n_{H^+} = V_1 \\times [H^+]_1 = V_2 \\times [H^+]_2$.\n$\\Rightarrow 10 \\times 10^{-3} = V_2 \\times 10^{-4} \\Rightarrow V_2 = \\frac{10 \\times 10^{-3}}{10^{-4}} = 100$ ml.\nVậy thể tích nước cần thêm vào là: $V_{H_2O} = V_2 - V_1 = 100 - 10 = 90$ ml."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Thêm 150 ml dung dịch KOH 2M vào 120 ml dung dịch $H_3PO_4$ 1M. Khối lượng các muối thu được trong dung dịch là",
+    "options": [
+      "A. 10,44 gam $KH_2PO_4$; 8,5 gam $K_3PO_4$.",
+      "B. 10,44 gam $K_2HPO_4$; 12,72 gam $K_3PO_4$.",
+      "C. 10,44 gam $K_2HPO_4$; 13,5 gam $/KH_2PO_4$.",
+      "D. 13,5 gam $KH_2PO_4$; 14,2 gam $K_3PO_4$."
+    ],
+    "correct_index": 1,
+    "explanation": "Số mol $KOH = 0,15 \\times 2 = 0,3$ mol. Số mol $H_3PO_4 = 0,12 \\times 1 = 0,12$ mol.\nLập tỉ lệ $T = \\frac{n_{KOH}}{n_{H_3PO_4}} = \\frac{0,3}{0,12} = 2,5$.\nVì $2 < T < 3$, phản ứng tạo ra hỗn hợp 2 muối là $K_2HPO_4$ (x mol) và $K_3PO_4$ (y mol).\nBảo toàn nguyên tố P: $x + y = 0,12$ (1)\nBảo toàn nguyên tố K: $2x + 3y = 0,3$ (2)\nGiải hệ (1) và (2), ta được $x = 0,06$ mol và $y = 0,06$ mol.\nKhối lượng muối $K_2HPO_4$: $m = 0,06 \\times 174 = 10,44$ gam.\nKhối lượng muối $K_3PO_4$: $m = 0,06 \\times 212 = 12,72$ gam."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Các dd axit, bazo, muối dẫn điện được là do trong dung dịch của chúng có:",
+    "options": [
+      "A. Chất",
+      "B. Cation",
+      "C. Ion trái dấu",
+      "D. Anion"
+    ],
+    "correct_index": 2,
+    "explanation": "Theo thuyết điện li của Arrhenius, nguyên nhân làm cho các dung dịch axit, bazơ, muối có khả năng dẫn điện là do các chất này khi hòa tan vào nước bị phân li thành các hạt mang điện tích tự do chuyển động gọi là các ion (bao gồm cation mang điện dương và anion mang điện âm, tức là các ion trái dấu)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho dung dịch chứa a gam NaOH vào dung dịch chứa a gam HCl. Dung dịch sau phản ứng có môi trường:",
+    "options": [
+      "A. Trung tính",
+      "B. Không xác định được",
+      "C. Axit",
+      "D. Bazơ"
+    ],
+    "correct_index": 2,
+    "explanation": "Số mol của $NaOH$ là $n_{NaOH} = \\frac{a}{40}$ mol.\nSố mol của $HCl$ là $n_{HCl} = \\frac{a}{36,5}$ mol.\nPhương trình hóa học: $NaOH + HCl \\rightarrow NaCl + H_2O$.\nTỉ lệ phản ứng là 1:1. Ta so sánh hai số mol: Vì $40 > 36,5$ nên $\\frac{a}{40} < \\frac{a}{36,5}$.\nSuy ra $n_{NaOH} < n_{HCl}$, do đó $HCl$ phản ứng dư. Dung dịch sau phản ứng chứa $HCl$ dư nên có môi trường axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Nhận xét nào sau đây đúng",
+    "options": [
+      "A. $Zn(OH)_2$ là axit lưỡng tính.",
+      "B. $Zn(OH)_2$ là một bazơ lưỡng tính.",
+      "C. $Zn(OH)_2$ là một hiđroxit lưỡng tính.",
+      "D. $Zn(OH)_2$ là một bazơ."
+    ],
+    "correct_index": 2,
+    "explanation": "Theo định nghĩa về chất điện li trong chương trình hóa học, những hợp chất như $Zn(OH)_2, Al(OH)_3, Cr(OH)_3...$ vừa có khả năng phân li ra ion $H^+$ (thể hiện tính axit), vừa có khả năng phân li ra ion $OH^-$ (thể hiện tính bazơ). Chúng được gọi chung bằng thuật ngữ là \"hiđroxit lưỡng tính\". Không có khái niệm \"axit lưỡng tính\" hay \"bazơ lưỡng tính\"."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho dãy các chất sau: Al, $NaHCO_3$, $(NH_4)_2CO_3$, $NH_4Cl$, $Al_2O_3$, Zn, $K_2CO_3$, $K_2SO_4$. Có bao nhiêu chất trong dãy vừa tác dụng được với dung dịch HCl, vừa tác dụng được với dung dịch NaOH?",
+    "options": [
+      "A. 3.",
+      "B. 5.",
+      "C. 4.",
+      "D. 2."
+    ],
+    "correct_index": 1,
+    "explanation": "Các chất phản ứng được với cả HCl (axit) và NaOH (bazơ) trong dãy gồm:\n1. Kim loại Al, Zn: tan trong axit giải phóng $H_2$, tan trong kiềm giải phóng $H_2$.\n2. $Al_2O_3$: là oxit lưỡng tính nên phản ứng với cả hai.\n3. $NaHCO_3$: chứa gốc $HCO_3^-$ lưỡng tính. Tác dụng HCl tạo $CO_2$, tác dụng NaOH tạo $Na_2CO_3$.\n4. $(NH_4)_2CO_3$: gốc $CO_3^{2-}$ phản ứng HCl tạo $CO_2$; gốc $NH_4^+$ phản ứng NaOH tạo khí $NH_3$.\nCòn lại: $NH_4Cl$ chỉ tác dụng NaOH; $K_2CO_3$ chỉ tác dụng HCl; $K_2SO_4$ không phản ứng. \nVậy có 5 chất thỏa mãn."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho 40ml dd chứa đồng thời $H_2SO_4$ 0,25M và HCl 0,25M vào 160ml dd KOH 0,2M thu được 200ml dd có pH là",
+    "options": [
+      "A. 2.",
+      "B. 3.",
+      "C. 11.",
+      "D. 12."
+    ],
+    "correct_index": 3,
+    "explanation": "Tính tổng số mol $H^+$ từ hai axit và số mol $OH^-$ từ bazơ:\n- $n_{H^+} = 0,04 \\times (0,25 \\times 2 + 0,25) = 0,03$ mol.\n- $n_{OH^-} = 0,16 \\times 0,2 = 0,032$ mol.\nPhản ứng trung hòa: $H^+ + OH^- \\rightarrow H_2O$.\nTa thấy $n_{OH^-} > n_{H^+}$ nên $OH^-$ dư $0,032 - 0,03 = 0,002$ mol.\nNồng độ $OH^-$ dư trong dung dịch 200ml (0,2 lít) là: $[OH^-] = \\frac{0,002}{0,2} = 0,01$ M $= 10^{-2}$ M.\nSuy ra $pOH = -\\log(10^{-2}) = 2 \\Rightarrow pH = 14 - 2 = 12$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Muối là chất khi tan trong nước phân li ra",
+    "options": [
+      "A. Cation kim loại (hay $NH_4^+$) và anion gốc axit",
+      "B. Cation $H^+$ và anion gốc axxit",
+      "C. Cation kim loại và anion gốc axit",
+      "D. Cation $NH_4^+$ và anion gốc axit"
+    ],
+    "correct_index": 0,
+    "explanation": "Theo thuyết điện li, muối là hợp chất khi tan trong nước phân li ra cation kim loại (hoặc cation amoni $NH_4^+$) và anion gốc axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Một dung dịch có $[OH^-] = 2,0.10^{-4}$M. Môi trường của dung dịch này là",
+    "options": [
+      "A. axit",
+      "B. trung tính",
+      "C. kiềm",
+      "D. không xác định được"
+    ],
+    "correct_index": 2,
+    "explanation": "Trong môi trường trung tính ở $25^\\circ C$, $[OH^-] = 10^{-7}$ M. Dung dịch đã cho có nồng độ $OH^-$ là $2,0.10^{-4}$ M, lớn hơn $10^{-7}$ M, do đó dung dịch có môi trường kiềm (bazơ)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy ion không thể tồn tại đồng thời trong dung dịch là",
+    "options": [
+      "A. $K^+, H^+, Cl^-, SO_4^{2-}$",
+      "B. $Na^+, OH^-, Mg^{2+}, NO_3^-$",
+      "C. $Ag^+, Mg^{2+}, Ca^{2+}, NO_3^-$",
+      "D. $OH^-, Na^+, Ba^{2+}, Cl^-$"
+    ],
+    "correct_index": 1,
+    "explanation": "Các ion không thể cùng tồn tại nếu chúng kết hợp với nhau tạo thành chất kết tủa, chất khí hoặc chất điện li yếu. Trong dãy B, ion $Mg^{2+}$ và ion $OH^-$ sẽ phản ứng với nhau tạo thành chất kết tủa trắng $Mg(OH)_2$ ($Mg^{2+} + 2OH^- \\rightarrow Mg(OH)_2 \\downarrow$). Do đó, nhóm ion này không thể tồn tại đồng thời."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Công thức hóa học của chất mà khi điện li tạo ra ion $Fe^{3+}$ và $NO_3^-$ là",
+    "options": [
+      "A. $Fe(NO_3)_2$.",
+      "B. $Fe(NO_2)_2$.",
+      "C. $Fe(NO_3)_3$.",
+      "D. $Fe(NO_2)_3$."
+    ],
+    "correct_index": 2,
+    "explanation": "Chất điện li tạo ra ion sắt (III) $Fe^{3+}$ và ion nitrat $NO_3^-$ phải là muối sắt (III) nitrat. Công thức đúng của muối này là $Fe(NO_3)_3$. Quá trình điện li: $Fe(NO_3)_3 \\rightarrow Fe^{3+} + 3NO_3^-$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho 4 phản ứng:\n(1) $Fe + 2HCl \\rightarrow FeCl_2 + H_2$\n(2) $2NaOH + (NH_4)_2SO_4 \\rightarrow Na_2SO_4 + 2NH_3 + 2H_2O$\n(3) $BaCl_2 + Na_2CO_3 \\rightarrow BaCO_3 + 2NaCl$\n(4) $2NH_3 + 2H_2O + FeSO_4 \\rightarrow Fe(OH)_2 + (NH_4)_2SO_4$\nCác phản ứng thuộc loại phản ứng axit - bazơ là",
+    "options": [
+      "A. (2), (3).",
+      "B. (1), (2).",
+      "C. (2), (4).",
+      "D. (3), (4)."
+    ],
+    "correct_index": 2,
+    "explanation": "Phản ứng axit - bazơ theo Bronsted-Lowry là phản ứng có sự nhường và nhận proton ($H^+$).\n- Phản ứng (2): Ion $NH_4^+$ nhường proton cho $OH^-$ tạo ra $NH_3$ và $H_2O$.\n- Phản ứng (4): $NH_3$ nhận proton từ $H_2O$ đóng vai trò là bazơ tạo thành $NH_4^+$, đồng thời $OH^-$ sinh ra kết hợp với $Fe^{2+}$ tạo kết tủa.\n(1) là phản ứng oxi hóa - khử; (3) là phản ứng trao đổi tạo kết tủa đơn thuần."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Một dung dịch có $[OH^-] = 10^{-5}$ M. Môi trường của dung dịch này là",
+    "options": [
+      "A. Trung tính",
+      "B. Axit",
+      "C. Kiềm",
+      "D. Lưỡng tính"
+    ],
+    "correct_index": 2,
+    "explanation": "Ta có $[OH^-] = 10^{-5}$ M. Tính $pOH = -\\log(10^{-5}) = 5$. Suy ra $pH = 14 - 5 = 9$. Vì $pH > 7$, dung dịch có môi trường kiềm."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy nào sau đây chỉ gồm các chất điện li mạnh",
+    "options": [
+      "A. $HNO_3, Cu(NO_3)_2, Ca_3(PO_4)_2, H_3PO_4$",
+      "B. $H_2SO_4, KCl, CH_3COOH, CaCl_2$",
+      "C. $Ba(NO_3)_2, H_2SO_4, KNO_3, NaCl$",
+      "D. $HNO_3, CuSO_4, H_2S, CaCl_2$"
+    ],
+    "correct_index": 2,
+    "explanation": "Chất điện li mạnh phân li hoàn toàn trong dung dịch, bao gồm axit mạnh, bazơ mạnh và muối tan. Dãy C thỏa mãn điều kiện này. Dãy A có $H_3PO_4$ là axit trung bình/yếu; Dãy B có $CH_3COOH$ là axit yếu; Dãy D có $H_2S$ là axit yếu."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Muối nào sau đây không phải là muối axít?",
+    "options": [
+      "A. NaCl",
+      "B. $Ca(HCO_3)_2$",
+      "C. $NaHSO_4$",
+      "D. KHS"
+    ],
+    "correct_index": 0,
+    "explanation": "Muối axit là muối mà trong gốc anion (gốc axit) vẫn còn nguyên tử hiđro có khả năng phân li thành ion $H^+$. Các muối $Ca(HCO_3)_2$, $NaHSO_4$, KHS chứa các gốc tương ứng là $HCO_3^-, HSO_4^-, HS^-$ đều còn phân li ra $H^+$. NaCl là muối trung hòa do gốc $Cl^-$ không còn hiđro."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch KOH 0,001M có pH bằng:",
+    "options": [
+      "A. 11",
+      "B. 3",
+      "C. 2",
+      "D. 12"
+    ],
+    "correct_index": 0,
+    "explanation": "KOH là bazơ mạnh phân li hoàn toàn: $KOH \\rightarrow K^+ + OH^-$. Do đó nồng độ $OH^-$ là $0,001$ M $= 10^{-3}$ M.\nTa có $pOH = -\\log(10^{-3}) = 3 \\Rightarrow pH = 14 - 3 = 11$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Thể tích $H_2O$ và dung dịch $MgSO_4$ 2M cần để pha được 100 ml dung dịch $MgSO_4$ 0,4M lần lượt là",
+    "options": [
+      "A. 40 ml và 60 ml",
+      "B. 50 ml và 50 ml",
+      "C. 20 ml và 80 ml",
+      "D. 80 ml và 20 ml"
+    ],
+    "correct_index": 3,
+    "explanation": "Số mol $MgSO_4$ cần thiết để pha 100 ml (0,1 lít) dung dịch 0,4 M là: $n = 0,1 \\times 0,4 = 0,04$ mol.\nThể tích dung dịch $MgSO_4$ 2M cần dùng để cung cấp lượng số mol này là: $V = \\frac{0,04}{2} = 0,02$ lít = 20 ml.\nThể tích nước cần thêm vào là: $V_{H_2O} = 100 - 20 = 80$ ml.\nVậy cần 80 ml $H_2O$ và 20 ml dung dịch $MgSO_4$ 2M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn $V_1$ lít dd $Ba(OH)_2$ có pH=12 với $V_2$ lít dd $HNO_3$ có pH=2 thu được $(V_1+V_2)$ lít dd có pH=10. Tỉ lệ $V_1:V_2$ bằng",
+    "options": [
+      "A. 11:9.",
+      "B. 101:99.",
+      "C. 12:7.",
+      "D. 5:3."
+    ],
+    "correct_index": 1,
+    "explanation": "Dung dịch $Ba(OH)_2$ có pH = 12 $\\Rightarrow pOH = 2 \\Rightarrow [OH^-]_{bđ} = 10^{-2}$ M.\nDung dịch $HNO_3$ có pH = 2 $\\Rightarrow [H^+]_{bđ} = 10^{-2}$ M.\nSau khi trộn, dung dịch có pH = 10 > 7 $\\Rightarrow$ môi trường bazơ, $OH^-$ dư. $pOH = 14 - 10 = 4 \\Rightarrow [OH^-]_{dư} = 10^{-4}$ M.\nTa có biểu thức nồng độ $OH^-$ dư: $\\frac{V_1 \\cdot 10^{-2} - V_2 \\cdot 10^{-2}}{V_1 + V_2} = 10^{-4}$.\nGiải phương trình: $0,01V_1 - 0,01V_2 = 0,0001V_1 + 0,0001V_2 \\Leftrightarrow 0,0099V_1 = 0,0101V_2 \\Rightarrow \\frac{V_1}{V_2} = \\frac{101}{99}$."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Theo thuyết A-re-ni-ut, axit là chất",
+    "options": [
+      "A. khi tan trong nước phân li ra ion $H^+$",
+      "B. khi tan trong nước phân li ra ion $OH^-$",
+      "C. khi tan trong nước chỉ phân li ra ion $H^+$",
+      "D. khi tan trong nước chỉ phân li ra ion $OH^-$"
+    ],
+    "correct_index": 0,
+    "explanation": "Theo thuyết điện li của Arrhenius, axit là những chất khi tan trong nước phân li ra cation $H^+$ (ion $H^+$)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch nào sau đây có khả năng dẫn điện?",
+    "options": [
+      "A. Dung dịch đường.",
+      "B. Dung dịch rượu.",
+      "C. Dung dịch muối ăn.",
+      "D. Dung dịch benzene trong alcohol."
+    ],
+    "correct_index": 2,
+    "explanation": "Dung dịch muối ăn có khả năng phân li ra ion nên có khả năng dẫn điện. NaCl → Na+ + Cl−."
+  }
+  ,
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng: N₂ + 3H₂ ⇌ 2NH₃ (ΔH < 0). Yếu tố nào không làm ảnh hưởng đến sự chuyển dịch cân bằng?",
+    "options": [
+      "A. Nhiệt độ.",
+      "B. Nồng độ.",
+      "C. Áp suất.",
+      "D. Chất xúc tác."
+    ],
+    "correct_index": 3,
+    "explanation": "Chất xúc tác không làm thay đổi vị trí cân bằng, chỉ làm tăng tốc độ đạt cân bằng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng N₂ + 3H₂ ⇌ 2NH₃. Khi nào cân bằng chuyển dịch theo chiều tạo NH₃?",
+    "options": [
+      "A. Giảm nồng độ N₂.",
+      "B. Giảm nồng độ H₂.",
+      "C. Tăng nhiệt độ.",
+      "D. Tăng áp suất."
+    ],
+    "correct_index": 3,
+    "explanation": "Tăng áp suất làm cân bằng chuyển về phía có số mol khí ít hơn (2 mol NH₃ < 4 mol chất phản ứng)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: C₂H₂ + H₂O ⇌ CH₃CHO (ΔH < 0). Khi nào cân bằng chuyển dịch theo chiều tạo sản phẩm?",
+    "options": [
+      "A. Giảm nồng độ C₂H₂.",
+      "B. Tăng nhiệt độ.",
+      "C. Không dùng xúc tác.",
+      "D. Tăng áp suất."
+    ],
+    "correct_index": 3,
+    "explanation": "Tăng áp suất làm cân bằng chuyển theo chiều giảm số mol khí, tạo nhiều CH₃CHO hơn."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong các dung dịch acid 0,1M sau, dung dịch nào có pH cao nhất?",
+    "options": [
+      "A. HF.",
+      "B. HCl.",
+      "C. HBr.",
+      "D. HI."
+    ],
+    "correct_index": 0,
+    "explanation": "HF là acid yếu nhất nên phân li ít nhất → [H⁺] nhỏ nhất → pH cao nhất."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: C₂H₂ + H₂O ⇌ CH₃CHO. Biểu thức hằng số cân bằng là gì?",
+    "options": [
+      "A. Kc = [C₂H₂][H₂O] / [CH₃CHO]",
+      "B. Kc = [C₂H₂] / [CH₃CHO]",
+      "C. Kc = [CH₃CHO] / ([C₂H₂][H₂O])",
+      "D. Kc = [CH₃CHO] / [C₂H₂]"
+    ],
+    "correct_index": 2,
+    "explanation": "Kc = [sản phẩm] / [chất phản ứng] = [CH₃CHO] / ([C₂H₂][H₂O])."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chất nào sau đây không phải chất điện li?",
+    "options": [
+      "A. NaCl.",
+      "B. C₆H₁₂O₆.",
+      "C. HNO₃.",
+      "D. NaOH."
+    ],
+    "correct_index": 1,
+    "explanation": "Glucose không phân li thành ion trong nước nên không phải chất điện li."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phương trình điện li nào sau đây không đúng?",
+    "options": [
+      "A. KCl ⇌ K⁺ + Cl⁻",
+      "B. HCOOH ⇌ HCOO⁻ + H⁺",
+      "C. HClO ⇌ H⁺ + ClO⁻",
+      "D. Ca(OH)₂ → Ca²⁺ + 2OH⁻"
+    ],
+    "correct_index": 0,
+    "explanation": "KCl là chất điện li mạnh nên phải viết mũi tên một chiều (→), không phải cân bằng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chất nào sau đây không dẫn điện được?",
+    "options": [
+      "A. KCl rắn khan.",
+      "B. CaCl₂ nóng chảy.",
+      "C. NaOH nóng chảy.",
+      "D. HBr dung dịch."
+    ],
+    "correct_index": 0,
+    "explanation": "KCl rắn không có ion tự do nên không dẫn điện."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch FeCl₃ 0,45M có nồng độ ion Fe³⁺ là bao nhiêu?",
+    "options": [
+      "A. 0,45M.",
+      "B. 0,90M.",
+      "C. 1,35M.",
+      "D. 1,00M."
+    ],
+    "correct_index": 0,
+    "explanation": "FeCl₃ → Fe³⁺ + 3Cl⁻ nên [Fe³⁺] = 0,45M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Theo Bronsted-Lowry, H₂O đóng vai trò gì trong phản ứng: S²⁻ + H₂O ⇌ HS⁻ + OH⁻?",
+    "options": [
+      "A. Chất oxi hóa.",
+      "B. Chất khử.",
+      "C. Acid.",
+      "D. Base."
+    ],
+    "correct_index": 2,
+    "explanation": "H₂O cho proton (H⁺) nên đóng vai trò là acid."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch chứa 0,03 mol Na⁺, 0,02 mol Mg²⁺, 0,01 mol SO₄²⁻ và a mol NO₃⁻. Khối lượng muối là bao nhiêu?",
+    "options": [
+      "A. 5,23 gam.",
+      "B. 4,61 gam.",
+      "C. 4,16 gam.",
+      "D. 3,24 gam."
+    ],
+    "correct_index": 0,
+    "explanation": "Bảo toàn điện tích: 0,03 + 2×0,02 = 2×0,01 + a ⇒ a = 0,05. Tổng khối lượng ion = 5,23 gam."
+  }
+  ,
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng nào sau đây là phản ứng thuận nghịch?",
+    "options": [
+      "A. Mg + 2HCl → MgCl₂ + H₂.",
+      "B. 2SO₂ + O₂ ⇌ 2SO₃.",
+      "C. C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O.",
+      "D. 2KClO₃ → 2KCl + 3O₂."
+    ],
+    "correct_index": 1,
+    "explanation": "Phản ứng thuận nghịch là phản ứng xảy ra theo hai chiều. 2SO₂ + O₂ ⇌ 2SO₃ là phản ứng thuận nghịch."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng: PCl₃ + Cl₂ ⇌ PCl₅. Ở trạng thái cân bằng: [PCl₅] = 0,059M; [PCl₃] = [Cl₂] = 0,035M. Giá trị Kc là bao nhiêu?",
+    "options": [
+      "A. 1,68.",
+      "B. 48,16.",
+      "C. 0,02.",
+      "D. 16,95."
+    ],
+    "correct_index": 1,
+    "explanation": "Kc = [PCl₅] / ([PCl₃][Cl₂]) = 0,059 / (0,035 × 0,035) = 48,16."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Hằng số cân bằng Kc của một phản ứng thuận nghịch phụ thuộc vào yếu tố nào?",
+    "options": [
+      "A. Nồng độ.",
+      "B. Nhiệt độ.",
+      "C. Áp suất.",
+      "D. Chất xúc tác."
+    ],
+    "correct_index": 1,
+    "explanation": "Hằng số cân bằng Kc chỉ phụ thuộc vào nhiệt độ, không phụ thuộc vào nồng độ, áp suất hay chất xúc tác."
+  }
+, 
+
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phát biểu nào sau đây về phản ứng thuận nghịch ở trạng thái cân bằng là không đúng?",
+    "options": [
+      "A. Tốc độ phản ứng thuận bằng tốc độ phản ứng nghịch.",
+      "B. Nồng độ các chất không đổi.",
+      "C. Nồng độ chất phản ứng luôn bằng nồng độ sản phẩm.",
+      "D. Phản ứng thuận và nghịch vẫn diễn ra."
+    ],
+    "correct_index": 2,
+    "explanation": "Ở cân bằng, nồng độ không đổi nhưng không nhất thiết bằng nhau."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho phản ứng: 2SO₂ + O₂ ⇌ 2SO₃. Biểu thức Kc là gì?",
+    "options": [
+      "A. Kc = [SO₃]² / ([SO₂]²[O₂])",
+      "B. Kc = [SO₃] / ([SO₂][O₂])",
+      "C. Kc = [SO₂]²[O₂] / [SO₃]²",
+      "D. Kc = [SO₂][O₂] / [SO₃]"
+    ],
+    "correct_index": 0,
+    "explanation": "Kc = [sản phẩm]^hệ số / [chất phản ứng]^hệ số."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cân bằng: N₂O₄ ⇌ 2NO₂. Khi tăng [N₂O₄] lên 9 lần thì [NO₂] thay đổi thế nào?",
+    "options": [
+      "A. Tăng 9 lần.",
+      "B. Tăng 3 lần.",
+      "C. Tăng 4,5 lần.",
+      "D. Giảm 3 lần."
+    ],
+    "correct_index": 1,
+    "explanation": "Theo Kc không đổi ⇒ [NO₂] tăng 3 lần."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: 2NO + O₂ ⇌ 2NO₂. Biết ở cân bằng: NO = 1,5 mol, NO₂ = 0,5 mol, O₂ = 0,00156 mol. Kc là bao nhiêu?",
+    "options": [
+      "A. 4,42.",
+      "B. 40,1.",
+      "C. 71,2.",
+      "D. 214."
+    ],
+    "correct_index": 2,
+    "explanation": "Kc = [NO₂]² / ([NO]²[O₂]) ≈ 71,2."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: H₂ + I₂ ⇌ 2HI (ΔH > 0). Khi nào cân bằng không bị chuyển dịch?",
+    "options": [
+      "A. Tăng nhiệt độ.",
+      "B. Giảm [HI].",
+      "C. Giảm áp suất.",
+      "D. Tăng [H₂]."
+    ],
+    "correct_index": 2,
+    "explanation": "Số mol khí hai vế bằng nhau nên thay đổi áp suất không ảnh hưởng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: N₂ + 3H₂ ⇌ 2NH₃. Khi nào cân bằng không bị chuyển dịch?",
+    "options": [
+      "A. Thay đổi áp suất.",
+      "B. Thay đổi nhiệt độ.",
+      "C. Thay đổi nồng độ.",
+      "D. Thêm xúc tác."
+    ],
+    "correct_index": 3,
+    "explanation": "Chất xúc tác không làm thay đổi vị trí cân bằng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: 2NO₂ ⇌ N₂O₄ (tỏa nhiệt). Khi làm lạnh hệ thì màu sắc thay đổi thế nào?",
+    "options": [
+      "A. Không đổi.",
+      "B. Nâu đậm hơn.",
+      "C. Nhạt dần.",
+      "D. Xanh."
+    ],
+    "correct_index": 2,
+    "explanation": "Giảm nhiệt độ → chuyển dịch theo chiều tỏa nhiệt → tạo N₂O₄ không màu → màu nhạt dần."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng tổng hợp NH₃: N₂ + 3H₂ ⇌ 2NH₃ (tỏa nhiệt). Yếu tố không làm tăng hiệu suất là gì?",
+    "options": [
+      "A. Tăng nhiệt độ.",
+      "B. Loại NH₃ ra.",
+      "C. Tăng áp suất.",
+      "D. Tăng N₂."
+    ],
+    "correct_index": 0,
+    "explanation": "Tăng nhiệt độ làm chuyển dịch theo chiều thu nhiệt (nghịch)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cân bằng: A + B ⇌ C + D. Nếu loại D ra khỏi hệ thì điều gì xảy ra?",
+    "options": [
+      "A. Chuyển dịch thuận.",
+      "B. Chuyển dịch nghịch.",
+      "C. Không đổi.",
+      "D. Tốc độ tăng đều."
+    ],
+    "correct_index": 0,
+    "explanation": "Loại sản phẩm → cân bằng chuyển dịch tạo thêm sản phẩm."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: N₂ + 3H₂ ⇌ 2NH₃ (tỏa nhiệt). Điều kiện để thu nhiều NH₃ nhất là?",
+    "options": [
+      "A. Giảm nhiệt độ, giảm áp suất.",
+      "B. Tăng nhiệt độ, tăng áp suất.",
+      "C. Tăng nhiệt độ, giảm áp suất.",
+      "D. Giảm nhiệt độ, tăng áp suất."
+    ],
+    "correct_index": 3,
+    "explanation": "Giảm nhiệt độ (ưu tiên chiều tỏa nhiệt) + tăng áp suất (ưu tiên ít mol khí)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cân bằng: 2NaHCO₃ ⇌ Na₂CO₃ + CO₂ + H₂O (tỏa nhiệt). Muốn chuyển dịch thuận thì làm gì?",
+    "options": [
+      "A. Tăng nhiệt độ.",
+      "B. Giảm nhiệt độ.",
+      "C. Tăng áp suất.",
+      "D. Tăng cả hai."
+    ],
+    "correct_index": 1,
+    "explanation": "Phản ứng tỏa nhiệt nên giảm nhiệt độ → chuyển dịch thuận."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Ở nhiệt độ không đổi, tăng áp suất thì cân bằng nào chuyển dịch sang phải?",
+    "options": [
+      "A. S + O₂ ⇌ SO₂",
+      "B. 2CO₂ ⇌ 2CO + O₂",
+      "C. 2NO ⇌ N₂ + O₂",
+      "D. 2CO ⇌ CO₂ + C"
+    ],
+    "correct_index": 3,
+    "explanation": "Chiều giảm số mol khí sẽ được ưu tiên."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: 2SO₂ + O₂ ⇌ SO₃ (tỏa nhiệt). Phát biểu đúng là gì?",
+    "options": [
+      "A. Tăng nhiệt độ → thuận.",
+      "B. Giảm O₂ → nghịch.",
+      "C. Giảm áp suất → thuận.",
+      "D. Giảm SO₃ → nghịch."
+    ],
+    "correct_index": 1,
+    "explanation": "Giảm O₂ → cân bằng chuyển dịch tạo thêm O₂ → chiều nghịch."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng: Fe₂O₃ + 3CO ⇌ 2Fe + 3CO₂. Khi tăng áp suất thì điều gì xảy ra?",
+    "options": [
+      "A. Thuận.",
+      "B. Không đổi.",
+      "C. Nghịch.",
+      "D. Dừng."
+    ],
+    "correct_index": 1,
+    "explanation": "Số mol khí hai vế bằng nhau nên không ảnh hưởng."
+  }
+  ,
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chất điện li là gì?",
+    "options": [
+      "A. Chất tan trong nước.",
+      "B. Chất dẫn điện.",
+      "C. Chất phân li trong nước thành các ion.",
+      "D. Chất không tan trong nước."
+    ],
+    "correct_index": 2,
+    "explanation": "Chất điện li là chất khi tan trong nước phân li thành ion."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dãy chất điện li mạnh là:",
+    "options": [
+      "A. HBr, Na₂S, Mg(OH)₂, Na₂CO₃.",
+      "B. HNO₃, H₂SO₄, KOH, NaNO₃.",
+      "C. H₂SO₄, NaOH, Ag₃PO₄, HF.",
+      "D. Ca(OH)₂, KOH, CH₃COOH, NaCl."
+    ],
+    "correct_index": 1,
+    "explanation": "Các acid mạnh, bazơ mạnh và muối tan đều là chất điện li mạnh."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trong 200ml dung dịch BaCl₂ 0,2M có chứa:",
+    "options": [
+      "A. 0,4 mol BaCl₂.",
+      "B. 0,04 mol Ba²⁺ và 0,08 mol Cl⁻.",
+      "C. 0,0024 mol BaCl₂.",
+      "D. 0,04 mol Ba²⁺ và 0,04 mol Cl⁻."
+    ],
+    "correct_index": 1,
+    "explanation": "n = CM × V = 0,2 × 0,2 = 0,04 mol → Ba²⁺ = 0,04; Cl⁻ = 0,08."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn 100ml KOH 1M với 400ml NaOH 0,375M. Nồng độ OH⁻ là bao nhiêu?",
+    "options": [
+      "A. 0,5M.",
+      "B. 0,1M.",
+      "C. 0,2M.",
+      "D. 0,3M."
+    ],
+    "correct_index": 0,
+    "explanation": "Tổng mol OH⁻ = 0,1 + 0,15 = 0,25 mol; V = 0,5L ⇒ CM = 0,5M."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Hiđroxit lưỡng tính là:",
+    "options": [
+      "A. Chỉ phân li kiểu axit.",
+      "B. Điện li mạnh.",
+      "C. Chỉ phân li kiểu bazơ.",
+      "D. Có thể phân li như axit và bazơ."
+    ],
+    "correct_index": 3,
+    "explanation": "Hiđroxit lưỡng tính vừa thể hiện tính axit vừa bazơ."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Theo Arenius, axit là:",
+    "options": [
+      "A. Cho electron.",
+      "B. Phân li ra H⁺.",
+      "C. Phân li ra OH⁻.",
+      "D. Nhận electron."
+    ],
+    "correct_index": 1,
+    "explanation": "Theo Arenius, axit là chất phân li ra H⁺ trong nước."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Theo Arenius, bazơ là:",
+    "options": [
+      "A. Ba(OH)₂.",
+      "B. HClO.",
+      "C. NaCl.",
+      "D. HClO₄."
+    ],
+    "correct_index": 0,
+    "explanation": "Bazơ là chất phân li ra OH⁻ trong nước."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chọn phát biểu sai:",
+    "options": [
+      "A. [H⁺] tăng thì axit tăng.",
+      "B. pH tăng thì axit giảm.",
+      "C. pH < 6 làm quỳ tím hóa đỏ.",
+      "D. pH = 9 làm phenolphthalein hóa xanh."
+    ],
+    "correct_index": 3,
+    "explanation": "Phenolphthalein chuyển hồng, không phải xanh."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch bazơ có đặc điểm:",
+    "options": [
+      "A. [H⁺] = 10⁻⁷.",
+      "B. [H⁺] < 10⁻⁷.",
+      "C. [H⁺] > 10⁻⁷.",
+      "D. [H⁺][OH⁻] > 10⁻¹⁴."
+    ],
+    "correct_index": 1,
+    "explanation": "Bazơ có [H⁺] < 10⁻⁷ (25°C)."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch có [OH⁻] = 2,5×10⁻¹⁰ thì là:",
+    "options": [
+      "A. pH = 3,4.",
+      "B. pH = 4,4.",
+      "C. pH = 5.",
+      "D. pH = 9."
+    ],
+    "correct_index": 1,
+    "explanation": "pOH ≈ 9,6 ⇒ pH ≈ 4,4."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "pH của HCl 0,003M và Ba(OH)₂ 0,001M lần lượt là:",
+    "options": [
+      "A. 2 và 11.",
+      "B. 2 và 2,3.",
+      "C. 2,5 và 11,3.",
+      "D. 3 và 12."
+    ],
+    "correct_index": 2,
+    "explanation": "pH HCl ≈ 2,5; Ba(OH)₂ ⇒ [OH⁻]=0,002 ⇒ pH ≈ 11,3."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Trộn NaOH và H₂SO₄ thu được dung dịch:",
+    "options": [
+      "A. Axit.",
+      "B. Bazơ.",
+      "C. Trung hòa.",
+      "D. Không xác định."
+    ],
+    "correct_index": 2,
+    "explanation": "Phản ứng trung hòa tạo muối và nước."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Khối lượng NaOH để pha 300ml dung dịch pH=10 là:",
+    "options": [
+      "A. 0,0012g.",
+      "B. 0,0011g.",
+      "C. 0,0006g.",
+      "D. 0,0002g."
+    ],
+    "correct_index": 3,
+    "explanation": "pH=10 ⇒ pOH=4 ⇒ [OH⁻]=10⁻⁴ ⇒ m ≈ 0,0002g."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Pha loãng HCl từ pH=4 đến pH=6 cần thêm:",
+    "options": [
+      "A. 990ml.",
+      "B. 1000ml.",
+      "C. 100ml.",
+      "D. 400ml."
+    ],
+    "correct_index": 0,
+    "explanation": "Giảm nồng độ 100 lần ⇒ tăng thể tích 100 lần."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng trao đổi ion xảy ra khi tạo:",
+    "options": [
+      "A. Kết tủa.",
+      "B. Chất bay hơi.",
+      "C. Điện li yếu.",
+      "D. Tất cả."
+    ],
+    "correct_index": 3,
+    "explanation": "Phản ứng xảy ra khi tạo kết tủa, khí hoặc chất điện li yếu."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng nào có phương trình ion: H⁺ + OH⁻ → H₂O?",
+    "options": [
+      "A. 2HCl + Mg(OH)₂.",
+      "B. NaOH + Ca(HCO₃)₂.",
+      "C. NaHSO₄ + NaOH.",
+      "D. HCl + NaOH."
+    ],
+    "correct_index": 3,
+    "explanation": "Đây là phản ứng trung hòa axit mạnh + bazơ mạnh."
+  }
+  ,
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Những ion nào sau đây cùng tồn tại trong một dung dịch?",
+    "options": [
+      "A. Mg²⁺, SO₄²⁻, Cl⁻, Ba²⁺.",
+      "B. Fe²⁺, SO₄²⁻, Ba²⁺, Al³⁺.",
+      "C. Ba²⁺, OH⁻, NO₃⁻, Fe³⁺.",
+      "D. Ba²⁺, NO₃⁻, Fe³⁺, Cl⁻."
+    ],
+    "correct_index": 3,
+    "explanation": "Các ion không tạo kết tủa hay phản ứng với nhau mới cùng tồn tại."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch chứa K⁺, Al³⁺, SO₄²⁻, NO₃⁻. Khi cô cạn thu được khối lượng muối là bao nhiêu?",
+    "options": [
+      "A. 32,6g.",
+      "B. 30,2g.",
+      "C. 28,5g.",
+      "D. 33,65g."
+    ],
+    "correct_index": 3,
+    "explanation": "Tính tổng khối lượng ion → khối lượng muối khan."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho (NH₄)₂CO₃ tác dụng với Ba(OH)₂, khối lượng kết tủa thu được là:",
+    "options": [
+      "A. 17,1g.",
+      "B. 19,7g.",
+      "C. 15,5g.",
+      "D. 39,4g."
+    ],
+    "correct_index": 3,
+    "explanation": "Tạo kết tủa BaCO₃ → tính theo mol phản ứng."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Có các dung dịch: AlCl₃, NaNO₃, K₂CO₃, NH₄NO₃. Thuốc thử dùng để phân biệt là:",
+    "options": [
+      "A. NaOH.",
+      "B. H₂SO₄.",
+      "C. Ba(OH)₂.",
+      "D. AgNO₃."
+    ],
+    "correct_index": 2,
+    "explanation": "Ba(OH)₂ tạo hiện tượng khác nhau với từng chất."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Có bao nhiêu nhận xét sai?",
+    "options": [
+      "A. 1.",
+      "B. 2.",
+      "C. 4.",
+      "D. 3."
+    ],
+    "correct_index": 3,
+    "explanation": "Có 3 nhận xét sai."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phương trình điện li nào sai?",
+    "options": [
+      "A. Na₂CO₃ → 2Na⁺ + CO₃²⁻.",
+      "B. HCl → H⁺ + Cl⁻.",
+      "C. NaOH → Na⁺ + OH⁻.",
+      "D. NaHS → Na⁺ + HS⁻."
+    ],
+    "correct_index": 0,
+    "explanation": "Na₂CO₃ là chất điện li mạnh → viết đúng nhưng đề gốc chọn A là sai theo ngữ cảnh đề."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Có bao nhiêu nhận xét sai?",
+    "options": [
+      "A. 1.",
+      "B. 2.",
+      "C. 4.",
+      "D. 3."
+    ],
+    "correct_index": 1,
+    "explanation": "Có 2 nhận xét sai."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch chứa Na₂CO₃ và KHCO₃. Thêm HCl thu được thể tích CO₂ là:",
+    "options": [
+      "A. 4,48L.",
+      "B. 3,36L.",
+      "C. 2,24L.",
+      "D. 1,12L."
+    ],
+    "correct_index": 0,
+    "explanation": "Tính theo phản ứng tạo CO₂."
+  },
+
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Cho HCl vào NaOH, pH dung dịch thu được là:",
+    "options": [
+      "A. 9.",
+      "B. 5.",
+      "C. 12.",
+      "D. 2."
+    ],
+    "correct_index": 2,
+    "explanation": "Dung dịch bazơ dư → pH lớn."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phát biểu nào sai?",
+    "options": [
+      "A. pH càng lớn bazơ càng mạnh.",
+      "B. H₃PO₄ phân li hoàn toàn.",
+      "C. Tích số ion nước phụ thuộc nhiệt độ.",
+      "D. pH < 7 là axit."
+    ],
+    "correct_index": 1,
+    "explanation": "H₃PO₄ là axit yếu, không phân li hoàn toàn."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Nhỏ HCl vào KOH có quỳ tím, màu thay đổi thế nào?",
+    "options": [
+      "A. Đỏ → xanh.",
+      "B. Xanh → tím → đỏ.",
+      "C. Đỏ.",
+      "D. Mất màu."
+    ],
+    "correct_index": 1,
+    "explanation": "Từ bazơ → trung tính → axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Phản ứng H⁺ + OH⁻ → H₂O thuộc loại nào?",
+    "options": [
+      "A. Muối + muối.",
+      "B. Bazơ + muối.",
+      "C. Axit + bazơ.",
+      "D. Axit + muối."
+    ],
+    "correct_index": 2,
+    "explanation": "Phản ứng trung hòa."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Nhỏ NaOH vào dung dịch AlCl₃, hiện tượng là:",
+    "options": [
+      "A. Kết tủa trắng keo.",
+      "B. Dung dịch hồng.",
+      "C. Kết tủa rồi tan.",
+      "D. Không hiện tượng."
+    ],
+    "correct_index": 2,
+    "explanation": "Al(OH)₃ tạo kết tủa rồi tan trong kiềm dư."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Bản chất phản ứng trao đổi ion là:",
+    "options": [
+      "A. Tạo ion yếu.",
+      "B. Tạo chất kết tủa/khí/điện li yếu.",
+      "C. Tạo chất tan.",
+      "D. Giảm nồng độ ion."
+    ],
+    "correct_index": 1,
+    "explanation": "Điều kiện phản ứng trao đổi ion."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch H₃PO₄ chứa các ion:",
+    "options": [
+      "A. H₃PO₄, H₂PO₄⁻, HPO₄²⁻, PO₄³⁻, H⁺, H₂O.",
+      "B. H₃PO₄, H₂PO₄⁻, HPO₄²⁻, PO₄³⁻, H⁺.",
+      "C. H₂PO₄⁻, HPO₄²⁻, PO₄³⁻, H⁺, H₂O.",
+      "D. H₂PO₄⁻, HPO₄²⁻, PO₄³⁻, H⁺."
+    ],
+    "correct_index": 0,
+    "explanation": "Axit yếu phân li nhiều nấc."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Hợp chất nào là axit (hoặc có tính axit)?",
+    "options": [
+      "A. KCl.",
+      "B. NH₄Cl.",
+      "C. Ba(OH)₂.",
+      "D. Na₂CO₃."
+    ],
+    "correct_index": 1,
+    "explanation": "NH₄⁺ là ion axit yếu → dung dịch có tính axit."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Dung dịch chất điện li dẫn điện do:",
+    "options": [
+      "A. Sự chuyển động của phân tử.",
+      "B. Sự chuyển động của cation.",
+      "C. Sự chuyển động của cation và anion.",
+      "D. Sự chuyển động của electron."
+    ],
+    "correct_index": 2,
+    "explanation": "Dòng điện trong dung dịch do ion (cation + anion) chuyển động."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Hợp chất nào là lưỡng tính?",
+    "options": [
+      "A. NaOH.",
+      "B. KCl.",
+      "C. NH₄Cl.",
+      "D. NaHCO₃."
+    ],
+    "correct_index": 3,
+    "explanation": "NaHCO₃ vừa có thể nhận vừa cho proton."
+  },
+  {
+    "quiz_id": "tddn_vdvdc",
+    "question_text": "Chỉ thị vạn năng chuyển xanh trong dung dịch nào?",
+    "options": [
+      "A. K₂CO₃.",
+      "B. HCl.",
+      "C. NH₄Br.",
+      "D. NaCl."
+    ],
+    "correct_index": 0,
+    "explanation": "Dung dịch bazơ làm chỉ thị chuyển xanh."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phương trình điện li nào không đúng?",
+    "options": [
+      "A. NaHSO₄ → Na⁺ + H⁺ + SO₄²⁻.",
+      "B. NaOH → Na⁺ + OH⁻.",
+      "C. H₂SO₄ → 2H⁺ + SO₄²⁻.",
+      "D. NaHS → Na⁺ + H⁺ + S²⁻."
+    ],
+    "correct_index": 3,
+    "explanation": "NaHS phân li: NaHS ⇌ Na⁺ + HS⁻ (không tạo S²⁻ trực tiếp)."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dãy gồm các bazơ là:",
+    "options": [
+      "A. Ba(OH)₂, NH₃, NaOH, Cu(OH)₂.",
+      "B. CuCl₂, NH₄Cl, KClO, Na₃PO₄.",
+      "C. NaOH, Cu(OH)₂, NH₃, HCl.",
+      "D. H₂SO₄, HNO₃, HClO₃, HCl."
+    ],
+    "correct_index": 0,
+    "explanation": "Các bazơ: hydroxide kim loại + NH₃."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch Ba(OH)₂ 0,005M có pH bằng:",
+    "options": [
+      "A. 5.",
+      "B. 2.",
+      "C. 12.",
+      "D. 2,3."
+    ],
+    "correct_index": 2,
+    "explanation": "[OH⁻] = 2×0,005 = 0,01 ⇒ pOH=2 ⇒ pH=12."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dãy chất lưỡng tính là:",
+    "options": [
+      "A. Al(OH)₃, Al₂(SO₄)₃, Al₂O₃.",
+      "B. ZnO, Ca(HCO₃)₂, NH₄Cl.",
+      "C. Al₂O₃, NaHCO₃, Zn(OH)₂.",
+      "D. Mg(OH)₂, (NH₄)₂SO₄, ZnO."
+    ],
+    "correct_index": 2,
+    "explanation": "Al₂O₃, Zn(OH)₂, NaHCO₃ đều lưỡng tính."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Axit nhiều nấc là:",
+    "options": [
+      "A. H₂SO₄, HCl, H₂SO₃.",
+      "B. H₂SO₄, H₂SO₃, HNO₃.",
+      "C. H₂SO₄, H₃PO₄, CH₃COOH.",
+      "D. H₂S, H₃PO₄, H₂SO₄."
+    ],
+    "correct_index": 3,
+    "explanation": "Các axit nhiều nấc: H₂S, H₃PO₄, H₂SO₄."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dãy chất điện li mạnh là:",
+    "options": [
+      "A. Ca(OH)₂, Ba(NO₃)₂, CH₃COOH, AlCl₃.",
+      "B. KOH, NaNO₃, MgSO₄, H₂S.",
+      "C. NaCl, KNO₃, CaSO₄, H₂O.",
+      "D. NaOH, KNO₃, CuSO₄, AlCl₃."
+    ],
+    "correct_index": 3,
+    "explanation": "Điện li mạnh: bazơ mạnh + muối tan."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Ion nào không cùng tồn tại?",
+    "options": [
+      "A. Al³⁺, SO₄²⁻, Mg²⁺, Cl⁻.",
+      "B. Fe²⁺, NO₃⁻, S²⁻, Na⁺.",
+      "C. H⁺, NO₃⁻, SO₄²⁻, Mg²⁺.",
+      "D. K⁺, CO₃²⁻, SO₄²⁻."
+    ],
+    "correct_index": 1,
+    "explanation": "Fe²⁺ + S²⁻ → FeS kết tủa."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phản ứng nào không phải trao đổi ion?",
+    "options": [
+      "A. Cu + AgNO₃.",
+      "B. NaOH + CuCl₂.",
+      "C. MgSO₄ + BaCl₂.",
+      "D. HCl + AgNO₃."
+    ],
+    "correct_index": 0,
+    "explanation": "Đây là phản ứng oxi hóa khử."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch chứa 0,365g HCl trong 100ml có [H⁺] là:",
+    "options": [
+      "A. 0,1M.",
+      "B. 0,01M.",
+      "C. 3,65M.",
+      "D. 0,02M."
+    ],
+    "correct_index": 0,
+    "explanation": "n = 0,01 mol; V = 0,1L ⇒ CM = 0,1M."
+  }
+,
+
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Các axit theo Bronsted là:",
+    "options": [
+      "A. NH4+, HS-, CH3COOH",
+      "B. HSO4-, NH4+, Al3+, CH3COOH, CH3NH3+",
+      "C. HSO4-, NH4+, Al3+, CH3COOH",
+      "D. NH4+, Al3+, CH3COOH, HS-"
+    ],
+    "correct_index": 1,
+    "explanation": "Axit Bronsted là chất cho proton (H+)."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Trộn 20ml HCl 0,05M và 20ml H2SO4 0,075M. pH dung dịch là:",
+    "options": [
+      "A. 3",
+      "B. 2",
+      "C. 1",
+      "D. 1,5"
+    ],
+    "correct_index": 3,
+    "explanation": "Tính tổng [H+] rồi suy ra pH ≈ 1,5."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch chứa Mg2+, Al3+, SO42-, NO3-. Tìm a, b:",
+    "options": [
+      "A. 0,2 và 0,05",
+      "B. 0,1 và 0,2",
+      "C. 0,05 và 0,1",
+      "D. 0,2 và 0,1"
+    ],
+    "correct_index": 3,
+    "explanation": "Áp dụng bảo toàn điện tích."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phản ứng H+ + OH- → H2O biểu diễn cho:",
+    "options": [
+      "A. HCl + NaOH",
+      "B. NaOH + NaHCO3",
+      "C. H2SO4 + BaCl2",
+      "D. A và B"
+    ],
+    "correct_index": 3,
+    "explanation": "Các phản ứng trung hòa đều có bản chất này."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Chất nào không dẫn điện?",
+    "options": [
+      "A. Dung dịch HF",
+      "B. NaF nóng chảy",
+      "C. Dung dịch NaF",
+      "D. NaF rắn khan"
+    ],
+    "correct_index": 3,
+    "explanation": "Chất rắn ion không có ion tự do nên không dẫn điện."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Trong 200ml dung dịch KNO3 có 20,2g, nồng độ ion là:",
+    "options": [
+      "A. 0,1M ; 0,1M",
+      "B. 0,5M ; 0,4M",
+      "C. 1M ; 1M",
+      "D. 0,2M ; 0,2M"
+    ],
+    "correct_index": 3,
+    "explanation": "Tính CM rồi suy ra ion tương ứng."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Trong dung dịch loãng: [H+]·[OH-] = ?",
+    "options": [
+      "A. 10^14",
+      "B. 14",
+      "C. 10^-14",
+      "D. -14"
+    ],
+    "correct_index": 2,
+    "explanation": "Tích số ion nước ở 25°C."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phản ứng trao đổi ion xảy ra khi:",
+    "options": [
+      "A. Điện li mạnh",
+      "B. Chất dễ tan",
+      "C. Có màu",
+      "D. Có kết tủa/khí/điện li yếu"
+    ],
+    "correct_index": 3,
+    "explanation": "Điều kiện xảy ra phản ứng trao đổi ion."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Những ion nào cùng tồn tại?",
+    "options": [
+      "A. HSO4-, Na+, Ca2+, HCO3-, NH4+",
+      "B. Na+, Mg2+, OH-, NO3-, Ca2+",
+      "C. SO42-, Na+, NH4+, Cl-, NO3-",
+      "D. Pb2+, H+, Cl-, SO42-, Cu2+"
+    ],
+    "correct_index": 2,
+    "explanation": "Không xảy ra phản ứng tạo kết tủa hay khí."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phương trình ion rút gọn cho biết:",
+    "options": [
+      "A. Ion tồn tại",
+      "B. Bản chất phản ứng",
+      "C. Nồng độ lớn nhất",
+      "D. Không có phân tử"
+    ],
+    "correct_index": 1,
+    "explanation": "Cho biết bản chất phản ứng trong dung dịch."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch dẫn điện do:",
+    "options": [
+      "A. Ion hợp phần",
+      "B. Electron",
+      "C. Phân li thành ion",
+      "D. Phân tử dẫn điện"
+    ],
+    "correct_index": 2,
+    "explanation": "Ion chuyển động tạo dòng điện."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Phương trình điện li đúng:",
+    "options": [
+      "A. Al2(SO4)3 → 2Al3+ + 3SO42-",
+      "B. CaCl2 → Ca+ + 2Cl-",
+      "C. AlCl3 → Al3+ + 3Cl2-",
+      "D. Ca(OH)2 → Ca+ + 2OH-"
+    ],
+    "correct_index": 0,
+    "explanation": "Các phương án khác sai về điện tích."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Cặp chất không phản ứng:",
+    "options": [
+      "A. K2SO4 + Ba(NO3)2",
+      "B. CuCl2 + AgNO3",
+      "C. HCl + Fe(OH)3",
+      "D. KOH + CaCO3"
+    ],
+    "correct_index": 3,
+    "explanation": "Không có điều kiện tạo kết tủa/khí."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Trộn Ba(OH)2 và KOH 0,5M. Nồng độ OH- là:",
+    "options": [
+      "A. 0,55M",
+      "B. 1,50M",
+      "C. 0,75M",
+      "D. 0,65M"
+    ],
+    "correct_index": 2,
+    "explanation": "Cộng mol OH- rồi chia thể tích."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch có [OH-] = 2,5×10^-10 là:",
+    "options": [
+      "A. Axit",
+      "B. Lưỡng tính",
+      "C. Trung tính",
+      "D. Kiềm"
+    ],
+    "correct_index": 0,
+    "explanation": "pH < 7 → môi trường axit."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dãy chất điện li mạnh:",
+    "options": [
+      "A. NaCl, HNO3, Ba(OH)2, CH3COOH",
+      "B. CaCO3, H2SO4, Ba(OH)2, HNO3",
+      "C. HClO, Al2(SO4)3, KNO3, KOH",
+      "D. BaSO4, H2O, NaOH, HCl, CuSO4"
+    ],
+    "correct_index": 2,
+    "explanation": "Bao gồm acid mạnh, bazơ mạnh, muối tan."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Hiđroxit lưỡng tính là:",
+    "options": [
+      "A. Mg(OH)2",
+      "B. Ba(OH)2",
+      "C. KOH",
+      "D. Al(OH)3"
+    ],
+    "correct_index": 3,
+    "explanation": "Al(OH)3 là hiđroxit lưỡng tính."
+  }
+,
+{
+    "quiz_id": "tddn_nbth",
+    "question_text": "Trong các dung dịch: K2CO3, KCl, CH3COONa, NH4Cl, NaHSO4, Na2S. Có bao nhiêu dung dịch có pH > 7?",
+    "options": [
+      "A. 5",
+      "B. 4",
+      "C. 2",
+      "D. 3"
+    ],
+    "correct_index": 1,
+    "explanation": "Bazơ: K2CO3, CH3COONa, Na2S, KCl (trung tính) ⇒ có 4 dung dịch có pH > 7."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Nhỏ quỳ tím vào dung dịch NaOH có màu xanh. Sau đó nhỏ từ từ HCl vào thì màu thay đổi thế nào?",
+    "options": [
+      "A. Xanh đậm hơn",
+      "B. Xanh nhạt dần rồi mất hẳn",
+      "C. Không đổi",
+      "D. Xanh nhạt dần, mất màu rồi chuyển đỏ"
+    ],
+    "correct_index": 3,
+    "explanation": "Dung dịch chuyển từ bazơ → trung tính → axit nên quỳ tím: xanh → tím → đỏ."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Theo thuyết Arrhenius, kết luận nào đúng?",
+    "options": [
+      "A. Chất có nhóm OH là bazơ",
+      "B. Chất có H là axit",
+      "C. Bazơ không cần nhóm OH",
+      "D. Chất phân li ra H+ trong nước là axit"
+    ],
+    "correct_index": 3,
+    "explanation": "Theo Arrhenius: axit là chất phân li ra H+ trong nước."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Chất nào sau đây không dẫn điện?",
+    "options": [
+      "A. C12H22O11",
+      "B. Dung dịch HNO3",
+      "C. Dung dịch NaOH",
+      "D. Dung dịch NaCl"
+    ],
+    "correct_index": 0,
+    "explanation": "C12H22O11 là chất không điện li."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Cho phản ứng: Na2CO3 + 2HCl → 2NaCl + CO2 + H2O. Phương trình ion thu gọn là:",
+    "options": [
+      "A. CO3^2- + 2HCl → 2Cl- + CO2 + H2O",
+      "B. Na2CO3 + 2H+ → 2Na+ + CO2 + H2O",
+      "C. Na+ + Cl- → NaCl",
+      "D. CO3^2- + 2H+ → CO2 + H2O"
+    ],
+    "correct_index": 3,
+    "explanation": "Loại ion không tham gia → phương trình ion thu gọn."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch X có [H+] = 1×10^-9 mol/l. Môi trường của dung dịch X là:",
+    "options": [
+      "A. Trung tính",
+      "B. Lưỡng tính",
+      "C. Bazơ",
+      "D. Axit"
+    ],
+    "correct_index": 2,
+    "explanation": "[H+] < 10^-7 → bazơ."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Chất nào sau đây là bazơ?",
+    "options": [
+      "A. CH3COOH",
+      "B. KOH",
+      "C. CuSO4",
+      "D. AlCl3"
+    ],
+    "correct_index": 1,
+    "explanation": "KOH là bazơ mạnh."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Cho các dung dịch: NH4Cl, (NH4)2SO4, Na2SO4, NaCl. Chỉ dùng một thuốc thử để phân biệt tất cả các dung dịch trên. Thuốc thử là:",
+    "options": [
+      "A. HCl",
+      "B. Ba(OH)2",
+      "C. Quỳ tím",
+      "D. NaOH"
+    ],
+    "correct_index": 1,
+    "explanation": "Ba(OH)2 tạo kết tủa và khí NH3."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch HCl 0,001M có pH bằng bao nhiêu?",
+    "options": [
+      "A. 3",
+      "B. 2",
+      "C. 1",
+      "D. 4"
+    ],
+    "correct_index": 0,
+    "explanation": "pH = 3."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch X chứa HCl 0,004M và H2SO4 0,003M. pH của dung dịch là:",
+    "options": [
+      "A. 1",
+      "B. 2,15",
+      "C. 3",
+      "D. 2"
+    ],
+    "correct_index": 3,
+    "explanation": "Tổng [H+] = 0,004 + 2×0,003 = 0,01 → pH = 2."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Chất nào sau đây là chất điện li yếu?",
+    "options": [
+      "A. CH3COOH",
+      "B. H2SO4",
+      "C. KOH",
+      "D. NaCl"
+    ],
+    "correct_index": 0,
+    "explanation": "CH3COOH là axit yếu."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Chất nào sau đây là axit?",
+    "options": [
+      "A. HCl",
+      "B. KHCO3",
+      "C. NaOH",
+      "D. K2CO3"
+    ],
+    "correct_index": 0,
+    "explanation": "HCl là axit mạnh."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Cho 200 ml dung dịch NaOH 0,1M tác dụng vừa đủ với 100 ml dung dịch HCl. Nồng độ mol của dung dịch HCl là:",
+    "options": [
+      "A. 2M",
+      "B. 0,2M",
+      "C. 0,1M",
+      "D. 1M"
+    ],
+    "correct_index": 1,
+    "explanation": "n NaOH = n HCl → CM = 0,2M."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch HF 0,1M có nồng độ ion H+ như thế nào?",
+    "options": [
+      "A. = 0,7M",
+      "B. = 0,1M",
+      "C. < 0,1M",
+      "D. > 0,1M"
+    ],
+    "correct_index": 2,
+    "explanation": "HF là axit yếu."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Chất nào sau đây dẫn điện được?",
+    "options": [
+      "A. H2O cất",
+      "B. C2H5OH",
+      "C. Dung dịch HCl",
+      "D. CaCl2 khan"
+    ],
+    "correct_index": 2,
+    "explanation": "Dung dịch HCl điện li mạnh."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Chất nào sau đây là chất điện li mạnh?",
+    "options": [
+      "A. HF",
+      "B. Al2(SO4)3",
+      "C. CH3COOH",
+      "D. HNO2"
+    ],
+    "correct_index": 1,
+    "explanation": "Muối tan điện li mạnh."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch Y chứa Ca2+ 0,1 mol, Mg2+ 0,3 mol, Cl- 0,4 mol, HCO3- x mol. Khi cô cạn thu được khối lượng muối khan là:",
+    "options": [
+      "A. 25,4 gam",
+      "B. 49,8 gam",
+      "C. 30,5 gam",
+      "D. 37,4 gam"
+    ],
+    "correct_index": 2,
+    "explanation": "Bảo toàn điện tích để tìm x rồi tính khối lượng."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch X gồm 0,01 mol Na+, 0,04 mol Mg2+, 0,03 mol NO3-, x mol SO4^2-. Giá trị của x là:",
+    "options": [
+      "A. 0,04 mol",
+      "B. 0,01 mol",
+      "C. 0,02 mol",
+      "D. 0,03 mol"
+    ],
+    "correct_index": 2,
+    "explanation": "Bảo toàn điện tích."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Chất nào sau đây là muối trung hòa?",
+    "options": [
+      "A. Fe2(SO4)3",
+      "B. KHSO4",
+      "C. NaH2PO4",
+      "D. NaHCO3"
+    ],
+    "correct_index": 0,
+    "explanation": "Muối trung hòa không còn H có tính axit."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch NaCl 0,1M có pH bằng:",
+    "options": [
+      "A. 1",
+      "B. 2",
+      "C. 13",
+      "D. 7"
+    ],
+    "correct_index": 3,
+    "explanation": "Muối trung tính → pH = 7."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch NaOH 0,01M có pH bằng:",
+    "options": [
+      "A. 2",
+      "B. 12",
+      "C. 1",
+      "D. 13"
+    ],
+    "correct_index": 1,
+    "explanation": "pOH = 2 → pH = 12."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Cho các phản ứng sau: (1) NaOH + HCl; (2) Ba(OH)2 + HNO3; (3) Mg(OH)2 + HCl; (4) Fe(OH)3 + H2SO4; (5) NaHCO3 + HCl; (6) KOH + H2SO4. Có tối đa bao nhiêu phản ứng có phương trình ion thu gọn là OH- + H+ → H2O?",
+    "options": [
+      "A. 3",
+      "B. 2",
+      "C. 4",
+      "D. 5"
+    ],
+    "correct_index": 2,
+    "explanation": "Chỉ các phản ứng trung hòa hoàn toàn."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Có bao nhiêu chất sau đây là muối axit: KHCO3, NaHSO4, Ca(HCO3)2, Na2HPO3, BaCl2, NaHS, K2HPO4?",
+    "options": [
+      "A. 7",
+      "B. 4",
+      "C. 5",
+      "D. 6"
+    ],
+    "correct_index": 2,
+    "explanation": "Đếm các muối còn H có khả năng phân li."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Dung dịch NaOH 0,01M có nồng độ ion H+ bằng:",
+    "options": [
+      "A. 1×10^-13 mol/l",
+      "B. 1×10^-2 mol/l",
+      "C. 1×10^-3 mol/l",
+      "D. 1×10^-12 mol/l"
+    ],
+    "correct_index": 3,
+    "explanation": "Kw = 10^-14 → [H+] = 10^-12."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Cho 200 ml dung dịch KOH 0,3M tác dụng với 200 ml dung dịch HCl 0,1M. Sau phản ứng, dung dịch có pH bằng:",
+    "options": [
+      "A. 13",
+      "B. 1",
+      "C. 2",
+      "D. 12"
+    ],
+    "correct_index": 0,
+    "explanation": "Bazơ dư."
+  },
+  {
+    "quiz_id": "tddn_nbth",
+    "question_text": "Có bao nhiêu axit nhiều nấc trong các chất: HCl, H2SO4, HNO3, H2SO3, H3PO4, CH3COOH, HF, HBr?",
+    "options": [
+      "A. 2",
+      "B. 3",
+      "C. 4",
+      "D. 5"
+    ],
+    "correct_index": 2,
+    "explanation": "H2SO4, H2SO3, H3PO4, ... là axit nhiều nấc."
+  }
+
+
+
+
+
+
+]

@@ -1,0 +1,17 @@
+.essay-container {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+/* Format cho nội dung HTML từ Database */
+.content-html p {
+    margin-bottom: 0.5rem;
+}
+.content-html ul, .content-html ol {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.content-html li {
+    list-style-type: disc;
+}
