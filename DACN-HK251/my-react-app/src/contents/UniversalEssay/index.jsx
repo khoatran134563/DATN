@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
-
+import { API_BASE } from '../../config/api';
 const UniversalEssay = ({ title, quizId }) => {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -13,7 +13,7 @@ const UniversalEssay = ({ title, quizId }) => {
   useEffect(() => {
     const fetchEssays = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/essay/${quizId}`);
+        const response = await fetch(`${API_BASE}/api/essay/${quizId}`);
         if (!response.ok) throw new Error('Lỗi kết nối Server');
         const data = await response.json();
         setQuestions(data);

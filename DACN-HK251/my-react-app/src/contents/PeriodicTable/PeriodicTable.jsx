@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { categoryColors } from './PeriodicData'; // Chỉ import màu sắc
 
+import { API_BASE } from '../../config/api';
 const PeriodicTable = () => {
   // State lưu danh sách nguyên tố từ API
   const [elements, setElements] = useState([]);
@@ -13,7 +14,7 @@ const PeriodicTable = () => {
   useEffect(() => {
     const fetchElements = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/elements');
+        const response = await fetch('${API_BASE}/api/elements');
         const data = await response.json();
         setElements(data);
         if (data.length > 0) setSelectedElement(data[0]); // Mặc định chọn Hydrogen

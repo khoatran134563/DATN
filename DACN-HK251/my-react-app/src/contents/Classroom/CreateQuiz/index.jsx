@@ -5,6 +5,7 @@ import QuizInfo from './QuizInfo';
 import QuestionItem from './QuestionItem';
 
 import { API_BASE } from '../../../config/api';
+
 const CreateQuiz = () => {
   const navigate = useNavigate();
   const { classId } = useParams();

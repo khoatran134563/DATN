@@ -2,6 +2,7 @@ import React, { useMemo, useState, useEffect } from 'react';
 import QuestionToolbar from './QuestionToolbar';
 import QuestionTable from './QuestionTable';
 import QuestionModal from './QuestionModal';
+import { API_BASE } from '../../config/api';
 
 const QuestionBank = () => {
   const [questions, setQuestions] = useState([]);
@@ -28,7 +29,7 @@ const QuestionBank = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/questions');
+        const response = await fetch('${API_BASE}/api/questions');
         const data = await response.json();
         setQuestions(data);
         setLoading(false);

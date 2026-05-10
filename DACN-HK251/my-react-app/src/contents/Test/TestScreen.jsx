@@ -4,7 +4,7 @@ import { LEVELS } from './TestData';
 import TestSetup from './TestSetup';
 import TestPlaying from './TestPlaying';
 import TestResult from './TestResult';
-
+import { API_BASE } from '../../config/api';
 const TestScreen = () => {
   const [gameState, setGameState] = useState('setup'); 
   const [selectedLevel, setSelectedLevel] = useState(LEVELS[2]); 
@@ -20,7 +20,7 @@ const TestScreen = () => {
   const handleStartGame = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/questions');
+      const response = await fetch('${API_BASE}/api/questions');
       const allData = await response.json();
 
       let filteredData = [];

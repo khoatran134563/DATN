@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
-
+import { API_BASE } from '../../config/api';
 // Component này nhận props: title (tên bài) và quizId (mã bài)
 const UniversalQuiz = ({ title, quizId }) => {
   const [questions, setQuestions] = useState([]);
@@ -22,7 +22,7 @@ const UniversalQuiz = ({ title, quizId }) => {
 
     const fetchQuestions = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/quiz/${quizId}`);
+        const response = await fetch(`${API_BASE}/api/quiz/${quizId}`);
         if (!response.ok) throw new Error('Lỗi kết nối Server');
         const data = await response.json();
         
