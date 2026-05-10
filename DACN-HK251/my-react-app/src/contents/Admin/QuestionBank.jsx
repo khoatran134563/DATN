@@ -29,8 +29,8 @@ const QuestionBank = () => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const response = await fetch('${API_BASE}/api/questions');
-        const data = await response.json();
+        const response = await fetch(`${API_BASE}/api/questions`); 
+        const data = await response.json(); 
         setQuestions(data);
         setLoading(false);
       } catch (error) {
