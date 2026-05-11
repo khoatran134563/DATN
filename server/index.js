@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const uploadRoutes = require('./routes/uploadRoutes');
+
 require('dotenv').config();
 
 if (!process.env.JWT_SECRET) {
@@ -60,7 +62,8 @@ const startServer = async () => {
     app.use('/api/elements', elementRoutes);
     app.use('/api', quizRoutes);
     app.use('/seed-data', seedRoutes);
-
+    app.use('/api/upload', uploadRoutes);
+    
     const PORT = process.env.PORT || 5000;
 
     app.listen(PORT, () => {
