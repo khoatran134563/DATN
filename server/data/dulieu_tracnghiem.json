@@ -1117,7 +1117,7 @@
   },
   {
     "quiz_id": "tddn_vdvdc",
-    "question_text": "Trộn 200ml dung dịch $H_2SO_4$ 0,05M với 300ml dung dịch HCl 0,1M thu được dung dịch Y. pH của dung dịch Y là :",
+    "question_text": "Trộn 200ml dung dịch H2SO4 0,05M với 300ml dung dịch HCl 0,1M thu được dung dịch Y. pH của dung dịch Y là :",
     "options": [
       "A. 1,2",
       "B. 4",
@@ -1321,7 +1321,7 @@
   },
   {
     "quiz_id": "tddn_vdvdc",
-    "question_text": "Nhóm dung dịch nào sau đây chứa các chất đều pư được với dung dịch $H_2SO_4$ loãng ở nhiệt độ thường.",
+    "question_text": "Nhóm dung dịch nào sau đây chứa các chất đều pư được với dung dịch H2SO4 loãng ở nhiệt độ thường.",
     "options": [
       "A. $Mg(NO_3)_2$; $CaO$; $HNO_2$; $KCl$",
       "B. $Ba(OH)_2$; $KOH$; $CaCl_2$; $NaHCO_3$.",
@@ -1329,7 +1329,7 @@
       "D. $HCl$; $CuO$; $CuS$; $KHSO_3$."
     ],
     "correct_index": 1,
-    "explanation": "Dung dịch $H_2SO_4$ loãng có thể phản ứng với bazơ, oxit bazơ, và muối (điều kiện: tạo kết tủa, khí hoặc chất điện li yếu). Nhóm B thỏa mãn vì: $Ba(OH)_2$ và $KOH$ phản ứng trung hòa; $NaHCO_3$ phản ứng tạo khí $CO_2$; $CaCl_2$ phản ứng tạo kết tủa $CaSO_4$ ít tan. Các nhóm khác đều chứa chất không phản ứng: A chứa $KCl$, C chứa $K_2SO_4$, D chứa $HCl$ và $CuS$ (không tan trong axit loãng)."
+    "explanation": "Dung dịch H2SO4 loãng có thể phản ứng với bazơ, oxit bazơ, và muối (điều kiện: tạo kết tủa, khí hoặc chất điện li yếu). Nhóm B thỏa mãn vì: Ba(OH)2 và KOH phản ứng trung hòa; NaHCO3 phản ứng tạo khí CO2; CaCl2 phản ứng tạo kết tủa $CaSO_4$ ít tan. Các nhóm khác đều chứa chất không phản ứng: A chứa $KCl$, C chứa $K_2SO_4$, D chứa $HCl$ và $CuS$ (không tan trong axit loãng)."
   },
   {
     "quiz_id": "tddn_vdvdc",

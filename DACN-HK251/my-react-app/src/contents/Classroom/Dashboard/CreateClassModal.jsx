@@ -1,34 +1,41 @@
 import React, { useEffect, useState } from 'react';
+import { API_BASE } from '../../../config/api';
 
 const CreateClassModal = ({ isOpen, onClose, onCreate }) => {
   const [className, setClassName] = useState('');
   const [requiresApproval, setRequiresApproval] = useState(false);
-  const [coverImage, setCoverImage] = useState(null);
+
+  const [coverImage, setCoverImage] = useState('');
+  const [coverImageFile, setCoverImageFile] = useState(null);
   const [imageError, setImageError] = useState('');
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isUploadingImage, setIsUploadingImage] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
       setClassName('');
       setRequiresApproval(false);
-      setCoverImage(null);
+      setCoverImage('');
+      setCoverImageFile(null);
       setImageError('');
+      setIsSubmitting(false);
+      setIsUploadingImage(false);
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    return () => {
+      if (coverImage && coverImage.startsWith('blob:')) {
+        URL.revokeObjectURL(coverImage);
+      }
+    };
+  }, [coverImage]);
+
   if (!isOpen) return null;
 
-  const readImageAsDataUrl = (file) =>
-    new Promise((resolve, reject) => {
-      const reader = new FileReader();
-
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-
-      reader.readAsDataURL(file);
-    });
-
-  const handleImageUpload = async (e) => {
-    const file = e.target.files[0];
+  const handleImageUpload = (e) => {
+    const file = e.target.files?.[0];
 
     if (!file) return;
 
@@ -44,31 +51,73 @@ const CreateClassModal = ({ isOpen, onClose, onCreate }) => {
       return;
     }
 
-    try {
-      const imageDataUrl = await readImageAsDataUrl(file);
-      setCoverImage(imageDataUrl);
-      setImageError('');
-    } catch (error) {
-      setImageError('Không thể đọc file ảnh.');
-    } finally {
-      e.target.value = '';
+    if (coverImage && coverImage.startsWith('blob:')) {
+      URL.revokeObjectURL(coverImage);
     }
+
+    const previewUrl = URL.createObjectURL(file);
+
+    setCoverImageFile(file);
+    setCoverImage(previewUrl);
+    setImageError('');
+    e.target.value = '';
   };
 
-  const handleSubmit = () => {
-    if (className.trim()) {
-      onCreate({
+  const uploadCoverImageToCloudinary = async () => {
+    if (!coverImageFile) return '';
+
+    const formData = new FormData();
+    formData.append('file', coverImageFile);
+    formData.append('folder', 'chemlearn/classrooms');
+
+    const response = await fetch(`${API_BASE}/api/upload/single`, {
+      method: 'POST',
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || 'Không thể upload ảnh bìa lên Cloudinary.');
+    }
+
+    return data.file?.url || '';
+  };
+
+  const handleSubmit = async () => {
+    if (!className.trim() || isSubmitting || isUploadingImage) return;
+
+    try {
+      setIsSubmitting(true);
+      setImageError('');
+
+      let uploadedCoverUrl = '';
+
+      if (coverImageFile) {
+        setIsUploadingImage(true);
+        uploadedCoverUrl = await uploadCoverImageToCloudinary();
+        setIsUploadingImage(false);
+      }
+
+      await onCreate({
         name: className.trim(),
-        cover: coverImage,
-        thumbnail: coverImage,
+        cover: uploadedCoverUrl,
+        thumbnail: uploadedCoverUrl,
         requiresApproval,
       });
 
       onClose();
+    } catch (error) {
+      console.error('CREATE CLASS MODAL ERROR =', error);
+      setImageError(error.message || 'Không thể tạo lớp học. Vui lòng thử lại.');
+    } finally {
+      setIsSubmitting(false);
+      setIsUploadingImage(false);
     }
   };
 
   const isValid = className.trim().length > 0;
+  const isButtonDisabled = !isValid || isSubmitting || isUploadingImage;
 
   return (
     <div className="fixed inset-0 z-[100] flex items-start justify-center bg-gray-900/60 backdrop-blur-sm p-4 pt-24 animate-fade-in overflow-y-auto">
@@ -78,7 +127,8 @@ const CreateClassModal = ({ isOpen, onClose, onCreate }) => {
 
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-gray-600 p-2 rounded-full hover:bg-gray-100 transition"
+            disabled={isSubmitting || isUploadingImage}
+            className="text-gray-400 hover:text-gray-600 p-2 rounded-full hover:bg-gray-100 transition disabled:opacity-50"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -100,6 +150,7 @@ const CreateClassModal = ({ isOpen, onClose, onCreate }) => {
                   placeholder="Ví dụ: Lớp thầy Ngọc 2025..."
                   value={className}
                   onChange={(e) => setClassName(e.target.value)}
+                  disabled={isSubmitting || isUploadingImage}
                   autoFocus
                 />
               </div>
@@ -144,14 +195,21 @@ const CreateClassModal = ({ isOpen, onClose, onCreate }) => {
                   <input
                     type="file"
                     accept="image/*"
-                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer disabled:cursor-not-allowed"
                     onChange={handleImageUpload}
+                    disabled={isSubmitting || isUploadingImage}
                   />
                 </div>
 
                 {imageError && (
                   <p className="text-xs text-red-500 font-medium mt-2">
                     {imageError}
+                  </p>
+                )}
+
+                {isUploadingImage && (
+                  <p className="text-xs text-blue-600 font-bold mt-2">
+                    Đang upload ảnh bìa lên Cloudinary...
                   </p>
                 )}
               </div>
@@ -173,6 +231,7 @@ const CreateClassModal = ({ isOpen, onClose, onCreate }) => {
                     className="sr-only peer"
                     checked={requiresApproval}
                     onChange={(e) => setRequiresApproval(e.target.checked)}
+                    disabled={isSubmitting || isUploadingImage}
                   />
 
                   <div className="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
@@ -259,14 +318,18 @@ const CreateClassModal = ({ isOpen, onClose, onCreate }) => {
 
                   <button
                     onClick={handleSubmit}
-                    disabled={!isValid}
+                    disabled={isButtonDisabled}
                     className={`w-full py-2.5 rounded-lg font-bold text-sm transition-all ${
-                      isValid
+                      !isButtonDisabled
                         ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-200 active:scale-95'
                         : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                     }`}
                   >
-                    Tạo lớp
+                    {isUploadingImage
+                      ? 'Đang upload ảnh...'
+                      : isSubmitting
+                        ? 'Đang tạo lớp...'
+                        : 'Tạo lớp'}
                   </button>
                 </div>
               </div>
