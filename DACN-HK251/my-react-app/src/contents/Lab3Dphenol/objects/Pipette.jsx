@@ -8,8 +8,7 @@ export default function Pipette({
   loadedColor = "#60a5fa",
   isHeld = false,
   isSqueezing = false,
-  onPickUp,
-  onRelease,
+  onToggleHold,
   onSqueezeStart,
   onSqueezeEnd,
 }) {
@@ -40,15 +39,21 @@ export default function Pipette({
     <group
       ref={groupRef}
       position={position}
+      
+      
       onPointerDown={(e) => {
         e.stopPropagation()
-        onPickUp?.(type)
-      }}
-      onPointerUp={(e) => {
-        e.stopPropagation()
-        onRelease?.(type)
+        onToggleHold?.(type)
       }}
     >
+      {/* FIX 2: THE INVISIBLE HITBOX */}
+      {/* This invisible cylinder wraps the thin glass body, making it incredibly easy to click! */}
+      <mesh position={[0, 0, 0]}>
+        <cylinderGeometry args={[0.15, 0.15, 1.2, 16]} />
+        
+        <meshBasicMaterial transparent={true} opacity={0} depthWrite={false} />
+      </mesh>
+
       {/* bóng cao su đỏ */}
       <mesh
         ref={bulbRef}

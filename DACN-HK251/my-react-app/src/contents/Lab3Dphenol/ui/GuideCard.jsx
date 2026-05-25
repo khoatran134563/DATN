@@ -3,6 +3,7 @@ import React from "react"
 export default function GuideCard({
   loadedLabel,
   naohDrops,
+  hclDrops,
   phenolDrops,
   status,
   description,
@@ -10,6 +11,8 @@ export default function GuideCard({
   turnedPink,
   onReset,
 }) {
+  const hclVolume = (hclDrops * 5.0).toFixed(1);
+  const naohVolume = (naohDrops * 0.1).toFixed(1);
   return (
     <>
       <div className="bg-white rounded-3xl shadow-md p-5">
@@ -42,10 +45,11 @@ export default function GuideCard({
 
         <div className="space-y-2 text-sm text-slate-700">
           <div>
-            <span className="font-semibold">Đang nạp:</span> {loadedLabel}
+            <span className="font-semibold">Thể tích HCl:</span> {hclVolume}  mL
           </div>
           <div>
-            <span className="font-semibold">Số giọt NaOH:</span> {naohDrops}
+            <span className="font-semibold">Thể tích NaOH:</span> {naohVolume} mL
+            
           </div>
           <div>
             <span className="font-semibold">Số giọt Phenolphthalein:</span> {phenolDrops}

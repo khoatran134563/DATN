@@ -75,7 +75,7 @@ const UniversalQuiz = ({ title, quizId }) => {
     <div className="quiz-container animate-fade-in">
       <div className="quiz-header">
         <div className="flex items-center gap-2 text-blue-600 mb-2 font-bold uppercase text-sm">
-           <span>📝 Bài tập trắc nghiệm</span>
+           <span>Bài tập trắc nghiệm</span>
         </div>
         <h1 className="text-3xl font-bold text-gray-900">{title}</h1>
       </div>

@@ -57,8 +57,25 @@ const ForumPostSchema = new mongoose.Schema(
 
     status: {
       type: String,
-      enum: ['active', 'hidden'],
-      default: 'active',
+      enum: ['pending', 'active', 'rejected', 'hidden'],
+      default: 'pending',
+    },
+
+    rejectedReason: {
+      type: String,
+      default: '',
+      trim: true,
+    },
+
+    reviewedBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User',
+      default: null,
+    },
+
+    reviewedAt: {
+      type: Date,
+      default: null,
     },
   },
   { timestamps: true }

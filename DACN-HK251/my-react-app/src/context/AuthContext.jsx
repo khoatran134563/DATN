@@ -30,6 +30,17 @@ export const AuthProvider = ({ children }) => {
     localStorage.setItem('currentUser', JSON.stringify(user));
   };
 
+  const updateCurrentUser = (updatedUser) => {
+    setCurrentUser(updatedUser);
+    setUserRole(updatedUser?.role || null);
+
+    localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+
+    if (updatedUser?.role) {
+      localStorage.setItem('userRole', updatedUser.role);
+    }
+  };
+
   const logout = () => {
     setIsLoggedIn(false);
     setUserRole(null);
@@ -42,7 +53,16 @@ export const AuthProvider = ({ children }) => {
   };
 
   return (
-    <AuthContext.Provider value={{ isLoggedIn, userRole, currentUser, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        isLoggedIn,
+        userRole,
+        currentUser,
+        login,
+        logout,
+        updateCurrentUser,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

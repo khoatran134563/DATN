@@ -4,9 +4,31 @@ import QuestionTable from './QuestionTable';
 import QuestionModal from './QuestionModal';
 import { API_BASE } from '../../config/api';
 
+const emptyFormData = {
+  quiz_id: '',
+  question_text: '',
+  options: ['', '', '', ''],
+  correct_index: 0,
+  explanation: '',
+  lessonPart: 'cbhh',
+  levelPart: 'nbth',
+};
+
+const getChapterFromQuizId = (quizId = '') => {
+  if (quizId.startsWith('cbhh_') || quizId.startsWith('tddn_')) return 'Chương 1';
+  return 'Khác';
+};
+
+const getLevelFromQuizId = (quizId = '') => {
+  if (quizId.endsWith('nbth')) return 'NB - TH';
+  if (quizId.endsWith('vdvdc')) return 'VD - VDC';
+  return 'Khác';
+};
+
 const QuestionBank = () => {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
 
   const [searchTerm, setSearchTerm] = useState('');
   const [filterChapter, setFilterChapter] = useState('All');
@@ -15,124 +37,208 @@ const QuestionBank = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingQ, setEditingQ] = useState(null);
 
-  const [formData, setFormData] = useState({
-    quiz_id: '',
-    question_text: '',
-    options: ['', '', '', ''],
-    correct_index: 0,
-    explanation: '',
-    lessonPart: 'cbhh',
-    levelPart: 'nbth'
-  });
+  const [formData, setFormData] = useState(emptyFormData);
 
-  // --- 1. LẤY DỮ LIỆU ---
-  useEffect(() => {
-    const fetchQuestions = async () => {
-      try {
-        const response = await fetch(`${API_BASE}/api/questions`); 
-        const data = await response.json(); 
-        setQuestions(data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Lỗi tải dữ liệu:", error);
-        setLoading(false);
+  const fetchQuestions = async () => {
+    setLoading(true);
+
+    try {
+      const response = await fetch(`${API_BASE}/api/questions`);
+
+      if (!response.ok) {
+        throw new Error('Không thể tải ngân hàng câu hỏi.');
       }
-    };
+
+      const data = await response.json();
+      setQuestions(Array.isArray(data) ? data : []);
+    } catch (error) {
+      console.error('Lỗi tải dữ liệu:', error);
+      alert(error.message || 'Lỗi tải dữ liệu ngân hàng câu hỏi.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
     fetchQuestions();
   }, []);
 
-  // --- 2. LOGIC LỌC ---
   const filteredQuestions = useMemo(() => {
     return questions.filter((q) => {
-        let chapter = "Chương 1"; 
-        let level = "Khác";
-        if (q.quiz_id.endsWith('nbth')) level = "NB - TH";
-        else if (q.quiz_id.endsWith('vdvdc')) level = "VD - VDC";
+      const questionText = q.question_text || '';
+      const chapter = getChapterFromQuizId(q.quiz_id);
+      const level = getLevelFromQuizId(q.quiz_id);
 
-        const matchText = q.question_text.toLowerCase().includes(searchTerm.toLowerCase());
-        const matchChapter = filterChapter === 'All' || chapter === filterChapter;
-        const matchLevel = filterLevel === 'All' || level === filterLevel;
+      const matchText = questionText.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchChapter = filterChapter === 'All' || chapter === filterChapter;
+      const matchLevel = filterLevel === 'All' || level === filterLevel;
 
-        return matchText && matchChapter && matchLevel;
+      return matchText && matchChapter && matchLevel;
     });
   }, [questions, searchTerm, filterChapter, filterLevel]);
 
-  // --- 3. CRUD HANDLERS ---
-  const handleDelete = (id) => {
-    if (window.confirm('Bạn chắc chắn muốn xóa câu hỏi này khỏi ngân hàng đề?')) {
-      setQuestions(questions.filter((q) => q._id !== id));
+  const handleDelete = async (id) => {
+    if (!id) return;
+
+    const confirmed = window.confirm('Bạn chắc chắn muốn xóa câu hỏi này khỏi MongoDB?');
+    if (!confirmed) return;
+
+    try {
+      const response = await fetch(`${API_BASE}/api/questions/${id}`, {
+        method: 'DELETE',
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Xóa câu hỏi thất bại.');
+      }
+
+      setQuestions((prev) => prev.filter((q) => q._id !== id));
+    } catch (error) {
+      console.error('Lỗi xóa câu hỏi:', error);
+      alert(error.message || 'Lỗi xóa câu hỏi.');
     }
   };
 
   const openModal = (question = null) => {
     if (question) {
+      const parts = String(question.quiz_id || '').split('_');
+
       setEditingQ(question);
-      const parts = question.quiz_id.split('_');
       setFormData({
-        ...question,
+        quiz_id: question.quiz_id || '',
+        question_text: question.question_text || '',
+        options:
+          Array.isArray(question.options) && question.options.length >= 4
+            ? question.options.slice(0, 4)
+            : [...(question.options || []), '', '', '', ''].slice(0, 4),
+        correct_index: Number(question.correct_index || 0),
+        explanation: question.explanation || '',
         lessonPart: parts[0] || 'cbhh',
-        levelPart: parts[1] || 'nbth'
+        levelPart: parts[1] || 'nbth',
       });
     } else {
       setEditingQ(null);
-      setFormData({
-        quiz_id: '',
-        question_text: '',
-        options: ['', '', '', ''],
-        correct_index: 0,
-        explanation: '',
-        lessonPart: 'cbhh',
-        levelPart: 'nbth'
-      });
+      setFormData(emptyFormData);
     }
+
     setIsModalOpen(true);
   };
 
-  const handleSave = () => {
-    if (!formData.question_text) return alert('Vui lòng nhập nội dung câu hỏi!');
-
-    const generatedId = `${formData.lessonPart}_${formData.levelPart}`;
-    const payload = { ...formData, quiz_id: generatedId };
-
-    if (editingQ) {
-      const updatedList = questions.map((q) =>
-        q._id === editingQ._id ? { ...payload, _id: editingQ._id } : q
-      );
-      setQuestions(updatedList);
-    } else {
-      const newQ = { ...payload, _id: Date.now().toString() };
-      setQuestions([newQ, ...questions]);
+  const validateForm = () => {
+    if (!formData.question_text.trim()) {
+      return 'Vui lòng nhập nội dung câu hỏi.';
     }
-    setIsModalOpen(false);
+
+    const cleanOptions = formData.options.map((item) => String(item || '').trim());
+
+    if (cleanOptions.some((item) => !item)) {
+      return 'Vui lòng nhập đủ 4 đáp án.';
+    }
+
+    if (
+      Number.isNaN(Number(formData.correct_index)) ||
+      Number(formData.correct_index) < 0 ||
+      Number(formData.correct_index) >= cleanOptions.length
+    ) {
+      return 'Vui lòng chọn đáp án đúng hợp lệ.';
+    }
+
+    return null;
   };
 
-  // --- RENDER ---
+  const handleSave = async () => {
+    const validationError = validateForm();
+
+    if (validationError) {
+      alert(validationError);
+      return;
+    }
+
+    const generatedId = `${formData.lessonPart}_${formData.levelPart}`;
+
+    const payload = {
+      quiz_id: generatedId,
+      question_text: formData.question_text.trim(),
+      options: formData.options.map((item) => String(item || '').trim()),
+      correct_index: Number(formData.correct_index),
+      explanation: formData.explanation.trim(),
+    };
+
+    setSaving(true);
+
+    try {
+      const url = editingQ
+        ? `${API_BASE}/api/questions/${editingQ._id}`
+        : `${API_BASE}/api/questions`;
+
+      const method = editingQ ? 'PUT' : 'POST';
+
+      const response = await fetch(url, {
+        method,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const savedQuestion = await response.json();
+
+      if (!response.ok) {
+        throw new Error(savedQuestion.error || 'Lưu câu hỏi thất bại.');
+      }
+
+      if (editingQ) {
+        setQuestions((prev) =>
+          prev.map((q) => (q._id === editingQ._id ? savedQuestion : q))
+        );
+      } else {
+        setQuestions((prev) => [savedQuestion, ...prev]);
+      }
+
+      setIsModalOpen(false);
+      setEditingQ(null);
+      setFormData(emptyFormData);
+    } catch (error) {
+      console.error('Lỗi lưu câu hỏi:', error);
+      alert(error.message || 'Lỗi lưu câu hỏi.');
+    } finally {
+      setSaving(false);
+    }
+  };
+
   return (
     <div className="p-8 h-full flex flex-col bg-gray-50 font-sans">
-      {/* TRUYỀN THÊM PROPS COUNT VÀO ĐÂY NÈ */}
-      <QuestionToolbar 
-        searchTerm={searchTerm} setSearchTerm={setSearchTerm}
-        filterChapter={filterChapter} setFilterChapter={setFilterChapter}
-        filterLevel={filterLevel} setFilterLevel={setFilterLevel}
+      <QuestionToolbar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        filterChapter={filterChapter}
+        setFilterChapter={setFilterChapter}
+        filterLevel={filterLevel}
+        setFilterLevel={setFilterLevel}
         onAdd={() => openModal()}
-        totalCount={questions.length}           // <--- Tổng số
-        filteredCount={filteredQuestions.length} // <--- Số sau khi lọc
+        totalCount={questions.length}
+        filteredCount={filteredQuestions.length}
       />
 
-      <QuestionTable 
+      <QuestionTable
         questions={filteredQuestions}
         loading={loading}
         onEdit={openModal}
         onDelete={handleDelete}
       />
 
-      <QuestionModal 
+      <QuestionModal
         isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        onClose={() => {
+          if (!saving) setIsModalOpen(false);
+        }}
         isEditing={!!editingQ}
         formData={formData}
         setFormData={setFormData}
         onSave={handleSave}
+        saving={saving}
       />
     </div>
   );

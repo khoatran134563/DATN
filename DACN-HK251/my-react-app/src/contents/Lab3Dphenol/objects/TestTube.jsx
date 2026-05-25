@@ -1,6 +1,7 @@
 import React, { useMemo, useRef } from "react"
 import * as THREE from "three"
 import { useFrame } from "@react-three/fiber"
+import { useGLTF } from '@react-three/drei';
 
 export default function TestTube({
   position = [0, 0, 0],

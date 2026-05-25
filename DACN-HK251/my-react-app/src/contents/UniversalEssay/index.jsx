@@ -41,7 +41,7 @@ const UniversalEssay = ({ title, quizId }) => {
       {/* Header */}
       <div className="essay-header border-b pb-4 mb-6">
         <div className="flex items-center gap-2 text-purple-600 mb-2 font-bold uppercase text-sm">
-           <span>📝 Bài tập Tự Luận</span>
+           <span>Bài tập Tự Luận</span>
         </div>
         <h1 className="text-3xl font-bold text-gray-900">{title}</h1>
         

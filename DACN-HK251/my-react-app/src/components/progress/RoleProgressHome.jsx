@@ -4,7 +4,10 @@ import StudentProgressHome from './StudentProgressHome';
 import TeacherProgressHome from './TeacherProgressHome';
 import AdminProgressHome from './AdminProgressHome';
 
-const RoleProgressHome = ({ onOpenTheory, onOpenVideo }) => {
+const RoleProgressHome = ({
+  progressSummary,
+  onOpenProgressTopic,
+}) => {
   const { userRole, currentUser } = useAuth();
 
   if (userRole === 'teacher') {
@@ -18,8 +21,8 @@ const RoleProgressHome = ({ onOpenTheory, onOpenVideo }) => {
   return (
     <StudentProgressHome
       currentUser={currentUser}
-      onOpenTheory={onOpenTheory}
-      onOpenVideo={onOpenVideo}
+      progressSummary={progressSummary}
+      onOpenProgressTopic={onOpenProgressTopic}
     />
   );
 };

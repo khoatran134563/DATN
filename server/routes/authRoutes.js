@@ -10,6 +10,27 @@ const { sendResetPasswordEmail } = require('../config/mailer');
 const JWT_SECRET = process.env.JWT_SECRET;
 const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
 
+const verifyToken = (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization || '';
+    const token = authHeader.startsWith('Bearer ')
+      ? authHeader.split(' ')[1]
+      : null;
+
+    if (!token) {
+      return res.status(401).json({ message: 'Bạn chưa đăng nhập.' });
+    }
+
+    const decoded = jwt.verify(token, JWT_SECRET);
+    req.userId = decoded.userId;
+    req.userRole = decoded.role;
+
+    next();
+  } catch (error) {
+    return res.status(401).json({ message: 'Phiên đăng nhập không hợp lệ hoặc đã hết hạn.' });
+  }
+};
+
 // REGISTER
 router.post('/register', async (req, res) => {
   try {
@@ -81,7 +102,8 @@ router.post('/register', async (req, res) => {
       dob,
       province: province.trim(),
       email: normalizedEmail,
-      password: hashedPassword
+      password: hashedPassword,
+      status: 'active'
     });
 
     await newUser.save();
@@ -90,7 +112,7 @@ router.post('/register', async (req, res) => {
       message: `Đăng ký tài khoản ${role === 'teacher' ? 'giáo viên' : 'học sinh'} thành công!`
     });
   } catch (error) {
-    console.error(error);
+    console.error('REGISTER ERROR =', error);
     res.status(500).json({ message: 'Lỗi server khi đăng ký tài khoản.' });
   }
 });
@@ -113,6 +135,13 @@ router.post('/login', async (req, res) => {
     const user = await User.findOne({ email: normalizedEmail });
     if (!user) {
       return res.status(400).json({ field: 'email', message: 'Email không tồn tại trong hệ thống!' });
+    }
+
+    if (user.status === 'locked') {
+      return res.status(403).json({
+        field: 'email',
+        message: 'Tài khoản của bạn đã bị khóa. Vui lòng liên hệ quản trị viên.'
+      });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
@@ -138,14 +167,16 @@ router.post('/login', async (req, res) => {
         fullName: user.fullName,
         email: user.email,
         role: user.role,
+        status: user.status || 'active',
         school: user.school || '',
         className: user.className || '',
         dob: user.dob || '',
-        province: user.province || ''
+        province: user.province || '',
+        bio: user.bio || ''
       }
     });
   } catch (error) {
-    console.error(error);
+    console.error('LOGIN ERROR =', error);
     res.status(500).json({ message: 'Lỗi server khi đăng nhập.' });
   }
 });
@@ -164,6 +195,13 @@ router.post('/forgot-password', async (req, res) => {
 
     if (!user) {
       return res.status(400).json({ field: 'email', message: 'Email không tồn tại trong hệ thống!' });
+    }
+
+    if (user.status === 'locked') {
+      return res.status(403).json({
+        field: 'email',
+        message: 'Tài khoản của bạn đã bị khóa. Vui lòng liên hệ quản trị viên.'
+      });
     }
 
     const rawToken = crypto.randomBytes(32).toString('hex');
@@ -224,6 +262,12 @@ router.post('/reset-password/:token', async (req, res) => {
       return res.status(400).json({ message: 'Liên kết đặt lại mật khẩu không hợp lệ hoặc đã hết hạn.' });
     }
 
+    if (user.status === 'locked') {
+      return res.status(403).json({
+        message: 'Tài khoản của bạn đã bị khóa. Vui lòng liên hệ quản trị viên.'
+      });
+    }
+
     const salt = await bcrypt.genSalt(10);
     user.password = await bcrypt.hash(password, salt);
     user.resetPasswordTokenHash = null;
@@ -233,8 +277,78 @@ router.post('/reset-password/:token', async (req, res) => {
 
     res.json({ message: 'Đặt lại mật khẩu thành công. Bạn có thể đăng nhập lại.' });
   } catch (error) {
-    console.error(error);
+    console.error('RESET PASSWORD ERROR =', error);
     res.status(500).json({ message: 'Không thể đặt lại mật khẩu.' });
+  }
+});
+
+// UPDATE PROFILE
+router.put('/profile', verifyToken, async (req, res) => {
+  try {
+    const { fullName, school, className, dob, province, bio } = req.body;
+
+    const user = await User.findById(req.userId);
+    if (!user) {
+      return res.status(404).json({ message: 'Không tìm thấy tài khoản.' });
+    }
+
+    if (user.status === 'locked') {
+      return res.status(403).json({
+        message: 'Tài khoản của bạn đã bị khóa. Không thể cập nhật hồ sơ.'
+      });
+    }
+
+    if (user.role === 'admin') {
+      return res.status(403).json({ message: 'Tài khoản quản trị không cập nhật hồ sơ tại đây.' });
+    }
+
+    if (!fullName?.trim()) {
+      return res.status(400).json({ field: 'fullName', message: 'Vui lòng nhập họ tên.' });
+    }
+
+    if (!school?.trim()) {
+      return res.status(400).json({ field: 'school', message: 'Vui lòng nhập đơn vị công tác / trường.' });
+    }
+
+    if (user.role === 'student' && !className?.trim()) {
+      return res.status(400).json({ field: 'className', message: 'Học sinh phải nhập lớp.' });
+    }
+
+    if (!dob) {
+      return res.status(400).json({ field: 'dob', message: 'Vui lòng chọn ngày sinh.' });
+    }
+
+    if (!province?.trim()) {
+      return res.status(400).json({ field: 'province', message: 'Vui lòng nhập tỉnh/thành phố.' });
+    }
+
+    user.fullName = fullName.trim();
+    user.school = school.trim();
+    user.className = user.role === 'student' ? className.trim() : '';
+    user.dob = dob;
+    user.province = province.trim();
+    user.bio = bio?.trim() || '';
+
+    await user.save();
+
+    res.json({
+      message: 'Cập nhật hồ sơ thành công.',
+      user: {
+        id: user._id,
+        fullName: user.fullName,
+        email: user.email,
+        role: user.role,
+        status: user.status || 'active',
+        school: user.school || '',
+        className: user.className || '',
+        dob: user.dob || '',
+        province: user.province || '',
+        bio: user.bio || ''
+      }
+    });
+  } catch (error) {
+    console.error('UPDATE PROFILE ERROR =', error);
+    res.status(500).json({ message: 'Lỗi server khi cập nhật hồ sơ.' });
   }
 });
 

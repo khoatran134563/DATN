@@ -1,5 +1,28 @@
 import { MAX_COLOR_STRENGTH } from "./constants"
 
+// The known concentration of your acid
+export const HCL_MOLARITY = 0.1;
+
+export function getLiquidColor(hclDrops, naohDrops, phenolDrops, secretNaohMolarity) {
+  // 1. If there is no indicator, the liquid is always clear water.
+  if (phenolDrops === 0) {
+    return "#f8fafc"; 
+  }
+
+  // 2. Calculate the relative moles
+  const hclMoles = hclDrops * HCL_MOLARITY;
+  const naohMoles = naohDrops * secretNaohMolarity;
+
+  // 3. The Titration Equivalence Point
+  // If we have more base than acid, it turns pink!
+  // (Note: If hclDrops is 0, but they drop NaOH in, it instantly turns pink! Very realistic.)
+  if (naohMoles > hclMoles) {
+    return "#f472b6"; // Pink
+  } else {
+    return "#f8fafc"; // Clear
+  }
+}
+
 export function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value))
 }

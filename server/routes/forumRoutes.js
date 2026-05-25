@@ -35,6 +35,14 @@ const authMiddleware = async (req, res, next) => {
   }
 };
 
+const adminMiddleware = (req, res, next) => {
+  if (req.user?.role !== 'admin') {
+    return res.status(403).json({ message: 'Bạn không có quyền quản trị forum.' });
+  }
+
+  next();
+};
+
 // ===============================
 // HELPERS
 // ===============================
@@ -112,8 +120,355 @@ const buildPostDetail = (post, commentCount = 0) => ({
   createdAt: post.createdAt,
 });
 
+const buildAdminPostItem = (post, commentCount = 0) => ({
+  id: post._id,
+  title: post.title,
+  category: post.category,
+  summary: post.summary || '',
+  excerpt: post.summary || post.content?.slice(0, 180) || '',
+  content: post.content || '',
+  image: post.image || '',
+  author: post.authorName,
+  authorRole: post.authorRole,
+  avatar: post.authorName?.charAt(0)?.toUpperCase() || 'U',
+  avatarColor: getAvatarColor(post.authorRole),
+  status: post.status,
+  rejectedReason: post.rejectedReason || '',
+  reviewedBy: post.reviewedBy || null,
+  reviewedAt: post.reviewedAt || null,
+  viewCount: post.viewCount || 0,
+  comments: commentCount,
+  commentsCount: commentCount,
+  date: formatRelativeTime(post.createdAt),
+  fullDate: formatFullDate(post.createdAt),
+  createdAt: post.createdAt,
+  updatedAt: post.updatedAt,
+});
+
+const buildMyPostItem = (post, commentCount = 0) => ({
+  id: post._id,
+  title: post.title,
+  category: post.category,
+  summary: post.summary || '',
+  excerpt: post.summary || post.content?.slice(0, 180) || '',
+  content: post.content || '',
+  image: post.image || '',
+  author: post.authorName,
+  authorRole: post.authorRole,
+  avatar: post.authorName?.charAt(0)?.toUpperCase() || 'U',
+  avatarColor: getAvatarColor(post.authorRole),
+  status: post.status || 'pending',
+  rejectedReason: post.rejectedReason || '',
+  reviewedAt: post.reviewedAt || null,
+  viewCount: post.viewCount || 0,
+  comments: commentCount,
+  commentsCount: commentCount,
+  date: formatRelativeTime(post.createdAt),
+  fullDate: formatFullDate(post.createdAt),
+  createdAt: post.createdAt,
+  updatedAt: post.updatedAt,
+});
+
 // ===============================
-// FORUM POSTS
+// ADMIN FORUM ROUTES
+// Đặt trước /posts/:postId để tránh bị Express hiểu nhầm admin là postId
+// ===============================
+
+router.get('/admin/posts', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { status = 'pending' } = req.query;
+
+    const allowedStatuses = ['pending', 'active', 'rejected', 'hidden', 'all'];
+    if (!allowedStatuses.includes(status)) {
+      return res.status(400).json({ message: 'Trạng thái bài viết không hợp lệ.' });
+    }
+
+    const query = status === 'all' ? {} : { status };
+
+    const posts = await ForumPost.find(query)
+      .sort({ createdAt: -1 })
+      .lean();
+
+    const postIds = posts.map((post) => post._id);
+
+    const commentCounts = await ForumComment.aggregate([
+      {
+        $match: {
+          postId: { $in: postIds },
+          status: 'active',
+        },
+      },
+      {
+        $group: {
+          _id: '$postId',
+          count: { $sum: 1 },
+        },
+      },
+    ]);
+
+    const commentCountMap = {};
+    commentCounts.forEach((item) => {
+      commentCountMap[String(item._id)] = item.count;
+    });
+
+    const counts = {
+      pending: await ForumPost.countDocuments({ status: 'pending' }),
+      active: await ForumPost.countDocuments({ status: 'active' }),
+      rejected: await ForumPost.countDocuments({ status: 'rejected' }),
+      hidden: await ForumPost.countDocuments({ status: 'hidden' }),
+    };
+
+    res.json({
+      posts: posts.map((post) =>
+        buildAdminPostItem(post, commentCountMap[String(post._id)] || 0)
+      ),
+      counts,
+    });
+  } catch (error) {
+    console.error('GET ADMIN FORUM POSTS ERROR =', error);
+    res.status(500).json({ message: 'Lỗi server khi lấy danh sách bài viết quản trị.' });
+  }
+});
+
+router.get('/admin/posts/:postId', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { postId } = req.params;
+
+    const post = await ForumPost.findById(postId).lean();
+
+    if (!post) {
+      return res.status(404).json({ message: 'Không tìm thấy bài viết.' });
+    }
+
+    const commentCount = await ForumComment.countDocuments({
+      postId,
+      status: 'active',
+    });
+
+    res.json({
+      post: buildAdminPostItem(post, commentCount),
+    });
+  } catch (error) {
+    console.error('GET ADMIN FORUM POST DETAIL ERROR =', error);
+    res.status(500).json({ message: 'Lỗi server khi lấy chi tiết bài viết quản trị.' });
+  }
+});
+
+router.patch('/admin/posts/:postId/approve', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { postId } = req.params;
+
+    const post = await ForumPost.findById(postId);
+
+    if (!post) {
+      return res.status(404).json({ message: 'Không tìm thấy bài viết cần duyệt.' });
+    }
+
+    post.status = 'active';
+    post.rejectedReason = '';
+    post.reviewedBy = req.user._id;
+    post.reviewedAt = new Date();
+
+    await post.save();
+
+    res.json({
+      message: 'Đã duyệt bài viết thành công.',
+      post: buildAdminPostItem(post, 0),
+    });
+  } catch (error) {
+    console.error('APPROVE FORUM POST ERROR =', error);
+    res.status(500).json({ message: 'Lỗi server khi duyệt bài viết.' });
+  }
+});
+
+router.patch('/admin/posts/:postId/reject', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { postId } = req.params;
+    const { reason } = req.body;
+
+    const post = await ForumPost.findById(postId);
+
+    if (!post) {
+      return res.status(404).json({ message: 'Không tìm thấy bài viết cần từ chối.' });
+    }
+
+    post.status = 'rejected';
+    post.rejectedReason = reason?.trim() || 'Bài viết chưa đạt yêu cầu đăng tải.';
+    post.reviewedBy = req.user._id;
+    post.reviewedAt = new Date();
+
+    await post.save();
+
+    res.json({
+      message: 'Đã từ chối bài viết.',
+      post: buildAdminPostItem(post, 0),
+    });
+  } catch (error) {
+    console.error('REJECT FORUM POST ERROR =', error);
+    res.status(500).json({ message: 'Lỗi server khi từ chối bài viết.' });
+  }
+});
+
+router.patch('/admin/posts/:postId/hide', authMiddleware, adminMiddleware, async (req, res) => {
+  try {
+    const { postId } = req.params;
+    const { reason } = req.body;
+
+    const post = await ForumPost.findById(postId);
+
+    if (!post) {
+      return res.status(404).json({ message: 'Không tìm thấy bài viết cần ẩn.' });
+    }
+
+    post.status = 'hidden';
+    post.rejectedReason = reason?.trim() || 'Bài viết đã được ẩn bởi quản trị viên.';
+    post.reviewedBy = req.user._id;
+    post.reviewedAt = new Date();
+
+    await post.save();
+
+    res.json({
+      message: 'Đã ẩn bài viết.',
+      post: buildAdminPostItem(post, 0),
+    });
+  } catch (error) {
+    console.error('HIDE FORUM POST ERROR =', error);
+    res.status(500).json({ message: 'Lỗi server khi ẩn bài viết.' });
+  }
+});
+
+
+
+// ===============================
+// TEACHER OWN POSTS
+// Giáo viên xem trạng thái các bài viết của chính mình
+// ===============================
+
+router.get('/my-posts', authMiddleware, async (req, res) => {
+  try {
+    const user = req.user;
+
+    if (user.role !== 'teacher') {
+      return res.status(403).json({
+        message: 'Chỉ giáo viên mới được xem trạng thái bài đăng của mình.',
+      });
+    }
+
+    const { status = 'all' } = req.query;
+
+    const allowedStatuses = ['all', 'pending', 'active', 'rejected', 'hidden'];
+
+    if (!allowedStatuses.includes(status)) {
+      return res.status(400).json({
+        message: 'Trạng thái bài viết không hợp lệ.',
+      });
+    }
+
+    const baseQuery = {
+      authorId: user._id,
+    };
+
+    const query = status === 'all'
+      ? baseQuery
+      : {
+          ...baseQuery,
+          status,
+        };
+
+    const posts = await ForumPost.find(query)
+      .sort({ createdAt: -1 })
+      .lean();
+
+    const postIds = posts.map((post) => post._id);
+
+    const commentCounts = await ForumComment.aggregate([
+      {
+        $match: {
+          postId: { $in: postIds },
+          status: 'active',
+        },
+      },
+      {
+        $group: {
+          _id: '$postId',
+          count: { $sum: 1 },
+        },
+      },
+    ]);
+
+    const commentCountMap = {};
+    commentCounts.forEach((item) => {
+      commentCountMap[String(item._id)] = item.count;
+    });
+
+    const [pending, active, rejected, hidden] = await Promise.all([
+      ForumPost.countDocuments({ ...baseQuery, status: 'pending' }),
+      ForumPost.countDocuments({ ...baseQuery, status: 'active' }),
+      ForumPost.countDocuments({ ...baseQuery, status: 'rejected' }),
+      ForumPost.countDocuments({ ...baseQuery, status: 'hidden' }),
+    ]);
+
+    res.json({
+      posts: posts.map((post) =>
+        buildMyPostItem(post, commentCountMap[String(post._id)] || 0)
+      ),
+      counts: {
+        all: pending + active + rejected + hidden,
+        pending,
+        active,
+        rejected,
+        hidden,
+      },
+    });
+  } catch (error) {
+    console.error('GET MY FORUM POSTS ERROR =', error);
+    res.status(500).json({
+      message: 'Lỗi server khi lấy trạng thái bài đăng.',
+    });
+  }
+});
+
+router.get('/my-posts/:postId', authMiddleware, async (req, res) => {
+  try {
+    const user = req.user;
+
+    if (user.role !== 'teacher') {
+      return res.status(403).json({
+        message: 'Chỉ giáo viên mới được xem trạng thái bài đăng của mình.',
+      });
+    }
+
+    const { postId } = req.params;
+
+    const post = await ForumPost.findOne({
+      _id: postId,
+      authorId: user._id,
+    }).lean();
+
+    if (!post) {
+      return res.status(404).json({
+        message: 'Không tìm thấy bài viết hoặc bạn không có quyền xem bài viết này.',
+      });
+    }
+
+    const commentCount = await ForumComment.countDocuments({
+      postId,
+      status: 'active',
+    });
+
+    res.json({
+      post: buildMyPostItem(post, commentCount),
+    });
+  } catch (error) {
+    console.error('GET MY FORUM POST DETAIL ERROR =', error);
+    res.status(500).json({
+      message: 'Lỗi server khi lấy chi tiết bài đăng.',
+    });
+  }
+});
+
+// ===============================
+// FORUM POSTS CÔNG KHAI
 // ===============================
 
 // Lấy danh sách bài viết forum
@@ -184,10 +539,14 @@ router.post('/posts', authMiddleware, async (req, res) => {
       summary: summary?.trim() || '',
       content: content.trim(),
       image: image || '',
+      status: user.role === 'admin' ? 'active' : 'pending',
     });
 
     res.status(201).json({
-      message: 'Đăng bài forum thành công!',
+      message:
+        user.role === 'admin'
+          ? 'Đăng bài forum thành công!'
+          : 'Bài viết đã được gửi và đang chờ quản trị viên duyệt.',
       post: buildPostDetail(newPost, 0),
     });
   } catch (error) {

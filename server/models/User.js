@@ -6,19 +6,35 @@ const UserSchema = new mongoose.Schema({
     enum: ['student', 'teacher', 'admin'],
     required: true
   },
+
   fullName: { type: String, required: true },
+
   school: { type: String, required: true },
+
   className: { type: String },
+
   dob: { type: Date, required: true },
+
   province: { type: String, required: true },
+
   email: {
     type: String,
     required: true,
     unique: true
   },
+
   password: { type: String, required: true },
 
+  status: {
+    type: String,
+    enum: ['active', 'locked'],
+    default: 'active'
+  },
+
+  bio: { type: String, default: '' },
+
   resetPasswordTokenHash: { type: String, default: null },
+
   resetPasswordExpires: { type: Date, default: null }
 }, { timestamps: true });
 

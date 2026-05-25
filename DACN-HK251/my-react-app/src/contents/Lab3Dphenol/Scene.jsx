@@ -2,53 +2,139 @@ import React, { useEffect, useMemo, useState } from "react"
 import * as THREE from "three"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { ContactShadows, Environment, OrbitControls } from "@react-three/drei"
+import { Suspense } from 'react';
 
 import {
   CAMERA_POS,
   DRAG_BOUNDS,
-  NAOH_BOTTLE_POS,
+  HCL_BOTTLE_POS,
   PHENOL_BOTTLE_POS,
   PIPETTE_HOME_OFFSET,
   PIPETTE_TIP_OFFSET,
-  TEST_TUBE_LIQUID_OFFSET,
-  TEST_TUBE_MOUTH_OFFSET,
-  TEST_TUBE_POS,
+  STAND_POS,
+  BURETTE_POS,
+  BURETTE_TIP_POS,
+  FLASK_POS,
+  FLASK_MOUTH_OFFSET,
 } from "./constants"
 
 import { clamp, getLoadedLiquidColor } from "./logic"
 import Bench from "./objects/Bench"
 import Labels3D from "./objects/Labels3D"
-import TestTube from "./objects/TestTube"
 import ReagentBottle from "./objects/ReagentBottle"
 import Pipette from "./objects/Pipette"
 import Droplet from "./objects/Droplet"
 
-function DragPipette({ dragging, setPosition, z = 0 }) {
+import BuretteStand from "./objects/BuretteStand"
+import Burette from "./objects/Burette"
+import ConicalFlask from "./objects/ConicalFlask"
+
+function DragPipette({ dragging, type, pipettePos, setPosition, flaskPos }) {
   const planeRef = React.useRef(new THREE.Plane(new THREE.Vector3(0, 0, 1), 0))
   const rayRef = React.useRef(new THREE.Ray())
   const pointRef = React.useRef(new THREE.Vector3())
+  const currentPosRef = React.useRef(new THREE.Vector3())
 
-  useFrame(({ camera, mouse }) => {
-    if (!dragging) return
+  const bottleTarget = React.useMemo(() => {
+    const bottlePos = type === "hcl" ? HCL_BOTTLE_POS : PHENOL_BOTTLE_POS
+    return new THREE.Vector3(
+      bottlePos.x + PIPETTE_HOME_OFFSET.x,
+      bottlePos.y + PIPETTE_HOME_OFFSET.y,
+      bottlePos.z + PIPETTE_HOME_OFFSET.z
+    )
+  }, [type])
 
-    const ray = rayRef.current
-    const point = pointRef.current
+  useFrame(({ camera, mouse }, delta) => {
+    if (dragging) {
+      const ray = rayRef.current
+      const point = pointRef.current
+      ray.origin.copy(camera.position)
+      ray.direction.set(mouse.x, mouse.y, 0.5).unproject(camera).sub(camera.position).normalize()
+      ray.intersectPlane(planeRef.current, point)
 
-    ray.origin.copy(camera.position)
-    ray.direction.set(mouse.x, mouse.y, 0.5).unproject(camera).sub(camera.position).normalize()
-    ray.intersectPlane(planeRef.current, point)
+      setPosition([
+        Math.max(DRAG_BOUNDS.minX, Math.min(DRAG_BOUNDS.maxX, point.x)),
+        Math.max(DRAG_BOUNDS.minY, Math.min(DRAG_BOUNDS.maxY, point.y)),
+        0.5 
+      ])
+    } else {
+      currentPosRef.current.set(pipettePos[0], pipettePos[1], pipettePos[2])
+      const flaskTarget = new THREE.Vector3(flaskPos[0], flaskPos[1] + 1.8, flaskPos[2])
 
-    setPosition([
-      clamp(point.x, DRAG_BOUNDS.minX, DRAG_BOUNDS.maxX),
-      clamp(point.y, DRAG_BOUNDS.minY, DRAG_BOUNDS.maxY),
-      z,
-    ])
+      const distToBottle = currentPosRef.current.distanceTo(bottleTarget)
+      const distToFlask = currentPosRef.current.distanceTo(flaskTarget)
+
+      let activeTarget = null
+      let minDistance = Infinity
+
+      if (distToBottle < 0.8) {
+        activeTarget = bottleTarget
+        minDistance = distToBottle
+      } else if (distToFlask < 1.0) {
+        activeTarget = flaskTarget
+        minDistance = distToFlask
+      }
+
+      if (activeTarget && minDistance > 0.001) {
+        if (minDistance < 0.05) {
+          currentPosRef.current.copy(activeTarget)
+          setPosition([activeTarget.x, activeTarget.y, activeTarget.z])
+        } else {
+          currentPosRef.current.lerp(activeTarget, 10 * delta)
+          setPosition([
+            currentPosRef.current.x, 
+            currentPosRef.current.y, 
+            currentPosRef.current.z
+          ])
+        }
+      }
+    }
+  })
+
+  return null
+}
+
+function DragFlask({ dragging, flaskPos, setPosition }) {
+  const planeRef = React.useRef(new THREE.Plane(new THREE.Vector3(0, 0, 1), 0))
+  const rayRef = React.useRef(new THREE.Ray())
+  const pointRef = React.useRef(new THREE.Vector3())
+  const currentPosRef = React.useRef(new THREE.Vector3())
+
+  useFrame(({ camera, mouse }, delta) => {
+    if (dragging) {
+      const ray = rayRef.current
+      const point = pointRef.current
+      ray.origin.copy(camera.position)
+      ray.direction.set(mouse.x, mouse.y, 0.5).unproject(camera).sub(camera.position).normalize()
+      ray.intersectPlane(planeRef.current, point)
+
+      setPosition([
+        Math.max(DRAG_BOUNDS.minX, Math.min(DRAG_BOUNDS.maxX, point.x)),
+        FLASK_POS.y, 
+        FLASK_POS.z,
+      ])
+    } else {
+      currentPosRef.current.set(flaskPos[0], flaskPos[1], flaskPos[2])
+      const distance = currentPosRef.current.distanceTo(FLASK_POS)
+
+      if (distance < 0.25 && distance > 0.001) {
+        currentPosRef.current.lerp(FLASK_POS, 10 * delta) 
+        setPosition([
+          currentPosRef.current.x, 
+          currentPosRef.current.y, 
+          currentPosRef.current.z
+        ])
+      }
+    }
   })
 
   return null
 }
 
 function SceneWorld({
+  hclDrops,
+  naohDrops,          
+  phenolDrops,
   loadedBottle,
   loadedLiquidColor,
   tubeColor,
@@ -61,11 +147,11 @@ function SceneWorld({
   commitDrop,
   spawnToken,
 }) {
-  const naohHome = useMemo(
+  const hclHome = useMemo(
     () => [
-      NAOH_BOTTLE_POS.x + PIPETTE_HOME_OFFSET.x,
-      NAOH_BOTTLE_POS.y + PIPETTE_HOME_OFFSET.y,
-      NAOH_BOTTLE_POS.z + PIPETTE_HOME_OFFSET.z,
+      HCL_BOTTLE_POS.x + PIPETTE_HOME_OFFSET.x,
+      HCL_BOTTLE_POS.y + PIPETTE_HOME_OFFSET.y,
+      HCL_BOTTLE_POS.z + PIPETTE_HOME_OFFSET.z,
     ],
     []
   )
@@ -79,34 +165,86 @@ function SceneWorld({
     []
   )
 
-  const [naohPipettePos, setNaohPipettePos] = useState(naohHome)
+  const [hclPipettePos, setHclPipettePos] = useState(hclHome)
   const [phenolPipettePos, setPhenolPipettePos] = useState(phenolHome)
 
   const [dragging, setDragging] = useState(null)
   const [drops, setDrops] = useState([])
+  const [isBuretteFlowing, setIsBuretteFlowing] = useState(false);
+  const [flaskPos, setFlaskPos] = useState([FLASK_POS.x, FLASK_POS.y, FLASK_POS.z])
+
+  const handleToggleHold = (type) => {
+    if (dragging === type) {
+      setDragging(null)
+    } else {
+      if (type === "hcl" || type === "phenol") {
+        loadBottle(type)
+      }
+      setDragging(type)
+    }
+  }
+
+  // THE NEW TOGGLE HANDLER
+  const handleBuretteClick = () => {
+    setIsBuretteFlowing((prev) => !prev);
+  };
+
+  // THE CONTINUOUS STREAM ENGINE
+  useEffect(() => {
+    let interval;
+    if (isBuretteFlowing) {
+      interval = setInterval(() => {
+        setDrops((prev) => [
+          ...prev,
+          {
+            // We add Math.random() to the ID so React doesn't get confused 
+            // by multiple drops spawning in the exact same millisecond!
+            id: `burette-${Date.now()}-${Math.random()}`, 
+            type: "naoh",
+            start: [BURETTE_TIP_POS.x, BURETTE_TIP_POS.y, BURETTE_TIP_POS.z],
+            color: "#e5e7eb",
+          },
+        ]);
+      }, 200); // 200ms = 5 drops per second
+    }
+    
+    // Cleanup function automatically kills the interval when the valve closes
+    return () => clearInterval(interval); 
+  }, [isBuretteFlowing]);
 
   const tubeMouth = useMemo(
-    () =>
-      new THREE.Vector3(
-        TEST_TUBE_POS.x + TEST_TUBE_MOUTH_OFFSET.x,
-        TEST_TUBE_POS.y + TEST_TUBE_MOUTH_OFFSET.y,
-        TEST_TUBE_POS.z + TEST_TUBE_MOUTH_OFFSET.z
+    () => new THREE.Vector3(
+        flaskPos[0] + FLASK_MOUTH_OFFSET.x,
+        flaskPos[1] + FLASK_MOUTH_OFFSET.y,
+        flaskPos[2] + FLASK_MOUTH_OFFSET.z
       ),
-    []
+    [flaskPos]
   )
 
   const liquidTarget = useMemo(
     () => [
-      TEST_TUBE_POS.x + TEST_TUBE_LIQUID_OFFSET.x,
-      TEST_TUBE_POS.y + TEST_TUBE_LIQUID_OFFSET.y,
-      TEST_TUBE_POS.z + TEST_TUBE_LIQUID_OFFSET.z,
+      flaskPos[0],
+      flaskPos[1] + 0.1, 
+      flaskPos[2]
     ],
-    []
+    [flaskPos]
   )
 
+  const handleBuretteDrop = () => {
+    setDrops((prev) => [
+      ...prev,
+      {
+        id: `burette-${Date.now()}`,
+        type: "naoh",
+        start: [BURETTE_TIP_POS.x, BURETTE_TIP_POS.y, BURETTE_TIP_POS.z],
+        color: "#e5e7eb",
+      },
+    ])
+  }
+
   const activePipettePos =
-    loadedBottle === "naoh"
-      ? naohPipettePos
+    loadedBottle === "hcl"
+      ? hclPipettePos
       : loadedBottle === "phenol"
       ? phenolPipettePos
       : null
@@ -141,22 +279,17 @@ function SceneWorld({
         color: getLoadedLiquidColor(loadedBottle),
       },
     ])
-  }, [spawnToken, loadedBottle, currentTipPos])
+  }, [spawnToken])
 
   const removeDrop = (id) => {
     setDrops((prev) => prev.filter((d) => d.id !== id))
   }
 
-  const handlePickUp = (type) => {
-    loadBottle(type)
-    setDragging(type)
-  }
-
   const handleReleaseTool = (type) => {
     setDragging(null)
 
-    if (type === "naoh") {
-      setNaohPipettePos(naohHome)
+    if (type === "hcl") {
+      setHclPipettePos(hclHome)
     } else {
       setPhenolPipettePos(phenolHome)
     }
@@ -184,16 +317,29 @@ function SceneWorld({
       <Bench />
       <Labels3D />
 
-      <TestTube
-        position={[TEST_TUBE_POS.x, TEST_TUBE_POS.y, TEST_TUBE_POS.z]}
-        liquidColor={tubeColor}
-        liquidOpacity={tubeOpacity}
-        highlight={false}
-      />
+      <Suspense fallback={null}>
+        <BuretteStand position={[STAND_POS.x, STAND_POS.y, STAND_POS.z]} />
+        
+        <Burette 
+          position={[BURETTE_POS.x, BURETTE_POS.y, BURETTE_POS.z]} 
+          onDrop={handleBuretteClick} 
+        />
+        
+        <ConicalFlask 
+          position={flaskPos}
+          liquidColor={tubeColor}
+          liquidOpacity={tubeOpacity}
+          hclDrops={hclDrops}         // FIX: Added HCl drops so flask knows total volume
+          naohDrops={naohDrops}
+          phenolDrops={phenolDrops}
+          isHeld={dragging === 'flask'}
+          onToggleHold={handleToggleHold}
+        />
+      </Suspense>
 
       <ReagentBottle
-        label="NaOH"
-        position={[NAOH_BOTTLE_POS.x, NAOH_BOTTLE_POS.y, NAOH_BOTTLE_POS.z]}
+        label={"HCl\n0.1M"}
+        position={[HCL_BOTTLE_POS.x, HCL_BOTTLE_POS.y, HCL_BOTTLE_POS.z]}
         bodyColor="#7a5825"
       />
 
@@ -203,39 +349,54 @@ function SceneWorld({
         bodyColor="#6b4520"
       />
 
-      <Pipette
-        type="naoh"
-        position={naohPipettePos}
-        loaded={loadedBottle === "naoh"}
-        loadedColor={getLoadedLiquidColor("naoh")}
-        isHeld={dragging === "naoh"}
-        isSqueezing={isSqueezing && loadedBottle === "naoh"}
-        onPickUp={handlePickUp}
-        onRelease={handleReleaseTool}
-        onSqueezeStart={handleSqueezeStart}
-        onSqueezeEnd={handleSqueezeEnd}
+      <DragFlask
+        dragging={dragging === "flask"}
+        flaskPos={flaskPos}
+        setPosition={setFlaskPos}
       />
 
-      <Pipette
-        type="phenol"
-        position={phenolPipettePos}
-        loaded={loadedBottle === "phenol"}
-        loadedColor={getLoadedLiquidColor("phenol")}
-        isHeld={dragging === "phenol"}
-        isSqueezing={isSqueezing && loadedBottle === "phenol"}
-        onPickUp={handlePickUp}
-        onRelease={handleReleaseTool}
-        onSqueezeStart={handleSqueezeStart}
-        onSqueezeEnd={handleSqueezeEnd}
-      />
+      <Suspense fallback={null}>
+        <Pipette
+          type="hcl"
+          position={hclPipettePos}
+          loaded={loadedBottle === "hcl"}
+          loadedColor={getLoadedLiquidColor("hcl")}
+          isHeld={dragging === "hcl"}
+          isSqueezing={isSqueezing && loadedBottle === "hcl"}
+          onToggleHold={handleToggleHold}
+          onSqueezeStart={handleSqueezeStart}
+          onSqueezeEnd={handleSqueezeEnd}
+        />
+      </Suspense>
+      
+      <Suspense fallback={null}>
+        <Pipette
+          type="phenol"
+          position={phenolPipettePos}
+          loaded={loadedBottle === "phenol"}
+          loadedColor={getLoadedLiquidColor("phenol")}
+          isHeld={dragging === "phenol"}
+          isSqueezing={isSqueezing && loadedBottle === "phenol"}
+          onToggleHold={handleToggleHold}
+          onSqueezeStart={handleSqueezeStart}
+          onSqueezeEnd={handleSqueezeEnd}
+        />
+      </Suspense>
 
       <DragPipette
-        dragging={dragging === "naoh"}
-        setPosition={setNaohPipettePos}
+        dragging={dragging === "hcl"}
+        type="hcl"
+        pipettePos={hclPipettePos}
+        setPosition={setHclPipettePos}
+        flaskPos={flaskPos}
       />
+      
       <DragPipette
         dragging={dragging === "phenol"}
+        type="phenol" 
+        pipettePos={phenolPipettePos}
         setPosition={setPhenolPipettePos}
+        flaskPos={flaskPos}
       />
 
       {drops.map((drop) => (
@@ -262,8 +423,8 @@ function SceneWorld({
       <OrbitControls
         enablePan={false}
         enableRotate={false}
-        minDistance={5}
-        maxDistance={7}
+        minDistance={4}
+        maxDistance={8}
         minPolarAngle={Math.PI / 2.2}
         maxPolarAngle={Math.PI / 2.2}
       />

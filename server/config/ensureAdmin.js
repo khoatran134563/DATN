@@ -15,7 +15,7 @@ const ensureAdmin = async () => {
     const existingAdmin = await User.findOne({ email: adminEmail });
 
     if (existingAdmin) {
-      console.log(`👑 Tài khoản admin đã tồn tại: ${adminEmail}`);
+      console.log(`Tài khoản admin đã tồn tại: ${adminEmail}`);
       return;
     }
 
@@ -32,9 +32,9 @@ const ensureAdmin = async () => {
       password: hashedPassword
     });
 
-    console.log(`👑 Đã tạo sẵn tài khoản admin: ${adminEmail}`);
+    console.log(`Đã tạo sẵn tài khoản admin: ${adminEmail}`);
   } catch (error) {
-    console.error('❌ Lỗi tạo admin mặc định:', error);
+    console.error('Lỗi tạo admin mặc định:', error);
   }
 };
 

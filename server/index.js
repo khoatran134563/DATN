@@ -20,7 +20,7 @@ const quizRoutes = require('./routes/quizRoutes');
 const seedRoutes = require('./routes/seedRoutes');
 const uploadRoutes = require('./routes/uploadRoutes');
 const forumRoutes = require('./routes/forumRoutes');
-
+const adminRoutes = require('./routes/adminRoutes');
 const app = express();
 
 const allowedOrigins = [
@@ -70,14 +70,15 @@ const startServer = async () => {
     app.use('/api/forum', forumRoutes);
     app.use('/api', quizRoutes);
     app.use('/seed-data', seedRoutes);
-
+    app.use('/api/admin', adminRoutes);
+    
     const PORT = process.env.PORT || 5000;
 
     app.listen(PORT, () => {
-      console.log(`🚀 Server đang chạy tại http://localhost:${PORT}`);
+      console.log(`Server đang chạy tại http://localhost:${PORT}`);
     });
   } catch (error) {
-    console.error('❌ Lỗi khởi động server:', error);
+    console.error('Lỗi khởi động server:', error);
     process.exit(1);
   }
 };
