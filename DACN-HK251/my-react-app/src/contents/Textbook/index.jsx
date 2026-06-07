@@ -8,8 +8,11 @@ import './styles.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
+const DEFAULT_PDF_URL =
+  'https://qoitkdoqcxojbyynyruu.supabase.co/storage/v1/object/public/textbooks/hoa-11-chuong-1.pdf';
+
 const PDF_URL =
-  import.meta.env.VITE_TEXTBOOK_PDF_URL || '/textbooks/hoa-11-chuong-1.pdf';
+  import.meta.env.VITE_TEXTBOOK_PDF_URL || DEFAULT_PDF_URL;
 
 const TABLE_OF_CONTENTS = [
   { id: 'cover', title: 'Bìa sách', page: 1 },
@@ -534,7 +537,7 @@ const TextbookViewer = () => {
               }
               error={
                 <div className="text-center py-20 text-red-500 font-bold">
-                  Không thể tải file PDF. Kiểm tra lại đường dẫn public/textbooks/hoa-11-chuong-1.pdf.
+                  Không thể tải file PDF. Kiểm tra lại đường dẫn Supabase Storage hoặc biến VITE_TEXTBOOK_PDF_URL.
                 </div>
               }
             >
