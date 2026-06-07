@@ -59,7 +59,7 @@ export default function Droplet({ start, target, color, liquidType, onHit, onDon
   })
 
   return (
-    <mesh ref={ref} castShadow>
+    <mesh ref={ref} castShadow position={start}>
       <sphereGeometry args={[0.045, 16, 16]} />
       <meshStandardMaterial color={color} emissive={color} emissiveIntensity={0.3} />
     </mesh>

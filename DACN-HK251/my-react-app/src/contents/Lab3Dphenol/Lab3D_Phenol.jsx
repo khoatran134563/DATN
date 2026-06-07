@@ -9,6 +9,7 @@ export default function Lab3D_Phenol() {
     hclDrops,
     naohDrops,
     phenolDrops,
+    dangerRatio,
     loadedBottle,
     overTube,
     isSqueezing,
@@ -46,6 +47,7 @@ export default function Lab3D_Phenol() {
             naohDrops={naohDrops}
             phenolDrops={phenolDrops}
             loadedBottle={loadedBottle}
+            dangerRatio={dangerRatio}
             overTube={overTube}
             isSqueezing={isSqueezing}
             spawnToken={spawnToken}

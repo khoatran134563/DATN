@@ -8,7 +8,8 @@ import './styles.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-const PDF_URL = '/textbooks/hoa-11-chuong-1.pdf';
+const PDF_URL =
+  import.meta.env.VITE_TEXTBOOK_PDF_URL || '/textbooks/hoa-11-chuong-1.pdf';
 
 const TABLE_OF_CONTENTS = [
   { id: 'cover', title: 'Bìa sách', page: 1 },
@@ -46,6 +47,7 @@ const TABLE_OF_CONTENTS = [
 const TextbookViewer = () => {
   const navigate = useNavigate();
   const pageRefs = useRef({});
+  const pageShellRefs = useRef({});
   const readerViewportRef = useRef(null);
 
   const [numPages, setNumPages] = useState(0);
@@ -55,6 +57,7 @@ const TextbookViewer = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageInput, setPageInput] = useState('1');
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [renderedPages, setRenderedPages] = useState(new Set([1]));
 
   const [selectedOptionId, setSelectedOptionId] = useState('');
   const [quizChecked, setQuizChecked] = useState(false);
@@ -87,6 +90,43 @@ const TextbookViewer = () => {
       setPracticeQuestions([]);
     }
   }, [selectedHotspot]);
+
+  useEffect(() => {
+  if (!numPages || !readerViewportRef.current) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      setRenderedPages((prev) => {
+        const next = new Set(prev);
+
+        entries.forEach((entry) => {
+          const pageNumber = Number(entry.target.dataset.pageNumber);
+
+          if (entry.isIntersecting) {
+            next.add(pageNumber);
+
+            if (pageNumber > 1) next.add(pageNumber - 1);
+            if (pageNumber < numPages) next.add(pageNumber + 1);
+          }
+        });
+
+        return next;
+      });
+    },
+    {
+      root: readerViewportRef.current,
+      rootMargin: '900px 0px',
+      threshold: 0.01,
+    }
+  );
+
+  Object.values(pageShellRefs.current).forEach((element) => {
+    if (element) observer.observe(element);
+  });
+
+  return () => observer.disconnect();
+}, [numPages]);
+
 
   const handleDocumentLoadSuccess = (pdf) => {
     setLoadError('');
@@ -499,29 +539,48 @@ const TextbookViewer = () => {
               }
             >
               {numPages > 0 ? (
-                Array.from({ length: numPages }, (_, index) => {
-                  const pageNumber = index + 1;
+                  Array.from({ length: numPages }, (_, index) => {
+                    const pageNumber = index + 1;
+                    const shouldRenderPage = renderedPages.has(pageNumber);
+                    const estimatedPageHeight = Math.round(pageWidth * 1.42);
 
-                  return (
-                    <div
-                      key={pageNumber}
-                      ref={(element) => {
-                        pageRefs.current[pageNumber] = element;
-                      }}
-                      className="scroll-mt-3"
-                    >
-                      <InteractivePdfPage
-                        pageNumber={pageNumber}
-                        width={pageWidth}
-                        hotspots={hotspotsByPage[pageNumber] || []}
-                        onHotspotClick={handleHotspotClick}
-                        debugMode={false}
-                        onPageLoadError={handlePageLoadError}
-                      />
-                    </div>
-                  );
-                })
-              ) : (
+                    return (
+                      <div
+                        key={pageNumber}
+                        ref={(element) => {
+                          pageRefs.current[pageNumber] = element;
+                          pageShellRefs.current[pageNumber] = element;
+                        }}
+                        data-page-number={pageNumber}
+                        className="scroll-mt-3"
+                        style={{
+                          minHeight: shouldRenderPage ? undefined : estimatedPageHeight,
+                        }}
+                      >
+                        {shouldRenderPage ? (
+                          <InteractivePdfPage
+                            pageNumber={pageNumber}
+                            width={pageWidth}
+                            hotspots={hotspotsByPage[pageNumber] || []}
+                            onHotspotClick={handleHotspotClick}
+                            debugMode={false}
+                            onPageLoadError={handlePageLoadError}
+                          />
+                        ) : (
+                          <div
+                            className="mx-auto mb-4 flex items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-400 text-sm font-bold shadow-sm"
+                            style={{
+                              width: pageWidth,
+                              height: estimatedPageHeight,
+                            }}
+                          >
+                            Đang chờ tải trang {pageNumber}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })
+                ) : (
                 <div className="text-center py-20 text-slate-500 font-bold">
                   Đang chuẩn bị hiển thị trang PDF...
                 </div>
@@ -753,5 +812,6 @@ const TextbookViewer = () => {
     </div>
   );
 };
+
 
 export default TextbookViewer;

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react"
 import * as THREE from "three"
 import { Canvas, useFrame } from "@react-three/fiber"
-import { ContactShadows, Environment, OrbitControls } from "@react-three/drei"
+import { ContactShadows, Environment, OrbitControls, Html } from "@react-three/drei"
 import { Suspense } from 'react';
 
 import {
@@ -28,6 +28,108 @@ import Droplet from "./objects/Droplet"
 import BuretteStand from "./objects/BuretteStand"
 import Burette from "./objects/Burette"
 import ConicalFlask from "./objects/ConicalFlask"
+
+// function DangerLight({ dangerRatio }) {
+//   const lightRef = React.useRef()
+//   const phase = React.useRef(0)
+
+//   useFrame((state, delta) => {
+//     if (!lightRef.current) return
+
+//     if (dangerRatio > 0) {
+//       // Base Speed (10) + Ramping Speed based on how close we are
+//       const currentSpeed = 10 + (dangerRatio * 40);
+//       phase.current += delta * currentSpeed;
+
+//       // Calculate the global glow intensity. 
+//       // We multiply by 1.2 to make it really flood the scene with pink!
+//       lightRef.current.intensity = Math.max(0, Math.sin(phase.current) * 1.2);
+//     } else {
+//       // Smoothly fade the alarm out to completely dark when safe
+//       lightRef.current.intensity = THREE.MathUtils.lerp(lightRef.current.intensity, 0, 0.1);
+//       phase.current = 0; 
+//     }
+//   })
+
+//   // THE FIX: We changed this from a <pointLight> to an <ambientLight>!
+//   // It no longer needs a position, because it hits the entire world simultaneously.
+//   return (
+//     <ambientLight 
+//       ref={lightRef} 
+//       color="#f472b6" // The pink danger color
+//       intensity={0}   // Starts at 0 so it doesn't ruin the default lighting
+//     />
+//   )
+// }
+
+
+function DangerLight({ dangerRatio }) {
+  const ambientRef = React.useRef()
+  const strobeRef = React.useRef()
+  const phase = React.useRef(0)
+
+  useFrame((state, delta) => {
+    if (!ambientRef.current || !strobeRef.current) return
+
+    if (dangerRatio > 0) {
+      // Speed ramps up the closer we get to the equivalence point
+      const currentSpeed = 10 + (dangerRatio * 40);
+      phase.current += delta * currentSpeed;
+
+      // Calculate the raw pulse (0.0 to 1.0)
+      const pulse = Math.max(0, Math.sin(phase.current));
+
+      // 1. Ambient Light: Provides a subtle pink tint to the shadows (Intensity: up to 1.5)
+      ambientRef.current.intensity = pulse * 1.5;
+      
+      // 2. The Strobe Light: Blasts the front of the glass for bright reflections (Intensity: up to 6.0)
+      strobeRef.current.intensity = pulse * 6.0;
+
+    } else {
+      // Smoothly fade both lights to black when safe
+      ambientRef.current.intensity = THREE.MathUtils.lerp(ambientRef.current.intensity, 0, 0.1);
+      strobeRef.current.intensity = THREE.MathUtils.lerp(strobeRef.current.intensity, 0, 0.1);
+      phase.current = 0; 
+    }
+  })
+
+  return (
+    <group>
+      {/* The subtle room fill */}
+      <ambientLight 
+        ref={ambientRef} 
+        color="#f472b6" 
+        intensity={0} 
+      />
+      
+      {/* The aggressive strobe positioned slightly above and in front of the flask */}
+      <directionalLight 
+        ref={strobeRef} 
+        position={[0, 5, 5]} 
+        color="#ec4899" // A slightly deeper, harsher pink/red for the reflection
+        intensity={0} 
+      />
+    </group>
+  )
+}
+
+function NeutralizationCue({ dangerRatio }) {
+  // Only show when the alarm is active
+  if (dangerRatio <= 0) return null;
+
+  return (
+    <Html fullscreen>
+  <div className="absolute top-4 left-1/2 -translate-x-1/2 flex flex-col items-center animate-pulse">
+    <h1 className="text-6xl font-black text-pink-500 drop-shadow-2xl whitespace-nowrap">
+      Trung hòa...
+    </h1>
+    <p className="text-2xl font-bold text-white bg-pink-500/50 px-4 py-1 rounded-full mt-2">
+      Gần đến điểm tương đương!
+    </p>
+  </div>
+</Html>
+  );
+}
 
 function DragPipette({ dragging, type, pipettePos, setPosition, flaskPos }) {
   const planeRef = React.useRef(new THREE.Plane(new THREE.Vector3(0, 0, 1), 0))
@@ -136,6 +238,7 @@ function SceneWorld({
   naohDrops,          
   phenolDrops,
   loadedBottle,
+  dangerRatio,
   loadedLiquidColor,
   tubeColor,
   tubeOpacity,
@@ -205,7 +308,7 @@ function SceneWorld({
             color: "#e5e7eb",
           },
         ]);
-      }, 200); // 200ms = 5 drops per second
+      }, 400); // 200ms = 5 drops per second
     }
     
     // Cleanup function automatically kills the interval when the valve closes
@@ -313,6 +416,8 @@ function SceneWorld({
       <ambientLight intensity={0.9} />
       <directionalLight position={[4, 5, 3]} intensity={1.15} castShadow />
       <pointLight position={[0, 3, 3]} intensity={0.55} />
+      <DangerLight dangerRatio={dangerRatio} />
+      <NeutralizationCue dangerRatio={dangerRatio} />
 
       <Bench />
       <Labels3D />

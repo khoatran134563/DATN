@@ -88,11 +88,28 @@ export default function usePhenolInteractiveLab() {
 
 
   const derived = useMemo(() => {
+    const hclMoles = (hclDrops * 5.0) * 0.1; 
+    const naohMoles = (naohDrops * 0.1) * secretNaohMolarity;
+
+    // THE NEW DANGER MATH
+    let dangerRatio = 0;
+    
+    if (phenolDrops > 0 && hclMoles > 0) {
+      const currentRatio = naohMoles / hclMoles;
+      
+      // If we are between 85% and 100% of the way there...
+      if (currentRatio >= 0.85 && currentRatio <= 1.0) {
+        // Normalize that 25% window into a clean 0.0 -> 1.0 value
+        dangerRatio = (currentRatio - 0.85) / 0.15;
+      }
+    }
     return {
       loadedLiquidColor: getLoadedLiquidColor(loadedBottle),
       loadedLabel: getLiquidLabel(loadedBottle),
       
       turnedPink: (naohDrops * secretNaohMolarity) > (hclDrops * 0.1) && phenolDrops > 0,
+      
+      dangerRatio,
       
       instruction: getInstruction({
         loadedBottle,
@@ -111,7 +128,7 @@ export default function usePhenolInteractiveLab() {
     naohDrops,
     phenolDrops,
     secretNaohMolarity,
-    
+
     loadedBottle,
     overTube,
     isSqueezing,

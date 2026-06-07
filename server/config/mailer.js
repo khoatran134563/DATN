@@ -14,7 +14,7 @@ const sendResetPasswordEmail = async ({ to, fullName, resetLink }) => {
       <h2 style="color: #1d4ed8;">ChemLearn - Đặt lại mật khẩu</h2>
       <p>Xin chào <strong>${fullName || 'bạn'}</strong>,</p>
       <p>Chúng tôi đã nhận được yêu cầu đặt lại mật khẩu cho tài khoản ChemLearn của bạn.</p>
-      <p>Nhấn vào nút bên dưới để đặt lại mật khẩu. Liên kết này sẽ hết hạn sau <strong>15 phút</strong>.</p>
+      <p>Nhấn vào nút bên dưới để đặt lại mật khẩu. Vì lý do bảo mật, liên kết này chỉ có hiệu lực trong <strong>15 phút</strong> và chỉ sử dụng được một lần.</p>
 
       <p style="margin: 24px 0;">
         <a href="${resetLink}" style="

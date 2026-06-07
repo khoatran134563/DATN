@@ -3,6 +3,24 @@ import Sidebar from '../components/Sidebar';
 import RoleProgressHome from '../components/progress/RoleProgressHome';
 import { useAuth } from '../context/AuthContext';
 
+import Video_Nitrogen_KhongDuyTriSuChay from '../contents/Video/Video_Nitrogen_KhongDuyTriSuChay.jsx';
+import Video_Nitrogen_LongLamLanh from '../contents/Video/Video_Nitrogen_LongLamLanh.jsx';
+
+import Video_H2SO4_LoangKimLoai from '../contents/Video/Video_H2SO4_LoangKimLoai.jsx';
+import Video_H2SO4_DacTacDungVoiCopper from '../contents/Video/Video_H2SO4_DacTacDungVoiCopper.jsx';
+import Video_H2SO4_DacTacDungVoiDuong from '../contents/Video/Video_H2SO4_DacTacDungVoiDuong.jsx';
+import Video_NhanBietIonSulfate from '../contents/Video/Video_NhanBietIonSulfate.jsx';
+import Video_Sulfur_TacDungVoiIron from '../contents/Video/Video_Sulfur_TacDungVoiIron.jsx';
+import Video_Sulfur_ChayTrongOxygen from '../contents/Video/Video_Sulfur_ChayTrongOxygen.jsx';
+import Video_SO2_MuaAcid from '../contents/Video/Video_SO2_MuaAcid.jsx';
+import Video_NitrogenOxide_KhongKhi from '../contents/Video/Video_NitrogenOxide_KhongKhi.jsx';
+import Video_MuaAcid from '../contents/Video/Video_MuaAcid.jsx';
+import Video_PhuDuong from '../contents/Video/Video_PhuDuong.jsx';
+import Video_Ammonia_TinhTanTrongNuoc from '../contents/Video/Video_Ammonia_TinhTanTrongNuoc.jsx';
+import Video_Ammonia_TacDungVoiHCl from '../contents/Video/Video_Ammonia_TacDungVoiHCl.jsx';
+import Video_Ammonium_NhanBietIon from '../contents/Video/Video_Ammonium_NhanBietIon.jsx';
+import Video_Ammonium_PhanHuyNhiet from '../contents/Video/Video_Ammonium_PhanHuyNhiet.jsx';
+
 import Video_PhanUngThuanNghich from '../contents/Video/Video_PhanUngThuanNghich.jsx';
 import Video_AnhHuongNhietDo from '../contents/Video/Video_AnhHuongNhietDo.jsx';
 import Video_AnhHuongNongDo from '../contents/Video/Video_AnhHuongNongDo.jsx';
@@ -18,14 +36,18 @@ import UniversalEssay from '../contents/UniversalEssay';
 import Lab3D_NO2 from '../contents/Lab3D/Lab3D_NO2.jsx';
 import Lab3D_Phenol from '../contents/Lab3Dphenol/Lab3D_Phenol';
 
-// --- DỮ LIỆU SIDEBAR: ĐÃ XÓA LÝ THUYẾT ---
 const COURSE_DATA = [
   {
     id: 'video',
     title: 'Video minh họa',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+        />
       </svg>
     ),
     chapters: [
@@ -40,8 +62,8 @@ const COURSE_DATA = [
               'Video: Phản ứng thuận nghịch',
               'Video: Ảnh hưởng của nhiệt độ đến cân bằng',
               'Video: Ảnh hưởng của nồng độ đến cân bằng',
-              'Video: Ảnh hưởng của áp suất đến cân bằng'
-            ]
+              'Video: Ảnh hưởng của áp suất đến cân bằng',
+            ],
           },
           {
             id: 'v_bai2',
@@ -49,19 +71,76 @@ const COURSE_DATA = [
             topics: [
               'Video: Chất điện li mạnh, chất điện li yếu',
               'Video: Đo độ pH bằng chất chỉ thị Acid - Base',
-              'Video: Chuẩn độ acid - base'
-            ]
-          }
-        ]
-      }
-    ]
+              'Video: Chuẩn độ acid - base',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'v_chap2',
+        title: 'Chương 2: Nitrogen và Sulfur',
+        lessons: [
+          {
+            id: 'v_bai3',
+            title: 'Bài 3: Đơn chất nitrogen',
+            topics: [
+              'Video: Nitrogen không duy trì sự cháy',
+              'Video: Nitrogen lỏng làm lạnh nhanh',
+            ],
+          },
+          {
+            id: 'v_bai4',
+            title: 'Bài 4: Ammonia và một số hợp chất ammonium',
+            topics: [
+              'Video: Tính tan của ammonia trong nước',
+              'Video: Ammonia tác dụng với hydrogen chloride',
+              'Video: Nhận biết ion ammonium',
+              'Video: Sự phân hủy nhiệt của muối ammonium',
+            ],
+          },
+          {
+            id: 'v_bai5',
+            title: 'Bài 5: Một số hợp chất với oxygen của nitrogen',
+            topics: [
+              'Video: Sự tạo thành nitrogen oxide trong không khí',
+              'Video: Hiện tượng mưa acid',
+              'Video: Hiện tượng phú dưỡng',
+            ],
+          },
+          {
+            id: 'v_bai6',
+            title: 'Bài 6: Sulfur và sulfur dioxide',
+            topics: [
+              'Video: Sulfur tác dụng với iron',
+              'Video: Sulfur cháy trong oxygen',
+              'Video: Sulfur dioxide và hiện tượng mưa acid',
+            ],
+          },
+          {
+            id: 'v_bai7',
+            title: 'Bài 7: Sulfuric acid và muối sulfate',
+            topics: [
+              'Video: Sulfuric acid loãng tác dụng với kim loại',
+              'Video: Sulfuric acid đặc tác dụng với copper',
+              'Video: Sulfuric acid đặc tác dụng với đường',
+              'Video: Nhận biết ion sulfate',
+            ],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'exercise',
     title: 'Bài tập',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+        />
       </svg>
     ),
     chapters: [
@@ -75,27 +154,78 @@ const COURSE_DATA = [
             topics: [
               'Trắc nghiệm: Cân bằng hóa học (Nhận biết - Thông hiểu)',
               'Trắc nghiệm: Cân bằng hóa học (Vận dụng - Vận dụng cao)',
-              'Tự luận: Cân bằng hóa học'
-            ]
+              'Tự luận: Cân bằng hóa học',
+            ],
           },
           {
             id: 'e_bai2',
             title: 'Bài 2: Cân bằng trong dung dịch nước',
             topics: [
               'Trắc nghiệm: Cân bằng trong dung dịch nước (Nhận biết - Thông hiểu)',
-              'Trắc nghiệm: Cân bằng trong dung dịch nước (Vận dụng - Vận dụng cao)'
-            ]
-          }
-        ]
-      }
-    ]
+              'Trắc nghiệm: Cân bằng trong dung dịch nước (Vận dụng - Vận dụng cao)',
+            ],
+          },
+        ],
+      },
+      {
+        id: 'e_chap2',
+        title: 'Chương 2: Nitrogen và Sulfur',
+        lessons: [
+          {
+            id: 'e_bai3',
+            title: 'Bài 3: Đơn chất nitrogen',
+            topics: [
+              'Trắc nghiệm: Đơn chất nitrogen (Nhận biết - Thông hiểu)',
+              'Trắc nghiệm: Đơn chất nitrogen (Vận dụng - Vận dụng cao)',
+            ],
+          },
+          {
+            id: 'e_bai4',
+            title: 'Bài 4: Ammonia và một số hợp chất ammonium',
+            topics: [
+              'Trắc nghiệm: Ammonia và hợp chất ammonium (Nhận biết - Thông hiểu)',
+              'Trắc nghiệm: Ammonia và hợp chất ammonium (Vận dụng - Vận dụng cao)',
+            ],
+          },
+          {
+            id: 'e_bai5',
+            title: 'Bài 5: Một số hợp chất với oxygen của nitrogen',
+            topics: [
+              'Trắc nghiệm: Hợp chất oxygen của nitrogen (Nhận biết - Thông hiểu)',
+              'Trắc nghiệm: Hợp chất oxygen của nitrogen (Vận dụng - Vận dụng cao)',
+            ],
+          },
+          {
+            id: 'e_bai6',
+            title: 'Bài 6: Sulfur và sulfur dioxide',
+            topics: [
+              'Trắc nghiệm: Sulfur và sulfur dioxide (Nhận biết - Thông hiểu)',
+              'Trắc nghiệm: Sulfur và sulfur dioxide (Vận dụng - Vận dụng cao)',
+            ],
+          },
+          {
+            id: 'e_bai7',
+            title: 'Bài 7: Sulfuric acid và muối sulfate',
+            topics: [
+              'Trắc nghiệm: Sulfuric acid và muối sulfate (Nhận biết - Thông hiểu)',
+              'Trắc nghiệm: Sulfuric acid và muối sulfate (Vận dụng - Vận dụng cao)',
+            ],
+          },
+        ],
+      },
+    ],
   },
   {
     id: 'virtual-lab',
     title: 'Thí nghiệm 3D',
     icon: (
       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+        />
       </svg>
     ),
     chapters: [
@@ -106,21 +236,19 @@ const COURSE_DATA = [
           {
             id: 'lab_no2',
             title: 'Mô phỏng 3D: Chuyển dịch cân bằng NO2',
-            topics: ['Thực hành: Nhiệt độ và cân bằng NO2']
+            topics: ['Thực hành: Chuyển dịch cân bằng NO2'],
           },
           {
             id: 'lab_phenol',
             title: 'Mô phỏng 3D: Chỉ thị phenolphthalein',
-            topics: ['Thực hành: Chỉ thị phenolphthalein']
-          }
-        ]
-      }
-    ]
-  }
+            topics: ['Thực hành: Chỉ thị phenolphthalein'],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
-// Chỉ tính tiến độ cho Video minh họa và Bài tập.
-// Video: 7 mục. Bài tập: 5 mục. Tổng: 12 mục.
 const TRACKED_CATEGORY_IDS = ['video', 'exercise'];
 
 const getTopicTitle = (topic) => topic?.title || topic;
@@ -322,6 +450,70 @@ const Progress = () => {
     if (selectedLesson === 'Video: Đo độ pH bằng chất chỉ thị Acid - Base') return <Video_DopH />;
     if (selectedLesson === 'Video: Chuẩn độ acid - base') return <Video_ChuanDo />;
 
+    if (selectedLesson === 'Video: Nitrogen không duy trì sự cháy') {
+      return <Video_Nitrogen_KhongDuyTriSuChay />;
+    }
+
+    if (selectedLesson === 'Video: Nitrogen lỏng làm lạnh nhanh') {
+      return <Video_Nitrogen_LongLamLanh />;
+    }
+
+    if (selectedLesson === 'Video: Tính tan của ammonia trong nước') {
+      return <Video_Ammonia_TinhTanTrongNuoc />;
+    }
+
+    if (selectedLesson === 'Video: Ammonia tác dụng với hydrogen chloride') {
+      return <Video_Ammonia_TacDungVoiHCl />;
+    }
+
+    if (selectedLesson === 'Video: Nhận biết ion ammonium') {
+      return <Video_Ammonium_NhanBietIon />;
+    }
+
+    if (selectedLesson === 'Video: Sự phân hủy nhiệt của muối ammonium') {
+      return <Video_Ammonium_PhanHuyNhiet />;
+    }
+
+    if (selectedLesson === 'Video: Sự tạo thành nitrogen oxide trong không khí') {
+      return <Video_NitrogenOxide_KhongKhi />;
+    }
+
+    if (selectedLesson === 'Video: Hiện tượng mưa acid') {
+      return <Video_MuaAcid />;
+    }
+
+    if (selectedLesson === 'Video: Hiện tượng phú dưỡng') {
+      return <Video_PhuDuong />;
+    }
+
+    if (selectedLesson === 'Video: Sulfur tác dụng với iron') {
+      return <Video_Sulfur_TacDungVoiIron />;
+    }
+
+    if (selectedLesson === 'Video: Sulfur cháy trong oxygen') {
+      return <Video_Sulfur_ChayTrongOxygen />;
+    }
+
+    if (selectedLesson === 'Video: Sulfur dioxide và hiện tượng mưa acid') {
+      return <Video_SO2_MuaAcid />;
+    }
+
+    if (selectedLesson === 'Video: Sulfuric acid loãng tác dụng với kim loại') {
+      return <Video_H2SO4_LoangKimLoai />;
+    }
+
+    if (selectedLesson === 'Video: Sulfuric acid đặc tác dụng với copper') {
+      return <Video_H2SO4_DacTacDungVoiCopper />;
+    }
+
+    if (selectedLesson === 'Video: Sulfuric acid đặc tác dụng với đường') {
+      return <Video_H2SO4_DacTacDungVoiDuong />;
+    }
+
+    if (selectedLesson === 'Video: Nhận biết ion sulfate') {
+      return <Video_NhanBietIonSulfate />;
+    }
+
     if (selectedLesson === 'Trắc nghiệm: Cân bằng hóa học (Nhận biết - Thông hiểu)') {
       return <UniversalQuiz title="Trắc nghiệm: Cân bằng hóa học (NB-TH)" quizId="cbhh_nbth" />;
     }
@@ -338,11 +530,51 @@ const Progress = () => {
       return <UniversalQuiz title="Trắc nghiệm: Cân bằng trong dung dịch nước (VD-VDC)" quizId="tddn_vdvdc" />;
     }
 
+    if (selectedLesson === 'Trắc nghiệm: Đơn chất nitrogen (Nhận biết - Thông hiểu)') {
+      return <UniversalQuiz title="Trắc nghiệm: Đơn chất nitrogen (NB-TH)" quizId="nitro_nbth" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Đơn chất nitrogen (Vận dụng - Vận dụng cao)') {
+      return <UniversalQuiz title="Trắc nghiệm: Đơn chất nitrogen (VD-VDC)" quizId="nitro_vdvdc" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Ammonia và hợp chất ammonium (Nhận biết - Thông hiểu)') {
+      return <UniversalQuiz title="Trắc nghiệm: Ammonia và hợp chất ammonium (NB-TH)" quizId="amonia_nbth" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Ammonia và hợp chất ammonium (Vận dụng - Vận dụng cao)') {
+      return <UniversalQuiz title="Trắc nghiệm: Ammonia và hợp chất ammonium (VD-VDC)" quizId="amonia_vdvdc" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Hợp chất oxygen của nitrogen (Nhận biết - Thông hiểu)') {
+      return <UniversalQuiz title="Trắc nghiệm: Hợp chất oxygen của nitrogen (NB-TH)" quizId="oxynitro_nbth" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Hợp chất oxygen của nitrogen (Vận dụng - Vận dụng cao)') {
+      return <UniversalQuiz title="Trắc nghiệm: Hợp chất oxygen của nitrogen (VD-VDC)" quizId="oxynitro_vdvdc" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Sulfur và sulfur dioxide (Nhận biết - Thông hiểu)') {
+      return <UniversalQuiz title="Trắc nghiệm: Sulfur và sulfur dioxide (NB-TH)" quizId="sulfur_nbth" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Sulfur và sulfur dioxide (Vận dụng - Vận dụng cao)') {
+      return <UniversalQuiz title="Trắc nghiệm: Sulfur và sulfur dioxide (VD-VDC)" quizId="sulfur_vdvdc" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Sulfuric acid và muối sulfate (Nhận biết - Thông hiểu)') {
+      return <UniversalQuiz title="Trắc nghiệm: Sulfuric acid và muối sulfate (NB-TH)" quizId="h2so4_nbth" />;
+    }
+
+    if (selectedLesson === 'Trắc nghiệm: Sulfuric acid và muối sulfate (Vận dụng - Vận dụng cao)') {
+      return <UniversalQuiz title="Trắc nghiệm: Sulfuric acid và muối sulfate (VD-VDC)" quizId="h2so4_vdvdc" />;
+    }
+
     if (selectedLesson === 'Tự luận: Cân bằng hóa học') {
       return <UniversalEssay title="Tự luận: Cân bằng hóa học" quizId="essay_cbhh" />;
     }
 
-    if (selectedLesson === 'Thực hành: Nhiệt độ và cân bằng NO2') {
+    if (selectedLesson === 'Thực hành: Chuyển dịch cân bằng NO2') {
       return <Lab3D_NO2 />;
     }
 
@@ -453,9 +685,11 @@ const Progress = () => {
                   <div className="p-4 space-y-6">
                     {chap.lessons?.map((lesson) => (
                       <div key={lesson.id}>
-                        <h4 className="font-semibold text-blue-700 mb-3 px-2 border-l-4 border-blue-500">
-                          {lesson.title}
-                        </h4>
+                        {activeCategory !== 'virtual-lab' && (
+                          <h4 className="font-semibold text-blue-700 mb-3 px-2 border-l-4 border-blue-500">
+                            {lesson.title}
+                          </h4>
+                        )}
 
                         <div className="space-y-2 pl-2">
                           {lesson.topics?.map((topic, tIdx) => {
@@ -486,12 +720,34 @@ const Progress = () => {
                                     }
                                   >
                                     {isCompleted ? (
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        strokeWidth={2}
+                                        stroke="currentColor"
+                                        className="w-6 h-6"
+                                      >
+                                        <path
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                          d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                                        />
                                       </svg>
                                     ) : (
-                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        strokeWidth={1.5}
+                                        stroke="currentColor"
+                                        className="w-6 h-6"
+                                      >
+                                        <path
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                          d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                        />
                                       </svg>
                                     )}
                                   </div>
@@ -555,10 +811,7 @@ const Progress = () => {
 
         <main className="flex-1 md:ml-64 p-8 bg-[#f8f9fa] min-h-screen">
           <div className="text-sm text-gray-500 mb-8">
-            <span
-              onClick={goHome}
-              className="cursor-pointer hover:text-blue-600"
-            >
+            <span onClick={goHome} className="cursor-pointer hover:text-blue-600">
               Home
             </span>
 

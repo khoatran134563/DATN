@@ -1,6 +1,6 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-
+const ForumPost = require('../models/ForumPost');
 const Classroom = require('../models/Classroom');
 const ClassMember = require('../models/ClassMember');
 const ClassPost = require('../models/ClassPost');
@@ -10,9 +10,20 @@ const ClassMaterial = require('../models/ClassMaterial');
 const ClassAssignment = require('../models/ClassAssignment');
 const ClassAssignmentAttempt = require('../models/AssignmentAttempt');
 const User = require('../models/User');
+const multer = require('multer');
+const streamifier = require('streamifier');
+const cloudinary = require('../config/cloudinary');
 
 const router = express.Router();
 const JWT_SECRET = process.env.JWT_SECRET;
+
+
+const upload = multer({
+  storage: multer.memoryStorage(),
+  limits: {
+    fileSize: 25 * 1024 * 1024, // 25MB
+  },
+});
 
 // ===============================
 // AUTH MIDDLEWARE
@@ -103,6 +114,27 @@ const formatDeadline = (date) => {
   });
 };
 
+const uploadBufferToCloudinary = (fileBuffer, originalName) => {
+  return new Promise((resolve, reject) => {
+    const safeName = String(originalName || 'class-material')
+      .replace(/[^\w.\-]+/g, '_');
+
+    const uploadStream = cloudinary.uploader.upload_stream(
+      {
+        folder: 'chemlearn/class-materials',
+        resource_type: 'raw',
+        public_id: `${Date.now()}-${safeName}`,
+      },
+      (error, result) => {
+        if (error) return reject(error);
+        resolve(result);
+      }
+    );
+
+    streamifier.createReadStream(fileBuffer).pipe(uploadStream);
+  });
+};
+
 const normalizeAnswer = (value = '') => {
   return String(value).trim().toLowerCase();
 };
@@ -132,6 +164,69 @@ const buildResultPayload = (attempt) => ({
 // ===============================
 // CLASSROOM
 // ===============================
+
+// Thống kê nhanh cho trang progress của giáo viên
+router.get('/teacher/stats', authMiddleware, async (req, res) => {
+  try {
+    const user = req.user;
+
+    if (user.role !== 'teacher') {
+      return res.status(403).json({
+        message: 'Chỉ giáo viên mới được xem thống kê giảng dạy!',
+      });
+    }
+
+    const teacherClassrooms = await Classroom.find({
+      teacherId: user._id,
+      status: 'active',
+    })
+      .select('_id')
+      .lean();
+
+    const classroomIds = teacherClassrooms.map((item) => item._id);
+
+    const [
+      totalClasses,
+      totalStudents,
+      totalForumPosts,
+      totalAssignments,
+    ] = await Promise.all([
+      Classroom.countDocuments({
+        teacherId: user._id,
+        status: 'active',
+      }),
+
+      ClassMember.countDocuments({
+        classroomId: { $in: classroomIds },
+        role: 'student',
+        joinStatus: 'approved',
+        isHidden: false,
+      }),
+
+      ForumPost.countDocuments({
+        authorId: user._id,
+      }),
+
+      ClassAssignment.countDocuments({
+        classroomId: { $in: classroomIds },
+        createdBy: user._id,
+        status: 'active',
+      }),
+    ]);
+
+    res.json({
+      totalClasses,
+      totalStudents,
+      totalForumPosts,
+      totalAssignments,
+    });
+  } catch (error) {
+    console.error('GET TEACHER STATS ERROR =', error);
+    res.status(500).json({
+      message: 'Lỗi server khi lấy thống kê giáo viên.',
+    });
+  }
+});
 
 // Tạo lớp học
 router.post('/', authMiddleware, async (req, res) => {
@@ -956,11 +1051,13 @@ router.get('/:id/materials', authMiddleware, async (req, res) => {
 });
 
 // Upload tài liệu mới
-router.post('/:id/materials', authMiddleware, async (req, res) => {
+
+// Upload tài liệu mới lên Cloudinary
+router.post('/:id/materials', authMiddleware, upload.single('file'), async (req, res) => {
   try {
     const { id } = req.params;
     const user = req.user;
-    const { title, fileType, fileUrl, size } = req.body;
+    const { title, fileType } = req.body;
 
     const membership = await ClassMember.findOne({
       classroomId: id,
@@ -976,27 +1073,31 @@ router.post('/:id/materials', authMiddleware, async (req, res) => {
       return res.status(403).json({ message: 'Chỉ giáo viên mới được tải tài liệu lên!' });
     }
 
-    if (!title?.trim()) {
-      return res.status(400).json({ message: 'Thiếu tên tài liệu!' });
+    if (!req.file) {
+      return res.status(400).json({ message: 'Vui lòng chọn file tài liệu!' });
     }
 
-    if (!fileUrl?.trim()) {
-      return res.status(400).json({ message: 'Thiếu nội dung file!' });
-    }
+    const cloudinaryResult = await uploadBufferToCloudinary(
+      req.file.buffer,
+      req.file.originalname
+    );
 
     const now = new Date();
     const day = String(now.getDate()).padStart(2, '0');
     const month = String(now.getMonth() + 1).padStart(2, '0');
     const postedDate = `${day} thg ${month}`;
 
+    const size = `${(req.file.size / 1024 / 1024).toFixed(2)} MB`;
+
     const material = await ClassMaterial.create({
       classroomId: id,
       uploadedBy: user._id,
       uploaderName: user.fullName,
-      title: title.trim(),
+      title: title?.trim() || req.file.originalname,
       fileType: fileType || 'OTHER',
-      fileUrl: fileUrl.trim(),
-      size: size || '',
+      fileUrl: cloudinaryResult.secure_url,
+      cloudinaryPublicId: cloudinaryResult.public_id,
+      size,
       postedDate,
     });
 
@@ -1047,7 +1148,18 @@ router.delete('/:id/materials/:materialId', authMiddleware, async (req, res) => 
       return res.status(404).json({ message: 'Không tìm thấy tài liệu!' });
     }
 
-    await ClassMaterial.deleteOne({ _id: materialId });
+    if (material.cloudinaryPublicId) {
+  try {
+    await cloudinary.uploader.destroy(material.cloudinaryPublicId, {
+      resource_type: 'raw',
+    });
+  } catch (cloudinaryError) {
+    console.error('DELETE CLOUDINARY MATERIAL ERROR =', cloudinaryError);
+  }
+}
+
+await ClassMaterial.deleteOne({ _id: materialId });
+    
 
     res.json({ message: 'Đã xóa tài liệu thành công!' });
   } catch (error) {

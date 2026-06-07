@@ -278,13 +278,7 @@ const Classwork = ({
     }
   };
 
-  const readFileAsDataUrl = (file) =>
-    new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
+  
 
   const detectFileType = (filename = '') => {
     const lower = filename.toLowerCase();
@@ -306,22 +300,19 @@ const Classwork = ({
     try {
       setIsUploading(true);
 
-      const fileUrl = await readFileAsDataUrl(file);
-      const size = (file.size / 1024 / 1024).toFixed(2) + ' MB';
       const fileType = detectFileType(file.name);
+
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('title', file.name);
+      formData.append('fileType', fileType);
 
       const response = await fetch(`${API_BASE}/api/classrooms/${classroomId}/materials`, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`,
         },
-        body: JSON.stringify({
-          title: file.name,
-          fileType,
-          fileUrl,
-          size,
-        }),
+        body: formData,
       });
 
       const data = await response.json();
@@ -335,6 +326,7 @@ const Classwork = ({
         await onReloadDocuments();
       }
     } catch (error) {
+      console.error('UPLOAD MATERIAL ERROR =', error);
       alert('Không thể kết nối tới server backend.');
     } finally {
       setIsUploading(false);

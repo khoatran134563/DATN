@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, Suspense } from "react" // Thêm Suspense vào đây
 import { Canvas } from "@react-three/fiber"
 import { Chip } from "./ui/Chip"
 import { Scene } from "./no2/Scene"
@@ -126,17 +126,21 @@ export default function Lab3D_NO2() {
             background: "#252b35",
           }}
         >
-          <Canvas
-            key={sceneKey}
-            shadows
-            camera={{ position: [0, 0.95, 8.1], fov: 40 }}
-            gl={{ antialias: true, alpha: true }}
-            dpr={[1, 1.75]}
-          >
-            <color attach="background" args={["#252b35"]} />
-            <fog attach="fog" args={["#252b35", 8.5, 14.5]} />
+            <Canvas
+          key={sceneKey}
+          shadows
+          camera={{ position: [0, 0.95, 8.1], fov: 40 }}
+          gl={{ antialias: true, alpha: true }}
+          dpr={[1, 1.75]}
+        >
+          <color attach="background" args={["#252b35"]} />
+          <fog attach="fog" args={["#252b35", 8.5, 14.5]} />
+          
+          {/* Thêm Suspense bọc xung quanh Scene như thế này */}
+          <Suspense fallback={null}>
             <Scene onInfoChange={setInfo} />
-          </Canvas>
+          </Suspense>
+        </Canvas>
         </div>
       </div>
 

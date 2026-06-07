@@ -10,6 +10,15 @@ const { sendResetPasswordEmail } = require('../config/mailer');
 const JWT_SECRET = process.env.JWT_SECRET;
 const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
 
+const getFrontendUrl = () => {
+  const frontendUrl =
+    process.env.FRONTEND_URL ||
+    process.env.CLIENT_URL ||
+    'http://localhost:5173';
+
+  return frontendUrl.replace(/\/+$/, '');
+};
+
 const verifyToken = (req, res, next) => {
   try {
     const authHeader = req.headers.authorization || '';
@@ -211,7 +220,7 @@ router.post('/forgot-password', async (req, res) => {
     user.resetPasswordExpires = new Date(Date.now() + 15 * 60 * 1000);
     await user.save();
 
-    const resetLink = `${process.env.CLIENT_URL}/reset-password/${rawToken}`;
+    const resetLink = `${getFrontendUrl()}/reset-password/${rawToken}`;
 
     await sendResetPasswordEmail({
       to: user.email,
@@ -225,6 +234,42 @@ router.post('/forgot-password', async (req, res) => {
     res.status(500).json({ message: 'Không thể gửi email đặt lại mật khẩu.' });
   }
 });
+
+// VALIDATE RESET PASSWORD LINK
+router.get('/reset-password/:token/validate', async (req, res) => {
+  try {
+    const { token } = req.params;
+
+    const tokenHash = crypto.createHash('sha256').update(token).digest('hex');
+
+    const user = await User.findOne({
+      resetPasswordTokenHash: tokenHash,
+      resetPasswordExpires: { $gt: new Date() },
+    });
+
+    if (!user) {
+      return res.status(400).json({
+        message: 'Liên kết đặt lại mật khẩu không hợp lệ hoặc đã hết hạn. Vui lòng quay lại trang quên mật khẩu để yêu cầu liên kết mới.',
+      });
+    }
+
+    if (user.status === 'locked') {
+      return res.status(403).json({
+        message: 'Tài khoản của bạn đã bị khóa. Vui lòng liên hệ quản trị viên.',
+      });
+    }
+
+    res.json({
+      message: 'Liên kết đặt lại mật khẩu còn hiệu lực.',
+    });
+  } catch (error) {
+    console.error('VALIDATE RESET PASSWORD TOKEN ERROR =', error);
+    res.status(500).json({
+      message: 'Không thể kiểm tra liên kết đặt lại mật khẩu.',
+    });
+  }
+});
+
 
 // RESET PASSWORD
 router.post('/reset-password/:token', async (req, res) => {
@@ -259,7 +304,9 @@ router.post('/reset-password/:token', async (req, res) => {
     });
 
     if (!user) {
-      return res.status(400).json({ message: 'Liên kết đặt lại mật khẩu không hợp lệ hoặc đã hết hạn.' });
+      return res.status(400).json({
+        message: 'Liên kết đặt lại mật khẩu không hợp lệ hoặc đã hết hạn. Vui lòng quay lại trang quên mật khẩu để yêu cầu liên kết mới.',
+      });
     }
 
     if (user.status === 'locked') {

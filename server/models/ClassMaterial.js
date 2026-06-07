@@ -7,11 +7,13 @@ const ClassMaterialSchema = new mongoose.Schema(
       ref: 'Classroom',
       required: true,
     },
+
     uploadedBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
       required: true,
     },
+
     uploaderName: {
       type: String,
       required: true,
@@ -23,15 +25,17 @@ const ClassMaterialSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
+
     fileType: {
       type: String,
-      enum: ['PDF', 'DOC', 'DOCX', 'PPT', 'PPTX', 'XLS', 'XLSX', 'TXT', 'OTHER'],
-      default: 'OTHER',
+      default: 'PDF',
     },
+
     postedDate: {
       type: String,
       default: '',
     },
+
     size: {
       type: String,
       default: '',
@@ -40,6 +44,11 @@ const ClassMaterialSchema = new mongoose.Schema(
     fileUrl: {
       type: String,
       required: true,
+    },
+
+    cloudinaryPublicId: {
+      type: String,
+      default: '',
     },
   },
   { timestamps: true }
